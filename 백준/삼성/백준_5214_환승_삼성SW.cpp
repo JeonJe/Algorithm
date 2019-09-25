@@ -14,7 +14,7 @@ int N, K, M;
 
 vector<int> v[1000000+ 2000]; // 2000  은 하이퍼튜브를 가상의 역
 int visit[1000000 + 2000]; // 해당 인덱스에 도달하는데 지나친 역의 수
-
+s
 // 1 : 10 11   => 1이 들어있는 곳은 10번과 11번
 // 2 : 10	   => 2이 들어있는 곳은 10번
 // 3 : 10 12
@@ -44,11 +44,10 @@ int solve() {
 		for (auto i : v[curr]) { // 출발역이 같은 역 확인 
 
 			if (!visit[i]) {   // ex) curr이 1이면 v[1] 에는 10,11에 대해 확인, 첫 방문시에대해
-				
 				visit[i] = visit[curr] + 1; // 첫 방문시 1증가
 				q.push(i);		//다음에 확인 할 역에 추가 
 			}
-			cout << endl;
+
 		}
 	
 	
@@ -73,8 +72,8 @@ int main() {
 			v[num].push_back(i); //정점을 역으로
 		}
 	}
-	solve();
-	//cout << solve();
+
+	cout << solve();
 
 	return 0;
 }
