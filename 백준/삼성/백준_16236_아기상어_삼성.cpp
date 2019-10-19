@@ -1,3 +1,5 @@
+//https://www.acmicpc.net/problem/16236
+
 #include <iostream>
 #include <queue>
 
@@ -5,8 +7,8 @@ using namespace std;
 
 const int MAX = 20;
 
-struct SHARK {  //»ó¾î°¡ °¡Áö°í ÀÖ´Â Æ¯¼º
-	int y, x, time; // time Àº ¹°°í±â¸¦ ¸ğµÎ ¸ÔÀ»¶§±îÁö °É¸®´Â ½Ã°£
+struct SHARK {  	//ìƒì–´ê°€ ê°€ì§€ê³  ìˆëŠ” íŠ¹ì„±
+	int y, x, time; // time ì€ ë¬¼ê³ ê¸°ë¥¼ ëª¨ë‘ ë¨¹ì„ë•Œê¹Œì§€ ê±¸ë¦¬ëŠ” ì‹œê°„
 };
 
 
@@ -16,69 +18,69 @@ int N;
 int Dy[] = { -1,1,0,0 };
 int Dx[] = { 0,0,1,-1 };
 
-int shark_size, shark_eat; //»ó¾îÀÇ Å©±â¿Í ¸ÔÀº ¹°°í±â ¼ö
-SHARK shark; //¸ÊÀÇ ÀÖ´Â »ó¾îÀÇ Á¤º¸ 
+int shark_size, shark_eat; //ìƒì–´ì˜ í¬ê¸°ì™€ ë¨¹ì€ ë¬¼ê³ ê¸° ìˆ˜
+SHARK shark;		 //ë§µì˜ ìˆëŠ” ìƒì–´ì˜ ì •ë³´ 
 
 int solve() {
 	int answer=0;
 
 	bool is_map_update = true;
 
-		while (is_map_update) { // »ó¾î°¡ ¸ÔÀ» ¼ö ÀÖ´Â ¹°°í±â°¡ ÀÖÀ» ¶§±îÁö 
+		while (is_map_update) { // ìƒì–´ê°€ ë¨¹ì„ ìˆ˜ ìˆëŠ” ë¬¼ê³ ê¸°ê°€ ìˆì„ ë•Œê¹Œì§€ 
 			is_map_update = false;
 
-			bool visited[MAX][MAX] = { false, }; //°¢ ¶ó¿îµå ¸¶´Ù »õ·Î visited »ç¿ë
-			visited[shark.y][shark.x] = true;    //ÇöÀç »ó¾î À§Ä¡ ¹æ¹® Ç¥½Ã
+			bool visited[MAX][MAX] = { false, }; //ê° ë¼ìš´ë“œ ë§ˆë‹¤ ìƒˆë¡œ visited ì‚¬ìš©
+			visited[shark.y][shark.x] = true;    //í˜„ì¬ ìƒì–´ ìœ„ì¹˜ ë°©ë¬¸ í‘œì‹œ
 
-			queue<SHARK> q; //¶ó¿îµå¸¶´Ù »õ·Î¿î Å¥¸¦ ³Ö°í »ó¾îÀÇ À§Ä¡ »ğÀÔ
+			queue<SHARK> q; //ë¼ìš´ë“œë§ˆë‹¤ ìƒˆë¡œìš´ íë¥¼ ë„£ê³  ìƒì–´ì˜ ìœ„ì¹˜ ì‚½ì…
 			q.push(shark);
 
-			SHARK favorite; // »ó¾î°¡ ¸ÔÀ» ¹°°í±â Á¤º¸
-			favorite.y = 20; favorite.time = -1; // ÁöµµÀÇ °¡Àå Å« °ªÀ¸·Î yÃÊ±âÈ­
-						   						//±× ÀÌÀ¯´Â y°ª º¸´Ù ÀÛÀº ¹°°í±â(À§ÂÊ) À» ¸ÕÀú ¸Ô±â À§ÇØ 
+			SHARK favorite; // ìƒì–´ê°€ ë¨¹ì„ ë¬¼ê³ ê¸° ì •ë³´
+			favorite.y = 20; favorite.time = -1; // ì§€ë„ì˜ ê°€ì¥ í° ê°’ìœ¼ë¡œ yì´ˆê¸°í™”
+							    //ê·¸ ì´ìœ ëŠ” yê°’ ë³´ë‹¤ ì‘ì€ ë¬¼ê³ ê¸°(ìœ„ìª½)ì„ ë¨¼ì € ë¨¹ê¸° ìœ„í•´ 
 
-			while (!q.empty()) {  // ¹°°í±â À§Ä¡ ÆÄ¾Ç 
+			while (!q.empty()) {  // ë¬¼ê³ ê¸° ìœ„ì¹˜ íŒŒì•… 
 				SHARK cur = q.front(); q.pop();
 
 				if (favorite.time != -1 && favorite.time < cur.time)
-					break; // ¸ÔÀ»·Á´Â ¹°°í±âÀÇ ½Ã°£ÀÌ ÇöÀçº¸´Ù ÀÛÀ¸¸é º¼ ÇÊ¿ä ¾øÀ½
-							//°¡Àå °¡±î¿î ¹°°í±â´Â Àâ¾Ò´Ù¶ó°í ÆÇ´Ü
+					break; // ë¨¹ì„ë ¤ëŠ” ë¬¼ê³ ê¸°ì˜ ì‹œê°„ì´ í˜„ì¬ë³´ë‹¤ ì‘ìœ¼ë©´ ë³¼ í•„ìš” ì—†ìŒ
+							//ê°€ì¥ ê°€ê¹Œìš´ ë¬¼ê³ ê¸°ëŠ” ì¡ì•˜ë‹¤ë¼ê³  íŒë‹¨
 				
-				if (map[cur.y][cur.x] < shark_size && map[cur.y][cur.x]!=0) { //»ó¾î°¡ ¹°°í±â¸¦ ¸ÔÀ» ¼ö ÀÖ´Ù¸é
-					is_map_update = true; //¸ÔÀ» ¹°°í±â°¡ ÀÖ´Ù  Ç¥½Ã
+				if (map[cur.y][cur.x] < shark_size && map[cur.y][cur.x]!=0) { //ìƒì–´ê°€ ë¬¼ê³ ê¸°ë¥¼ ë¨¹ì„ ìˆ˜ ìˆë‹¤ë©´
+					is_map_update = true; //ë¨¹ì„ ë¬¼ê³ ê¸°ê°€ ìˆë‹¤  í‘œì‹œ
 
-					//¸ÔÀ»·Á´Â ¹°°í±âµé Áß À§ÂÊ¿¡ ÀÖ°í °¡Àå ¿ŞÂÊ¿¡ ÀÖ´Â ³ğÀÎÁö¸¦ È®ÀÎ
+					//ë¨¹ì„ë ¤ëŠ” ë¬¼ê³ ê¸°ë“¤ ì¤‘ ìœ„ìª½ì— ìˆê³  ê°€ì¥ ì™¼ìª½ì— ìˆëŠ” ë†ˆì¸ì§€ë¥¼ í™•ì¸
 					if (favorite.y > cur.y || (favorite.y == cur.y && favorite.x > cur.x)) {
 						favorite = cur;
 					}
 
 				}
 
-				for (int dir = 0; dir < 4; ++dir) { // 4¹æÇâÀ¸·Î Å½»öÀ» µ¹¸ç 
+				for (int dir = 0; dir < 4; ++dir) { // 4ë°©í–¥ìœ¼ë¡œ íƒìƒ‰ì„ ëŒë©° 
 					SHARK next;
 					next.y = cur.y + Dy[dir];
-					next.x = cur.x + Dx[dir]; //4 ¹æÇâÀ¸·Î ÀÌµ¿
+					next.x = cur.x + Dx[dir]; //4 ë°©í–¥ìœ¼ë¡œ ì´ë™
 					next.time = cur.time + 1;
 
-					if (next.y < 0 || next.y >= N || next.x < 0 || next.x >= N) continue; //ÆÇ¹ÛÀ¸·Î ³ª°¡¸é ´ÙÀ½ È®ÀÎ 
+					if (next.y < 0 || next.y >= N || next.x < 0 || next.x >= N) continue; //íŒë°–ìœ¼ë¡œ ë‚˜ê°€ë©´ ë‹¤ìŒ í™•ì¸ 
 
-					//¹æ¹®ÇÑÀû ¾ø°í ¹°°í±âÀÇ Å©±â°¡ »ó¾îÀÇ Å©±âº¸´Ù ÀÛÀ¸¸é 
+					//ë°©ë¬¸í•œì  ì—†ê³  ë¬¼ê³ ê¸°ì˜ í¬ê¸°ê°€ ìƒì–´ì˜ í¬ê¸°ë³´ë‹¤ ì‘ìœ¼ë©´ 
 					if (visited[next.y][next.x] == false && map[next.y][next.x] <= shark_size) {
 						visited[next.y][next.x] = true;
 						q.push(next);
 					}
 				}
 
-			}
-
-			if (is_map_update) { // ¸ÔÀ» ¼ö ÀÖ´Â ¹°°í±â°¡ ÀÖÀ¸¸é
-				shark = favorite;
+			} // end of while
+			
+			if (is_map_update) { // ë¨¹ì„ ìˆ˜ ìˆëŠ” ë¬¼ê³ ê¸°ê°€ ìˆìœ¼ë©´
+				shark = favorite; // ë¬¼ê³ ê¸° ìœ„ì¹˜ë¡œ ì´ë™
 				++shark_eat;
-				if (shark_eat == shark_size) {
+				if (shark_eat == shark_size) { // ë¨¹ê³  í¬ê¸° ì¡°ì •
 					++shark_size;
 					shark_eat = 0;
 				}
-				map[shark.y][shark.x] = 0;  //¹°°í±â ¸Ô°í ¸Ê °»½Å
+				map[shark.y][shark.x] = 0;  //ë¬¼ê³ ê¸° ë¨¹ê³  ë§µ ê°±ì‹ 
 
 			}
 
@@ -87,16 +89,17 @@ int solve() {
 	answer = shark.time;
 	return answer;
 }
+
 int main() {
 	cin >> N;
 	for (int i = 0; i < N; ++i) {
 		for (int j = 0; j < N; j++) {
 			cin >> map[i][j];
-			if (map[i][j] == 9) {  //»ó¾î¶ó¸é
+			if (map[i][j] == 9) {  //ìƒì–´ë¼ë©´
 				shark.x = j; shark.y = i;
 				shark.time = 0;
-				shark_size = 2; shark_eat = 0; // ÃÊ±â »ó¾î °ª ¼¼ÆÃ
-				map[i][j] = 0;  // »ó¾î°¡ ³ªÁß¿¡ ÀÌ À§Ä¡·Î ÀÌµ¿ ÇÒ ¼ö ÀÖµµ·Ï º¯°æ
+				shark_size = 2; shark_eat = 0; // ì´ˆê¸° ìƒì–´ ê°’ ì„¸íŒ…
+				map[i][j] = 0;  // ìƒì–´ê°€ ë‚˜ì¤‘ì— ì´ ìœ„ì¹˜ë¡œ ì´ë™ í•  ìˆ˜ ìˆë„ë¡ ë³€ê²½
 			
 			}
 		}
