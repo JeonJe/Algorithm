@@ -1,17 +1,22 @@
+//https://www.acmicpc.net/problem/1194
 
-//ºó °÷ : ¾ðÁ¦³ª ÀÌµ¿ÇÒ ¼ö ÀÖ´Ù. ('.¡®·Î Ç¥½ÃµÊ)
-//	º® : Àý´ë ÀÌµ¿ÇÒ ¼ö ¾ø´Ù. (¡®#¡¯)
-//	¿­¼è : ¾ðÁ¦³ª ÀÌµ¿ÇÒ ¼ö ÀÖ´Ù.ÀÌ °÷¿¡ Ã³À½ µé¾î°¡¸é ¿­¼è¸¦ Áý´Â´Ù. (a - f)
-//	¹® : ´ëÀÀÇÏ´Â ¿­¼è°¡ ÀÖÀ» ¶§¸¸ ÀÌµ¿ÇÒ ¼ö ÀÖ´Ù. (A - F)
-//	¹Î½ÄÀÌÀÇ ÇöÀç À§Ä¡ : ºó °÷ÀÌ°í, ¹Î½ÄÀÌ°¡ ÇöÀç ¼­ ÀÖ´Â °÷ÀÌ´Ù. (¼ýÀÚ 0)
-//	Ãâ±¸ : ´ÞÀÌ Â÷¿À¸£±â ¶§¹®¿¡, ¹Î½ÄÀÌ°¡ °¡¾ßÇÏ´Â °÷ÀÌ´Ù.ÀÌ °÷¿¡ ¿À¸é ¹Ì·Î¸¦ Å»ÃâÇÑ´Ù. (¼ýÀÚ 1)
-//	´ÞÀÌ Â÷¿À¸£´Â ±âÈ¸¸¦ ³õÄ¡Áö ¾Ê±â À§ÇØ¼­, ¹Ì·Î¸¦ Å»ÃâÇÏ·Á°í ÇÑ´Ù.ÇÑ ¹øÀÇ ¿òÁ÷ÀÓÀº ÇöÀç À§Ä¡¿¡¼­ ¼öÆòÀÌ³ª ¼öÁ÷À¸·Î ÇÑ Ä­ ÀÌµ¿ÇÏ´Â °ÍÀÌ´Ù.
+//ë¹ˆ ê³³ : ì–¸ì œë‚˜ ì´ë™í•  ìˆ˜ ìžˆë‹¤. ('.â€˜ë¡œ í‘œì‹œë¨)
+//ë²½ : ì ˆëŒ€ ì´ë™í•  ìˆ˜ ì—†ë‹¤. (â€˜#â€™)
+//ì—´ì‡  : ì–¸ì œë‚˜ ì´ë™í•  ìˆ˜ ìžˆë‹¤.ì´ ê³³ì— ì²˜ìŒ ë“¤ì–´ê°€ë©´ ì—´ì‡ ë¥¼ ì§‘ëŠ”ë‹¤. (a - f)
+//ë¬¸ : ëŒ€ì‘í•˜ëŠ” ì—´ì‡ ê°€ ìžˆì„ ë•Œë§Œ ì´ë™í•  ìˆ˜ ìžˆë‹¤. (A - F)
+//ë¯¼ì‹ì´ì˜ í˜„ìž¬ ìœ„ì¹˜ : ë¹ˆ ê³³ì´ê³ , ë¯¼ì‹ì´ê°€ í˜„ìž¬ ì„œ ìžˆëŠ” ê³³ì´ë‹¤. (ìˆ«ìž 0)
+//ì¶œêµ¬ : ë‹¬ì´ ì°¨ì˜¤ë¥´ê¸° ë•Œë¬¸ì—, ë¯¼ì‹ì´ê°€ ê°€ì•¼í•˜ëŠ” ê³³ì´ë‹¤.ì´ ê³³ì— ì˜¤ë©´ ë¯¸ë¡œë¥¼ íƒˆì¶œí•œë‹¤. (ìˆ«ìž 1)
+//ë‹¬ì´ ì°¨ì˜¤ë¥´ëŠ” ê¸°íšŒë¥¼ ë†“ì¹˜ì§€ ì•Šê¸° ìœ„í•´ì„œ, ë¯¸ë¡œë¥¼ íƒˆì¶œí•˜ë ¤ê³  í•œë‹¤.í•œ ë²ˆì˜ ì›€ì§ìž„ì€ í˜„ìž¬ ìœ„ì¹˜ì—ì„œ ìˆ˜í‰ì´ë‚˜ ìˆ˜ì§ìœ¼ë¡œ í•œ ì¹¸ ì´ë™í•˜ëŠ” ê²ƒì´ë‹¤.
 //
-//	¹Î½ÄÀÌ°¡ ¹Ì·Î¸¦ Å»ÃâÇÏ´Âµ¥ °É¸®´Â ÀÌµ¿ È½¼öÀÇ ÃÖ¼Ú°ªÀ» ±¸ÇÏ´Â ÇÁ·Î±×·¥À» ÀÛ¼ºÇÏ½Ã¿À.\\ÀÔ·Â
-//Ã¹Â° ÁÙ¿¡ ¹Ì·ÎÀÇ ¼¼·Î Å©±â N°ú °¡·Î Å©±â MÀÌ ÁÖ¾îÁø´Ù. (1 ¡Â N, M ¡Â 50) µÑÂ° ÁÙºÎÅÍ N°³ÀÇ ÁÙ¿¡ ¹Ì·ÎÀÇ ¸ð¾çÀÌ ÁÖ¾îÁø´Ù. °°Àº Å¸ÀÔÀÇ ¿­¼è°¡ ¿©·¯ °³ ÀÖÀ» ¼ö ÀÖ°í, ¹®µµ ¸¶Âù°¡ÁöÀÌ´Ù. ±×¸®°í, ¿µ½ÄÀÌ°¡ ¿­¼è¸¦ ¼û°Ü³õ´Â ´Ù¸é ¹®¿¡ ´ëÀÀÇÏ´Â ¿­¼è°¡ ¾øÀ» ¼öµµ ÀÖ´Ù. 0Àº ÇÑ °³, 1Àº Àû¾îµµ ÇÑ °³ ÀÖ´Ù. ±×¸®°í, ¿­¼è´Â ¿©·¯ ¹ø »ç¿ëÇÒ ¼ö ÀÖ´Ù.
+//ë¯¼ì‹ì´ê°€ ë¯¸ë¡œë¥¼ íƒˆì¶œí•˜ëŠ”ë° ê±¸ë¦¬ëŠ” ì´ë™ íšŸìˆ˜ì˜ ìµœì†Ÿê°’ì„ êµ¬í•˜ëŠ” í”„ë¡œê·¸ëž¨ì„ ìž‘ì„±í•˜ì‹œì˜¤.\\ìž…ë ¥
+//ì²«ì§¸ ì¤„ì— ë¯¸ë¡œì˜ ì„¸ë¡œ í¬ê¸° Nê³¼ ê°€ë¡œ í¬ê¸° Mì´ ì£¼ì–´ì§„ë‹¤.
+//(1 â‰¤ N, M â‰¤ 50) ë‘˜ì§¸ ì¤„ë¶€í„° Nê°œì˜ ì¤„ì— ë¯¸ë¡œì˜ ëª¨ì–‘ì´ ì£¼ì–´ì§„ë‹¤. 
+//ê°™ì€ íƒ€ìž…ì˜ ì—´ì‡ ê°€ ì—¬ëŸ¬ ê°œ ìžˆì„ ìˆ˜ ìžˆê³ , ë¬¸ë„ ë§ˆì°¬ê°€ì§€ì´ë‹¤. 
+//ê·¸ë¦¬ê³ , ì˜ì‹ì´ê°€ ì—´ì‡ ë¥¼ ìˆ¨ê²¨ë†“ëŠ” ë‹¤ë©´ ë¬¸ì— ëŒ€ì‘í•˜ëŠ” ì—´ì‡ ê°€ ì—†ì„ ìˆ˜ë„ ìžˆë‹¤.
+//0ì€ í•œ ê°œ, 1ì€ ì ì–´ë„ í•œ ê°œ ìžˆë‹¤. ê·¸ë¦¬ê³ , ì—´ì‡ ëŠ” ì—¬ëŸ¬ ë²ˆ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
 //
-//Ãâ·Â
-//Ã¹Â° ÁÙ¿¡ ¹Î½ÄÀÌ°¡ ¹Ì·Î¸¦ Å»ÃâÇÏ´Âµ¥ µå´Â ÀÌµ¿ È½¼öÀÇ ÃÖ¼Ú°ªÀ» Ãâ·ÂÇÑ´Ù. ¸¸¾à ¹Î½ÄÀÌ°¡ ¹Ì·Î¸¦ Å»Ãâ ÇÒ ¼ö ¾øÀ¸¸é, -1À» Ãâ·ÂÇÑ´Ù.
+//ì¶œë ¥
+//ì²«ì§¸ ì¤„ì— ë¯¼ì‹ì´ê°€ ë¯¸ë¡œë¥¼ íƒˆì¶œí•˜ëŠ”ë° ë“œëŠ” ì´ë™ íšŸìˆ˜ì˜ ìµœì†Ÿê°’ì„ ì¶œë ¥í•œë‹¤. ë§Œì•½ ë¯¼ì‹ì´ê°€ ë¯¸ë¡œë¥¼ íƒˆì¶œ í•  ìˆ˜ ì—†ìœ¼ë©´, -1ì„ ì¶œë ¥í•œë‹¤.
 
 
 #include <iostream>
@@ -19,57 +24,58 @@
 #include <queue>
 
 using namespace std;
+
 const int MAX = 51;
 char map[MAX][MAX];
-bool visit[64][MAX][MAX]; // ¿­¼è°¡ 6°³ÀÌ°í ¿­¼è¸¦ ÇÑ¹ø ÀÌ»ó »ç¿ëÇÒ ¼ö ÀÖ´Ù. => ºñÆ®¸¶½ºÅ·
-//6ºñÆ®¸¦ »ç¿ëÇØ¼­ LSBºÎÅÍ a,b ... f±îÁö ¸ÅÄª a,c ¿­¼è¸¦ °¡Áö°í ÀÖÀ¸¸é 000101·Î Ç¥Çö => O(64*NM) => O(NM)
+bool visit[64][MAX][MAX]; // ì—´ì‡ ê°€ 6ê°œì´ê³  ì—´ì‡ ë¥¼ í•œë²ˆ ì´ìƒ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤. => ë¹„íŠ¸ë§ˆìŠ¤í‚¹
+//6ë¹„íŠ¸ë¥¼ ì‚¬ìš©í•´ì„œ LSBë¶€í„° a,b ... fê¹Œì§€ ë§¤ì¹­ a,c ì—´ì‡ ë¥¼ ê°€ì§€ê³  ìžˆìœ¼ë©´ 000101ë¡œ í‘œí˜„ => O(64*NM) => O(NM)
 
-
-int N, M; // ¼¼·Î N, °¡·Î M
+int N, M; // ì„¸ë¡œ N, ê°€ë¡œ M
 
 int Dx[] = { 0,0,-1,1 };
 int Dy[] = { 1,-1,0,0 };
 
-queue < pair<pair<int,int>, pair<int, int>>> q; //y, x ÁÂÇ¥ , ,Å½»ö È½¼ö ,¿­¼è
+queue < pair<pair<int,int>, pair<int, int>>> q; //<y, x ì¢Œí‘œ>,<íƒìƒ‰ íšŸìˆ˜ ,ì—´ì‡ >
 
 int solve() {
 	int min = 0;
 
 	while (!q.empty()) {
 
-		int qsize = q.size(); // ÀÌ¹ø È½¼ö¿¡ ¿òÁ÷ÀÏ ¾Öµé¿¡ ´ëÇØ¼­
+		int qsize = q.size(); // ì´ë²ˆ íšŸìˆ˜ì— ì›€ì§ì¼ ì• ë“¤ì— ëŒ€í•´ì„œ
 
-		for (int t = 0; t < qsize; t++) {  //ÀÌ¹ø È½¼ö¿¡ Ã£À» queue µé¿¡ ´ëÇÏ¿© 
-			int y = q.front().first.first; //ÇöÀç Ã£À» y,x À§Ä¡¿Í È½¼ö, key °ª
+		for (int t = 0; t < qsize; t++) {  // ì´ë²ˆ íšŸìˆ˜ì— ì°¾ì„ ìœ„ì¹˜ì— ëŒ€í•˜ì—¬ 
+			int y = q.front().first.first; // í˜„ìž¬ ì°¾ì„ y,x ìœ„ì¹˜ì™€ íšŸìˆ˜, key ê°’
 			int x = q.front().first.second;
-			int cnt = q.front().second.first; //ÇöÀç±îÁö È½¼ö
-			int key = q.front().second.second; // °¡Áö°í ÀÖ´Â key 
+			int cnt = q.front().second.first; // í˜„ìž¬ê¹Œì§€ íšŸìˆ˜
+			int key = q.front().second.second; // ê°€ì§€ê³  ìžˆëŠ” key 
 
 			q.pop();
 
-			if (map[y][x] == '1') return cnt; // ÇöÀçÀÇ À§Ä¡°¡ 1ÀÌ¶ó¸é Å»Ãâ
+			if (map[y][x] == '1') return cnt; // í˜„ìž¬ì˜ ìœ„ì¹˜ê°€ 1ì´ë¼ë©´ íƒˆì¶œ
 
-			for (int i = 0; i < 4; i++) { //4¹æÇâ¿¡ ´ëÇØ¼­ 
+			for (int i = 0; i < 4; i++) { //4ë°©í–¥ì— ëŒ€í•´ì„œ 
 				int ny = y + Dy[i];
 				int nx = x + Dx[i];
 				int nkey = key;
 				
-				if (ny < 0 || ny >= N || nx < 0 || nx >= M) continue; //  ÆÇ ¹ÛÀ¸·Î ³ª°¥ ½Ã È®ÀÎ X
+				if (ny < 0 || ny >= N || nx < 0 || nx >= M) continue; //  íŒ ë°–ìœ¼ë¡œ ë‚˜ê°ˆ ì‹œ í™•ì¸ X
 				
-				if (map[ny][nx] == '#' || visit[key][ny][nx]) continue; // º®ÀÌ°Å³ª ¹æ¹®ÇÑÀû ÀÖÀ¸¸é ¸øÁö³ª°¨
+				if (map[ny][nx] == '#' || visit[key][ny][nx]) continue; // ë²½ì´ê±°ë‚˜ ë°©ë¬¸í•œì  ìžˆìœ¼ë©´ ëª»ì§€ë‚˜ê°
 
-				else if (islower(map[ny][nx])) // mapÀÌ ¿­¼èÀÏ ¶§ 					
-					nkey |= 1 << (map[ny][nx] - 'a');  //  ¿­¼èÀÇ ºñÆ®¸¦ Å² °ÍÀ» key¿¡ ´õÇÔ. (or ¿¬»êÀ¸·Î)  => Å° ½Àµæ
-					//¸¸¾à D¶ó¸é 001000 ÀÌ°í ÀÌ°ÍÀ» key¿Í or ¿¬»êÇÏ¿© key ¿¡ 3¹øÂ° ÀÚ¸®°¡ 1·Î ¹Ù²ñ.
-					// |=  : ¿¬»êÀÚ¿Í ¼ýÀÚ¸¦ »ç¿ëÇÏ¿© Æ¯Á¤ ºñÆ®¸¦ Å²´Ù. or ¿¬»ê
+				else if (islower(map[ny][nx])) // mapì´ ì—´ì‡ ì¼ ë•Œ 					
+					nkey |= 1 << (map[ny][nx] - 'a');  //  ì—´ì‡ ì˜ ë¹„íŠ¸ë¥¼ í‚¨ ê²ƒì„ keyì— ë”í•¨. (or ì—°ì‚°ìœ¼ë¡œ)  => í‚¤ ìŠµë“
+					//ë§Œì•½ Dë¼ë©´ 001000 ì´ê³  ì´ê²ƒì„ keyì™€ or ì—°ì‚°í•˜ì—¬ key ì— 3ë²ˆì§¸ ìžë¦¬ê°€ 1ë¡œ ë°”ë€œ.
+					// |=  : ì—°ì‚°ìžì™€ ìˆ«ìžë¥¼ ì‚¬ìš©í•˜ì—¬ íŠ¹ì • ë¹„íŠ¸ë¥¼ í‚¨ë‹¤. or ì—°ì‚°
 					
-				else if (isupper(map[ny][nx])) // ¹®ÀÏ ¶§ 
-					if (!(nkey & (1 << (map[ny][nx] - 'A')))) continue; // ¹®ÀÇ ¾ËÆÄºªÀ» ºñÆ®·Î Ç¥ÇöÇÏ°í key °¡ °¡Áö°í ÀÖ´ÂÁö & ¿¬»êÀ¸·Î È®ÀÎ
-																		// Å°¸¦ °¡Áö°í ÀÖÁö ¾Ê´Ù¸é continue
+				else if (isupper(map[ny][nx])) // ë¬¸ì¼ ë•Œ 
+					if (!(nkey & (1 << (map[ny][nx] - 'A')))) continue; 
+				// ë¬¸ì˜ ì•ŒíŒŒë²³ì„ ë¹„íŠ¸ë¡œ í‘œí˜„í•˜ê³  key ê°€ ê°€ì§€ê³  ìžˆëŠ”ì§€ & ì—°ì‚°ìœ¼ë¡œ í™•ì¸
+				// í‚¤ë¥¼ ê°€ì§€ê³  ìžˆì§€ ì•Šë‹¤ë©´ continue
 			
-				//1) ¿­¼è°¡ ÀÖ´Â °÷ÀÌ°Å³ª, 2)¹®ÀÎµ¥ ÇØ´ç Å°°¡ ÀÖ°Å³ª 3) ºó °÷ÀÌ°Å³ª, 4) ¹Î½ÄÀÌ°¡ ÀÖ´ø °÷ÀÌ°Å³ª 5) Ãâ±¸ÀÎ °æ¿ì
-				visit[nkey][ny][nx] = true; // ¹æ¹® Ç¥½Ã
-				q.push({ {ny,nx},{cnt + 1 , nkey} }); // °æ·ÎÀÇ¼ö + 1				
+				//1) ì—´ì‡ ê°€ ìžˆëŠ” ê³³ì´ê±°ë‚˜, 2)ë¬¸ì¸ë° í•´ë‹¹ í‚¤ê°€ ìžˆê±°ë‚˜ 3) ë¹ˆ ê³³ì´ê±°ë‚˜, 4) ë¯¼ì‹ì´ê°€ ìžˆë˜ ê³³ì´ê±°ë‚˜ 5) ì¶œêµ¬ì¸ ê²½ìš°
+				visit[nkey][ny][nx] = true; // ë°©ë¬¸ í‘œì‹œ
+				q.push({ {ny,nx},{cnt + 1 , nkey} }); // ê²½ë¡œì˜ìˆ˜ + 1				
 				
 			}
 		}		
@@ -80,16 +86,16 @@ int solve() {
 }
 int main() {
 
-	cin >> N >> M; // ¼¼·Î N, °¡·Î M
+	cin >> N >> M; // ì„¸ë¡œ N, ê°€ë¡œ M
 	memset(visit, false, sizeof(visit));
 
 	for (int i = 0; i < N; ++i) {
-		getchar();	//¹öÆÛ ºñ¿ì±â
+		getchar();	//ë²„í¼ ë¹„ìš°ê¸°
 		for (int j = 0; j < M; ++j) {
-			map[i][j] = getchar(); // ÇÑ ±ÛÀÚ¾¿ ¹Þ±â
+			map[i][j] = getchar(); // í•œ ê¸€ìžì”© ë°›ê¸°
 			if (map[i][j] == '0') {
-				q.push({ {i,j},{0,0} });
-				visit[0][i][j] = true; //i,j À§Ä¡ ¹æ¹® Ç¥½Ã key´Â °¡ÁöÁö ¾Ê¾ÒÀ¸¹Ç·Î 0¿¡ ´ëÀÔ
+				q.push({ {i,j},{0,0} }); //íƒìƒ‰ íšŸìˆ˜ 0 , í‚¤ 0
+				visit[0][i][j] = true; //i,j ìœ„ì¹˜ ë°©ë¬¸ í‘œì‹œ keyëŠ” ê°€ì§€ì§€ ì•Šì•˜ìœ¼ë¯€ë¡œ 0ì— ëŒ€ìž…
 			}
 		}
 	}
