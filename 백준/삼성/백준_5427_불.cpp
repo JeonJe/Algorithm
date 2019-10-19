@@ -1,3 +1,5 @@
+//https://www.acmicpc.net/problem/5427
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <iostream>
@@ -18,33 +20,33 @@ char map[MAX][MAX];
 bool visit[MAX][MAX];
 
 
-//¸ÅÃÊ¸¶´Ù ºÒÀº µ¿¼­³²ºÏ ¹æÇâÀ¸·Î ÆÛÁ®³ª°¨
-//º®¿¡´Â ºÒÀÌ ºÙÁö ¾ÊÀ½
-//»ó±ÙÀÌ´Â ¸ÅÃÊ¸¶´Ù µ¿¼­³²ºÏ ÀÎÁ¢ Ä­À¸·Î ÀÌµ¿°¡´É
-//º®À» Åë°úÇÒ ¼ö ¾ø°í, ºÒÀÌ ¿Å°ÜÁø Ä­ ¶Ç´Â ÀÌÁ¦ ºÒÀÌ ºÙÀ¸·Á´Â Ä­À¸·Î ÀÌµ¿x
-//»ó±ÙÀÌ°¡ ÀÖ´Â Ä­¿¡ ºÒÀÌ ¿Å°Ü¿Å°ú µ¿½Ã¿¡ ´Ù¸¥ Ä­ ÀÌµ¿ °¡´É
-// ºôµîÀ» Å»ÃâÇÏ´Âµ¥ °¡Àå ºü¸¥ ½Ã°£ Ãâ·Â, ºôµùÀ» Å»ÃâÇÒ ¼ö ¾øÀ¸¸é ºÒ°¡´É	
+//ë§¤ì´ˆë§ˆë‹¤ ë¶ˆì€ ë™ì„œë‚¨ë¶ ë°©í–¥ìœ¼ë¡œ í¼ì ¸ë‚˜ê°
+//ë²½ì—ëŠ” ë¶ˆì´ ë¶™ì§€ ì•ŠìŒ
+//ìƒê·¼ì´ëŠ” ë§¤ì´ˆë§ˆë‹¤ ë™ì„œë‚¨ë¶ ì¸ì ‘ ì¹¸ìœ¼ë¡œ ì´ë™ê°€ëŠ¥
+//ë²½ì„ í†µê³¼í•  ìˆ˜ ì—†ê³ , ë¶ˆì´ ì˜®ê²¨ì§„ ì¹¸ ë˜ëŠ” ì´ì œ ë¶ˆì´ ë¶™ìœ¼ë ¤ëŠ” ì¹¸ìœ¼ë¡œ ì´ë™x
+//ìƒê·¼ì´ê°€ ìžˆëŠ” ì¹¸ì— ë¶ˆì´ ì˜®ê²¨ì˜®ê³¼ ë™ì‹œì— ë‹¤ë¥¸ ì¹¸ ì´ë™ ê°€ëŠ¥
+// ë¹Œë“±ì„ íƒˆì¶œí•˜ëŠ”ë° ê°€ìž¥ ë¹ ë¥¸ ì‹œê°„ ì¶œë ¥, ë¹Œë”©ì„ íƒˆì¶œí•  ìˆ˜ ì—†ìœ¼ë©´ ë¶ˆê°€ëŠ¥	
 
-// . : ºó°ø°£
-// # : º®
-// @ : »ó±ÙÀÌ À§Ä¡
-// '*' : ºÒ
+// . : ë¹ˆê³µê°„
+// # : ë²½
+// @ : ìƒê·¼ì´ ìœ„ì¹˜
+// '*' : ë¶ˆ
 int solve() {
 	int time = 0;
 
 	memset(visit, false, sizeof(visit));
 	queue<pair<int, int>> q;
-	queue<pair<int, int>> fq;
+	queue<pair<int, int>> fq;  //ë¶ˆì˜ ì´ë™ì„ ìœ„í•œ queue
 
 
 	for (int i = 0; i < h; ++i) {
 		for (int j = 0; j < w; ++j) {
 			if (map[i][j] == '@') {
-				visit[i][j] = true; //»ó±ÙÀÌ À§Ä¡
+				visit[i][j] = true; //ìƒê·¼ì´ ìœ„ì¹˜
 				q.push({ i, j }); // y, x
 		
 			}
-			else if (map[i][j] == '*') { // ºÒ À§Ä¡ ÀÔ·Â 
+			else if (map[i][j] == '*') { // ë¶ˆ ìœ„ì¹˜ ìž…ë ¥ 
 				fq.push({ i, j }); // y, x
 			}
 		}
@@ -52,51 +54,51 @@ int solve() {
 
 	bool exit = false;
 	while (!q.empty()) {
-		time++; // ½Ã°£ Áõ°¡
+		time++; // ì‹œê°„ ì¦ê°€
 
 		int current_move = q.size();
-		for (int m = 0; m < current_move; ++m) { // 1ÃÊ¿¡ »ó±ÙÀÌ°¡ ÀÌµ¿ÇÒ ¼ö ÀÖ´Â °æ¿ì È®ÀÎ
+		for (int m = 0; m < current_move; ++m) { // 1ì´ˆì— ìƒê·¼ì´ê°€ ì´ë™í•  ìˆ˜ ìžˆëŠ” ê²½ìš° í™•ì¸
 			int y = q.front().first;
-			int x = q.front().second; // ÀÌ¹ø À§Ä¡ÀÇ x, y ÁÂÇ¥
+			int x = q.front().second; // ì´ë²ˆ ìœ„ì¹˜ì˜ x, y ì¢Œí‘œ
 
 			q.pop();
 
-			if (map[y][x] == '*') continue;  // ÀÌ¹ø »ó±ÙÀÌ À§Ä¡°¡ ºÒÀÌ ÀÖ´Â °÷ÀÌ¸é ´ÙÀ½°Å È®ÀÎ.
+			if (map[y][x] == '*') continue;  // ì´ë²ˆ ìƒê·¼ì´ ìœ„ì¹˜ê°€ ë¶ˆì´ ìžˆëŠ” ê³³ì´ë©´ ë‹¤ìŒê±° í™•ì¸.
 
-			for (int i = 0; i < 4; ++i) { // ¾ÆÁ÷ Å»Ãâ ¸øÇßÀ¸¸é 4¹æÇâ¿¡ ´ëÇØ ÀÌµ¿ È®ÀÎ
+			for (int i = 0; i < 4; ++i) { // ì•„ì§ íƒˆì¶œ ëª»í–ˆìœ¼ë©´ 4ë°©í–¥ì— ëŒ€í•´ ì´ë™ í™•ì¸
 				int ny = y + Dy[i];
 				int nx = x + Dx[i];
 
-				if (nx < 0 || nx >= w || ny < 0 || ny >= h) {  // ´ÙÀ½ À§Ä¡°¡ map ¹ÛÀÌ¸é »ó±ÙÀÌ Å»Ãâ
+				if (nx < 0 || nx >= w || ny < 0 || ny >= h) {  // ë‹¤ìŒ ìœ„ì¹˜ê°€ map ë°–ì´ë©´ ìƒê·¼ì´ íƒˆì¶œ
 					exit = true;
 					break;
 				}
 
-				if (map[ny][nx] == '.' && visit[ny][nx] == false) { // ´ÙÀ½ À§Ä¡°¡ ºó °ø°£ÀÌ°í ¹æ¹®ÇÑ Àû ¾øÀ¸¸é
-					visit[ny][nx] = true; // ¹æ¹® Ç¥½Ã 
-					q.push({ ny,nx });  // »ó±ÙÀÌ ¹æ¹® Å¥¿¡ Ãß°¡ 
+				if (map[ny][nx] == '.' && visit[ny][nx] == false) { // ë‹¤ìŒ ìœ„ì¹˜ê°€ ë¹ˆ ê³µê°„ì´ê³  ë°©ë¬¸í•œ ì  ì—†ìœ¼ë©´
+					visit[ny][nx] = true; // ë°©ë¬¸ í‘œì‹œ 
+					q.push({ ny,nx });  // ìƒê·¼ì´ ë°©ë¬¸ íì— ì¶”ê°€ 
 				}
 			}
 
 		}
-		if (exit) return time; // »ó±ÙÀÌ°¡ ºôµùÀ» Å»ÃâÇßÀ¸¸é ¹Ýº¹¹® break ¾Æ´Ï¶ó¸é ºÒ ÀÌµ¿
+		if (exit) return time; // ìƒê·¼ì´ê°€ ë¹Œë”©ì„ íƒˆì¶œí–ˆìœ¼ë©´ ë°˜ë³µë¬¸ break, ì•„ë‹ˆë¼ë©´ ë¶ˆ ì´ë™
 
-			int current_fmove = fq.size(); // ÀÌ¹ø ½Ã°£¿¡ ºÒÀÌ ¿ñÁ÷ÀÏ ¼ö ÀÖ´Â °æ¿ìµé
+			int current_fmove = fq.size(); // ì´ë²ˆ ì‹œê°„ì— ë¶ˆì´ ìšºì§ì¼ ìˆ˜ ìžˆëŠ” ê²½ìš°ë“¤
 
 			for (int m = 0; m < current_fmove; ++m) {
 				int y = fq.front().first;
-				int x = fq.front().second; // ÀÌ¹ø ºÒ À§Ä¡ÀÇ x,y ÁÂÇ¥
+				int x = fq.front().second; // ì´ë²ˆ ë¶ˆ ìœ„ì¹˜ì˜ x,y ì¢Œí‘œ
 				fq.pop();
 
-				for (int i = 0; i < 4; ++i) { // ºÒ 4¹æÇâ ÀÌµ¿ È®ÀÎ
+				for (int i = 0; i < 4; ++i) { // ë¶ˆ 4ë°©í–¥ ì´ë™ í™•ì¸
 					int ny = y + Dy[i];
 					int nx = x + Dx[i];
 
-					if (nx < 0 || nx >= w || ny < 0 || ny >= h) continue; // ÆÇ ¹ÛÀ¸·Î ³ª°¡¸é È®ÀÎ x
+					if (nx < 0 || nx >= w || ny < 0 || ny >= h) continue; // íŒ ë°–ìœ¼ë¡œ ë‚˜ê°€ë©´ í™•ì¸ x
 
-					if (map[ny][nx] == '.') { // ´ÙÀ½ ÀÌµ¿ Àå¼Ò°¡ ºó °ø°£ÀÌ¶ó¸é 
-						map[ny][nx] = '*'; // ºÒ·Î º¯°æ 
-						fq.push({ ny,nx });  // ºÒ ¹æ¹® Å¥¿¡ Ãß°¡ 
+					if (map[ny][nx] == '.') { // ë‹¤ìŒ ì´ë™ ìž¥ì†Œê°€ ë¹ˆ ê³µê°„ì´ë¼ë©´ 
+						map[ny][nx] = '*'; // ë¶ˆë¡œ ë³€ê²½ 
+						fq.push({ ny,nx });  // ë¶ˆ ë°©ë¬¸ íì— ì¶”ê°€ 
 					}
 				}
 			}
@@ -104,6 +106,7 @@ int solve() {
 
 	return -1;
 }
+
 int main()
 {
 	cin >> T;
@@ -111,9 +114,9 @@ int main()
 		cin >> w >> h;
 		memset(map, 0, sizeof(map));
 		for (int i = 0; i < h; ++i) {
-			getchar(); // ÀÔ·Â ¹öÆÛ ºñ¿ì±â
+			getchar(); // ìž…ë ¥ ë²„í¼ ë¹„ìš°ê¸°
 			for (int j = 0; j < w; ++j) {
-				map[i][j] = getchar(); //ÇÑ ±ÛÀÚ¾¿ ¹Þ±â 
+				map[i][j] = getchar(); //í•œ ê¸€ìžì”© ë°›ê¸° 
 			}
 		}
 
