@@ -1,4 +1,8 @@
+//https://www.acmicpc.net/problem/11047
 #include <iostream>
+
+//총 N종류이고, 각각의 동전을 매우 많이 가지고 있다.
+//동전을 적절히 사용해서 그 가치의 합을 K
 
 using namespace std;
 
