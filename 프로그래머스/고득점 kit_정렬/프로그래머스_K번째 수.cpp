@@ -1,3 +1,5 @@
+
+
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -10,8 +12,8 @@ vector<int> solution(vector<int> array, vector<vector<int>> commands) {
 
 	for (int i = 0; i < commands.size(); i++) {
 		new_array.clear();
-		for (int j = commands[i][0]; j <= commands[i][1]; j++) {   // 2Â÷¿ø º¤ÅÍ´Â 2Â÷¿ø¹è¿­·Î »ý°¢
-			new_array.push_back(array[j - 1]);  // ¹è¿­Àº 0¹ø ºÎÅÍ ÀÎµ¦½Ì
+		for (int j = commands[i][0]; j <= commands[i][1]; j++) {   // 2ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Í´ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			new_array.push_back(array[j - 1]);  // ï¿½è¿­ï¿½ï¿½ 0ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 		}
 		sort(new_array.begin(), new_array.end());
 		answer.push_back(new_array[commands[i][2] - 1]); 
