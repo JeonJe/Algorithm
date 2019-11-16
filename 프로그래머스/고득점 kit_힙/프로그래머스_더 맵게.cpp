@@ -1,3 +1,4 @@
+//https://programmers.co.kr/learn/courses/30/lessons/42626
 #include <string>
 #include <vector>
 #include <queue>
@@ -15,7 +16,7 @@ int solution(vector<int> scoville, int K) {
 		min_heap.push(scoville[i]);
 	}
 
-	while (min_heap.top() < K) {
+	while (min_heap.top() < K) { //최솟값이 일정 값 K 보다 작을 동안
 
 		if (min_heap.size() == 1) return -1; // 두 개를 섞을 수 없으면 -1 리턴
 

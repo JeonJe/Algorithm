@@ -1,3 +1,4 @@
+//https://programmers.co.kr/learn/courses/30/lessons/42629
 #include <string>
 #include <vector>
 #include <queue>
@@ -8,7 +9,7 @@ int solution(int stock, vector<int> dates, vector<int> supplies, int k) {
 	priority_queue<int> pq;
 	int lastDate = 0;
 
-	while (stock < k) {      //st가 k보다 같거나 커지면 공장을 가동 못함 ( st는 하루마다 -1 )
+	while (stock < k) {      //st가 k보다 같거나 커지면 공장을 고려할 필요 없음
 		while (lastDate < dates.size() && dates[lastDate] <= stock)
 			// lastDate가 date의 사이즈 보다 작고 (인덱싱 범위)
 			// 추가하려는 날 보다 stock이 작으면 ( 버틸 수 없으면)  
