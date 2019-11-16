@@ -1,3 +1,4 @@
+//https://www.acmicpc.net/problem/1463
 #include <iostream>
 #include <string.h>
 #include <algorithm>
@@ -24,7 +25,8 @@ int main()
 	for (int i = 2; i <= N; i++) {
 		DP[i] = DP[i - 1] + 1; //1을 뺴는 경우 
 		if (i % 2 == 0) DP[i] = min(DP[i], DP[i / 2] + 1); // 2으로 나누어지는 경우 
-		if (i % 3 == 0) DP[i] = min(DP[i], DP[i / 3] + 1); // 3으로 나누어지는 경우  
+		if (i % 3 == 0) DP[i] = min(DP[i], DP[i / 3] + 1); // 3으로 나누어지는 경우 
+		cout << " i  : " << i << " DP [i] : " << DP[i] << endl;
 	}
 
 	cout << DP[N] << endl;;
