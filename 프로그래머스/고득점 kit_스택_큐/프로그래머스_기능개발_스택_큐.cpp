@@ -15,20 +15,20 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
 		int front = q[0];
 		int qsize = q.size();
 
-		if (front == 100) { // ¸ÕÀú ¹èÆ÷µÇ¾î¾ß ÇÏ´Â °ÍÀÌ °³¹ßÀÌ ´Ù µÇ¾úÀ¸¸é
+		if (front == 100) { // ë¨¼ì € ë°°í¬ë˜ì–´ì•¼ í•˜ëŠ” ê²ƒì´ ê°œë°œì´ ë‹¤ ë˜ì—ˆìœ¼ë©´
 			int cnt = 0;
 			while (true) {
-				if (q.empty() || q[0] != 100)  { // ¸ðµÎ ¹èÆ÷µÇ¾ú°Å³ª ¹èÆ÷¼ø¼­°¡ ¸ÂÁö ¾ÊÀ¸¸é
-					answer.emplace_back(cnt); // ¹èÆ÷µÈ ±â´É ¼ö Ãß°¡ 
+				if (q.empty() || q[0] != 100)  { // ëª¨ë‘ ë°°í¬ë˜ì—ˆê±°ë‚˜ ë‹¤ìŒ ê¸°ëŠ¥ì´ ê°œë°œì´ 
+					answer.emplace_back(cnt); // ë°°í¬ëœ ê¸°ëŠ¥ ìˆ˜ ì¶”ê°€ 
 					break;
 				}
 	
-				q.erase(q.begin()); // ¼øÂ÷´ë·Î ¹èÆ÷ÁßÀÌ¸é Å¥¿¡¼­ »èÁ¦
+				q.erase(q.begin()); // ìˆœì°¨ëŒ€ë¡œ ë°°í¬ì¤‘ì´ë©´ íì—ì„œ ì‚­ì œ
 				sq.erase(sq.begin());
-				cnt++; // ¼øÂ÷ÀûÀ¸·Î ¸î°³°¡ ¹èÆ÷µÇ´ÂÁö Ã¼Å©
+				cnt++; // ìˆœì°¨ì ìœ¼ë¡œ ëª‡ê°œê°€ ë°°í¬ë˜ëŠ”ì§€ ì²´í¬
 			}
 		}
-		else { // ¸ÕÀú ¹èÆ÷µÇ¾î¾ß ÇÏ´Â °ÍÀÌ °³¹ßÀÌ µÇÁö ¾Ê¾ÒÀ¸¸é
+		else { // ë¨¼ì € ë°°í¬ë˜ì–´ì•¼ í•˜ëŠ” ê²ƒì´ ê°œë°œì´ ë˜ì§€ ì•Šì•˜ìœ¼ë©´
 			for (int i = 0; i < qsize; ++i) {
 				q[i] += sq[i];
 				if (q[i] > 100) q[i] = 100;
