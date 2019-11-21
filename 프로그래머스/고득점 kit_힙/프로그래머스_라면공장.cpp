@@ -7,17 +7,18 @@ using namespace std;
 int solution(int stock, vector<int> dates, vector<int> supplies, int k) {
 	int answer = 0;
 	priority_queue<int> pq;
-	int lastDate = 0;
+	int lastDate = 0; // ìµœëŒ€í•œ ë²„í‹°ë‹¤ê°€ ë§ˆì§€ë§‰ìœ¼ë¡œ ê³µê¸‰ë°›ëŠ” ë‚ 
 
-	while (stock < k) {      //st°¡ kº¸´Ù °°°Å³ª Ä¿Áö¸é °øÀåÀ» °í·ÁÇÒ ÇÊ¿ä ¾øÀ½
+	while (stock < k) {      //stê°€ kë³´ë‹¤ ê°™ê±°ë‚˜ ì»¤ì§€ë©´ ê³µì¥ì„ ê³ ë ¤í•  í•„ìš” ì—†ìŒ
 		while (lastDate < dates.size() && dates[lastDate] <= stock)
-			// lastDate°¡ dateÀÇ »çÀÌÁî º¸´Ù ÀÛ°í (ÀÎµ¦½Ì ¹üÀ§)
-			// Ãß°¡ÇÏ·Á´Â ³¯ º¸´Ù stockÀÌ ÀÛÀ¸¸é ( ¹öÆ¿ ¼ö ¾øÀ¸¸é)  
-			pq.push(supplies[lastDate++]); // ÃÖ´ë °ø±Ş·®À» Å¥¿¡ ³Ö°í +1Áõ°¡
-
-		stock += pq.top(); // °¡Àå ¸¹Àº °ø±Ş·®À» ²¨³»¼­ Ãß°¡
+			// lastDateê°€ dateì˜ ì‚¬ì´ì¦ˆ ë³´ë‹¤ ì‘ê³  (ì¸ë±ì‹± ë²”ìœ„)
+			// ë§ˆì§€ë§‰ ê³µê¸‰ë‚ ì´  ë‚¨ì€ stockì´ ì‘ìœ¼ë©´ ( ì•„ì§ ë²„í‹¸ ìˆ˜ ìˆìœ¼ë©´ )  
+			pq.push(supplies[lastDate++]); // ì¼ë‹¨ ìµœëŒ€ ê³µê¸‰ëŸ‰ì„ íì— ë„£ê³  lastDateë¥¼+1ì¦ê°€
+		
+		//while ì„ ë¹ ì ¸ë‚˜ì˜´ -> í˜„ì¬ë‚¨ì€ stock ìœ¼ë¡œ ë²„í‹¸ ìˆ˜ ì—†ê³  ê³µê¸‰ë°›ì•„ì•¼í•˜ëŠ” ê²½ìš°
+		stock += pq.top(); //íì—ì„œ ê°€ì¥ ë§ì€ ê³µê¸‰ëŸ‰ì„ êº¼ë‚´ì„œ ì¶”ê°€
 		pq.pop();
-		answer++;       // ÇØ¿Ü °øÀå¿¡¼­ ¼öÀÔ È½¼ö Áõ°¡ 
+		answer++;       // í•´ì™¸ ê³µì¥ì—ì„œ ìˆ˜ì… íšŸìˆ˜ ì¦ê°€ 
 	}
 
 	return answer;
