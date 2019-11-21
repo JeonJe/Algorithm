@@ -34,7 +34,8 @@ int solution(vector<vector<int>> baseball) {
 			if (c == expt_a || c == expt_b) ball++;
 			if (ball != baseball[j][2]) break; //볼의 갯수가 다르면 해당 경우 확인 X
 
-			if (j == baseball.size() - 1) answer++;
+			if (j == baseball.size() - 1) answer++;//완전 탐색 수와 예상한 수의 스트라이크와 볼이 
+                                                    //정확하다면 answer 증가
 
 		}
 	}
