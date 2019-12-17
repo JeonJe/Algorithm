@@ -1,25 +1,27 @@
+//https://programmers.co.kr/learn/courses/30/lessons/43165
+
 #include <string>
 #include <vector>
 #include <queue>
-adsf
+
 using namespace std;
 
 int cnt;
 
 void dfs(vector<int> numbers, int target, int sum, int depth) {
-	if (depth >= numbers.size()) { // ¼ıÀÚ¸¦ ÇÑ °³¾¿ ´õÇÏ´Ù°¡ ¹è¿­ÀÇ Å©±â¸¸Å­ Ä¿Áö¸é
-		if (sum == target) // ¹è¿­ÀÇ ÇÕÀÌ Å¸°Ù°ú °°´Ù¸é cnt Áõ°¡
+	if (depth >= numbers.size()) { // ìˆ«ìë¥¼ í•œ ê°œì”© ë”í•˜ë‹¤ê°€ ë°°ì—´ì˜ í¬ê¸°ë§Œí¼ ì»¤ì§€ë©´
+		if (sum == target) // ë°°ì—´ì˜ í•©ì´ íƒ€ê²Ÿê³¼ ê°™ë‹¤ë©´ cnt ì¦ê°€
 			cnt++;
-		return;              // dfs ¸®ÅÏ
+		return;              // dfs ë¦¬í„´
 	}
-	dfs(numbers, target, sum + numbers[depth], depth + 1); // ´ÙÀ½ ¼ıÀÚ¸¦ ´õÇÔ
-	dfs(numbers, target, sum - numbers[depth], depth + 1); // ´ÙÀ½ ¼ıÀÚ¸¦ »­
+	dfs(numbers, target, sum + numbers[depth], depth + 1); // ë‹¤ìŒ ìˆ«ìë¥¼ ë”í•¨
+	dfs(numbers, target, sum - numbers[depth], depth + 1); // ë‹¤ìŒ ìˆ«ìë¥¼ ëºŒ
 }
 
 int solution(vector<int> numbers, int target) {
 	
-	dfs(numbers, target, numbers[0], 1); // Ã¹¹ø Â° ¼ıÀÚ¸¦ ´õÇÒ °æ¿ì
-	dfs(numbers, target, numbers[0] * -1, 1); //µÎ¹ø Â°  ¼ıÀÚ¸¦ »¬ °æ¿ì
+	dfs(numbers, target, numbers[0], 1); // ì²«ë²ˆ ì§¸ ìˆ«ìë¥¼ ë”í•  ê²½ìš°
+	dfs(numbers, target, numbers[0] * -1, 1); //ë‘ë²ˆ ì§¸  ìˆ«ìë¥¼ ëº„ ê²½ìš°
 
 	return cnt;
 }
