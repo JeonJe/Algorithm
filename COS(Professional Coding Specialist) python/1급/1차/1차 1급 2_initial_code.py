@@ -55,8 +55,8 @@
 
 def func_a(string, length):
     padZero = ""
-    padSize = length
-    for i in range(padSize-len(string)):
+    padSize = length-len(string)
+    for i in range(padSize):
         padZero += "0"
     return padZero + string
 
