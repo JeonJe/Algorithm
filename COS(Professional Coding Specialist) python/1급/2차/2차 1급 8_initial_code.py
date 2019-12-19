@@ -17,7 +17,7 @@ def solution(arr):
     idx = 0
     answer = [0 for _ in range(len(arr))]
     while left <= right:
-        if idx % 2 == 0:
+        if idx % 2 == 0:  #여기 수정
             answer[idx] = arr[left]
             left += 1
         else:
