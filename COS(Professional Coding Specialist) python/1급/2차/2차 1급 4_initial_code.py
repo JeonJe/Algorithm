@@ -17,8 +17,8 @@ def solution(arr, K):
     #여기에 코드를 작성해주세요.
     answer = 0
     size = len(arr);
-    for i in range(size):
-        for j in range(i+1,size):
+    for i in range(size-2):
+        for j in range(i+1,size-1):
             for k in range(j+1,size):
                 sum = arr[i] + arr[j] + arr[k]
                 if(check_multi(sum,K)):

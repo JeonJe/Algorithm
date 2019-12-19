@@ -46,7 +46,6 @@ def solution(arrA, arrB):
 
     # 두 리스트의 구성 성분이 달라 회전했을 때 같아질 가능성이 없다면 false 리턴
     if func_b(arrA,arrB):
-
         arrA_temp = func_a(arrA)
         if func_c(arrA_temp,arrB):
             return True
