@@ -1,4 +1,4 @@
-def func_a(matrix):
+def func_a(matrix):  # 존재하지 않는 두 숫자
     n = 4
     ret = []
     exist = [False for _ in range(n*n + 1)]
@@ -10,7 +10,7 @@ def func_a(matrix):
             ret.append(i)
     return ret
 
-def func_b(matrix):
+def func_b(matrix):  # 두 빈칸의 위치
     n = 4
     ret = []
     for i in range(0, n):
@@ -19,7 +19,7 @@ def func_b(matrix):
                 ret.append([i, j])
     return ret
 
-def func_c(matrix):
+def func_c(matrix):   # 마방진 검사 
     n = 4
     goal_sum = sum(range(1, n*n+1))//n
     for i in range(0, n):
@@ -42,12 +42,12 @@ def func_c(matrix):
 
 def solution(matrix):
     answer = []
-    coords = func_@@@(@@@)
-    nums = func_@@@(@@@)
+    coords = func_b(matrix)
+    nums = func_a(matrix)
 
     matrix[coords[0][0]][coords[0][1]] = nums[0]
     matrix[coords[1][0]][coords[1][1]] = nums[1]
-    if func_@@@(@@@):
+    if func_c(matrix):
         for i in range(0, 2):
             answer.append(coords[i][0] + 1)
             answer.append(coords[i][1] + 1)

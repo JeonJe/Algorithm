@@ -14,9 +14,50 @@
 # 체스판에 놓인 비숍의 위치 bishops 가 매개변수로 주어 질 때 , 비숍에게 한 번에 잡히지 않도록
 # 새로운 체스 말을 놓을 수 있는 빈칸 개수를 return 하도록 solution 함수를 완성해주세요
 
+
 def solution(bishops):
     #여기에 코드를 작성해주세요.
     answer = 0
+    arr = [[0]*8 for _ in range(8)]
+
+    for bishop in bishops:
+        row = ord(bishop[0]) - 65
+        col = int(bishop[1]) - 1
+
+        trow = row
+        tcol = col
+        while 0<=trow<8 and 0<=tcol<8:
+            arr[tcol][trow] = 1
+            trow = trow + 1
+            tcol = tcol - 1
+
+        trow = row
+        tcol = col
+        while 0<=trow<8 and 0<=tcol<8:
+            arr[tcol][trow] = 1
+            trow = trow + 1
+            tcol = tcol + 1
+
+        trow = row
+        tcol = col
+        while 0<=trow<8 and 0<=tcol<8:
+            arr[tcol][trow] = 1
+            trow = trow - 1
+            tcol = tcol + 1
+
+        trow = row
+        tcol = col
+        while 0 <= trow < 8 and 0 <= tcol < 8:
+            arr[tcol][trow] = 1
+            trow = trow - 1
+            tcol = tcol - 1
+
+    for i in range(8):
+        for j in range(8):
+            print(arr[i][j],end='')
+            if arr[i][j]==0:
+                answer+=1
+        print()
     return answer
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.

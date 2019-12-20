@@ -32,16 +32,26 @@
 def solution(phrases, second):
 	answer = ''
 
-	display = '______________' + phrases
-	for i in range(second):
-		display = display[1:] + display[0]
-
-	answer = display[:14]
-
+	display = '______________' + phrases +  '______________'
+	# print(display [10:3])
+	display = display[second%28:second%28+14]
+	answer = display
 	return answer
 
+
+# def solution(phrases, second):
+# 	answer = ''
+#
+# 	display = '______________' + phrases
+# 	for i in range(second):
+# 		display = display[1:] + display[0]
+#
+# 	answer = display[:14]
+#
+# 	return answer
+
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
-phrases = "happy-birthday"
+phrases = "abc-birthday"
 second = 4
 
 for i in range(30):

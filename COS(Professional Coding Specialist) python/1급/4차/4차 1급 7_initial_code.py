@@ -4,31 +4,31 @@ class Unit:
     def under_attack(self, damage):
         pass
 
-class Monster@@@:
+class Monster(Unit):
     def __init__(self, attack_point):
         super().__init__()
         self.attack_point = attack_point
-    @@@:
+    def under_attack(self, damage):
         self.HP -= damage
-    @@@:
+    def attack(self):
         return self.attack_point
 
-class Warrior@@@:
+class Warrior(Unit):
     def __init__(self, attack_point):
         super().__init__()
         self.attack_point = attack_point
-    @@@:
+    def under_attack(self, damage):
         self.HP -= damage
-    @@@:
+    def attack(self):
         return self.attack_point
 
-class Healer@@@:
+class Healer(Unit):
     def __init__(self, healing_point):
         super().__init__()
         self.healing_point = healing_point
-    @@@:
+    def under_attack(self, damage):
         self.HP -= damage
-    @@@:
+    def healing(self,unit):
         unit.HP += self.healing_point
 
 

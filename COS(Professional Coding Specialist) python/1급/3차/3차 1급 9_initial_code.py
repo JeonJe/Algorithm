@@ -10,8 +10,8 @@ def solution(revenue, k) :
     answer = 0
     rsum = sum(revenue[0:k])  # 처음 k 일동안
     answer = rsum
-    for i in range(len(revenue)) :
-        rsum = rsum + revenue[i - k] - revenue[i]
+    for i in range(k,len(revenue)) : #여기 수정함
+        rsum = rsum - revenue[i - k] + revenue[i]
         if answer < rsum :
             answer = rsum
     return answer
