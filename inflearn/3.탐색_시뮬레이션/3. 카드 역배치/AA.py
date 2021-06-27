@@ -2,16 +2,16 @@ import sys
 
 # sys.stdin = open("input.txt",'rt')
 
-nums = [ i for i in range (0,21)]
+arr = [ i for i in range(21)]
 
-for i in range(10):
-    N,M = map(int,input().split())
+for _ in range(10):
+    a,b = map(int,input().split())
+    for i in range( (b-a+1)//2):
 
-    temp = nums[N:M+1]
-    temp=temp[::-1]
-    nums[N:M+1] = temp
+        arr[a+i], arr[b-i] = arr[b-i], arr[a+i]
 
+print(' '.join(map(str,arr[1:21])))
+# arr.pop(0)
 
-for i in range(1,21):
-    print(nums[i],end=' ')
- 
+# for x in arr:
+#     print(x, end=' ')
