@@ -2,60 +2,34 @@
 import sys
 # sys.stdin = open("input.txt",'rt')
 
-
-def printarr(arr):
-    for i in range(len(arr)):
-        for j in range(len(arr)):
-            print(arr[i][j], end=' ')
-        print()
-        print
-
-def rot(arr, rnum,direction,rotnum):
-
-    rotnum %= len(arr)
-
-    if direction == 0:
-        for _ in range(rotnum):
-            arr[rnum-1].append(arr[rnum-1].pop(0))
-        
-        
-        
-    else:
-        for _ in range(rotnum):
-            arr[rnum-1].insert(0,arr[rnum-1].pop())
-
-    return arr 
-
 N = int(input())
-arr = []
 
-#arr = [list(map(int,input().split())) for _ in range(n)]
+res = 0
+arr = [ list(map(int,input().split())) for _ in range(N)]
+
+#왼, 위, 오, 아 
+dx = [-1,0,1,0]
+dy = [0,-1,0,1]
+
+
 for i in range(N):
-    arr.append( list(map(int,input().split())))
+    for j in range(N):
+        cur = arr[i][j]
+        point = True
 
-M = int(input())
-for i in range(M):
-    rnum, direction, rotnum = map(int,input().split())
-    # 회전 정보에 따라 돌림
-    
-    arr = rot(arr, rnum,direction,rotnum)
+        for z in range(4):
+            nx = j+dx[z] 
+            ny = i+dy[z]
+
+            if nx < 0 or nx >= N or ny < 0 or ny >= N :
+                continue
+            
+            if arr[ny][nx] >= cur:
+                point = False
+
+        if point:
+            res += 1
+        
 
 
-#곶감모양판 덧셈
-left,right = 0, N
-mid = N // 2
-
-total = 0
-for i in range(N):
-    for j in range(left,right):
-        total+= arr[i][j]
-
-    if i < mid:
-        left+=1
-        right-=1
-
-    else:
-        left-=1
-        right+=1
-
-print(total)
+print(res)
