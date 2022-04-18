@@ -2,307 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d493db7-b645-4344-8850-1a8c7ee70ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/23. Merge k Sorted Lists.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 10_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 1_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 2_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 3_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 4_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 5_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 6_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 7_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 8_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/1차/1차 1급 9_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 10_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 1_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 2_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 3_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 4_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 5_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 6_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 7_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 8_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/2차/2차 1급 9_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 10_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 1_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 2_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 3_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 4_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 5_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 6_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 7_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 8_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/3차/3차 1급 9_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 10_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 1_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 2_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 3_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 4_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 5_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 6_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 7_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 8_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/4차/4차 1급 9_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 10_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 1_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 2_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 3_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 4_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 5_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 6_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 7_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 8_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/5차/5차 1급 9_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/1번.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 10_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 2_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 3_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 4_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 5_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 6_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 7_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 8_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/1급/6차/6차 1급 9_initial_code.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/04.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/05.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/06.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/07.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/08.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/09.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 1회/10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 2회/01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 2회/02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/01.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/02.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/03.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/04.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/05.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/06.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/07.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/08.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/09.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../COS(Professional Coding Specialist) python/2급/모의고사 3회/10.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SW_Expert_Academy/SW_Expert_Academy_1204_최빈수 구하기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SW_Expert_Academy/SW_Expert_Academy_1249_보급로_그래프.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/10. 스도쿠 검사/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/11.격자판 회문수/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/3. 카드 역배치/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/3. 카드 역배치/Judge(Python).exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/3. 카드 역배치/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/4.두 리스트 합치기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/5. 수들의 합/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/6.격자판 최대합/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/7.사과나무/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/3.탐색_시뮬레이션/8.곳감/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/10. 역수열/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/2. 랜선자르기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/3. 뮤직비디오/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/4. 마구간 정하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/5.회의실 배정/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/6.씨름선수/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/7.창고정리/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/8.침몰하는 타이타닉/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/4.이분 탐색(결정알고리즘)_그리디 알고리즘/9.증가수열 만들기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/1.가장 큰 수/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/10.최소힙/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/11.최대힙/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/2.쇠막대기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/3.후위표기식 만들기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/4.후위식 연산/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/5.공주구하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/6.응급실/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/7.교육과정 설계/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/8.단어찾기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/9.아나그램/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/5.자료구조(스택,큐,해쉬,힙)/test.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/1.재귀함수란(이진수출력)/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/10.조합 구하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/11. 수들의 조합/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/3.부분집합 구하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/3.부분집합구하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/4.합이 같은 부분집합/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/5.바둑이 승차(Cut the Edge)/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/6.중복순열 구하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/7.동전교환/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/8. 순열 구하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/6.완전탐색(백트랙킹, 상태트리와 CCUT EDGE) DFS 기초/9. 수열 추측하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/8. Dynamic programming(동적계획법)/1,2. 네트워크 선 자르기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/8. Dynamic programming(동적계획법)/4. 최대부분증가수열/4. 최대부분증가수열.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../inflearn/8. Dynamic programming(동적계획법)/5.최대 선 연결하기/AA.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../softeer/징검다리.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../라인_나잡아봐라.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../라인_코니와 문의 술래잡기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_1012_ 유기농배추.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_1260_DFS_BFS.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_1697_숨바꼭질.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_1707_이분그래프.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2146_다리만들기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2178_미로탐색.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2206_벽 부수고 이동하기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2468_안전영역.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2606_vrius.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2636_치즈.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2644_촌수계산.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2667_단지번호붙이기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_2839_빙산.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_7562_나이트의 이동.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_7569_토마토2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/BFS&amp;DFS/백준_7576_토마토.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1003_DP_피보나치2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1149_RGB거리.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1149_RGB거리.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_12865_평범한 배낭.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1463_1로만들기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1904_01타일.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1932_정수 삼각형.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_1965_상자넣기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_2056_작업.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_2156_포도주 시식.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_2579_계단오르기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_2579_계단오르기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_2748_DP_피보나치.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_2839_설탕배달.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_9461_파도반 수열.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_9461_파도반수열.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/DP/백준_9465_스티커.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Greedy/백준_11047_동전0_그리디.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Greedy/백준_11399_ATM_그리드.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Greedy/백준_1541_잃어버린 괄호_그리디.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Greedy/백준_1931_회의실배정_그리디.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Greedy/백준_2217_로프.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Greedy/백준_2217_로프_그리디.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/Stack/백준_2493_탑_스택.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/구현/백준_17144_미세먼지 안녕!.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/구현/백준_2960_에라토스테네스의 체.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/1504_특정한 최단경로_다익스트라.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/1753_최단경로.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/1916_최소비용구하기_다익스트라.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/백준_10282_해킹.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/백준_11779_최소비용 구하기2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/백준_1238_파티.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/그래프/백준_3584_가장 가까운 조상.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/문자열 폭발.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_10809_알파벳찾기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_1152_단어의 개수.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_1157_단어 공부.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_11654_아스키 코드.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_11720_숫자의 합.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_11720_숫자의 합_int버전.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_1316_그룹 단어 체크.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_2675_문자열 반복.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_2908_상수.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_2941_크로아티아 알파벳.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_5622_다이얼.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/문자열/백준_9935_문자열 폭발.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/분할정복/백준_2630_색종이 만들기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_1194_달이 차오른다, 가자.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_15686_치킨배달_삼성_DFS.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_16235_나무재테크_BFS_삼성.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_16236_아기상어_삼성.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_17070_파이프 옮기기 1_삼성 A형.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_17143_낚시왕_시뮬레이션_19년.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_5214_환승_삼성SW.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_5427_불.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/삼성/백준_삼성_13460_구슬탈출2_시뮬레이션.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/이분탐색/백준_10816_숫자카드2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/이분탐색/백준_1477_휴게소 세우기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/이분탐색/백준_16401_과자나눠주기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/이분탐색/백준_2632_피자판매.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../백준/이분탐색/백준_2792_보석상자.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../소스.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DFS_BFS]미로탈출.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DFS_BFS]음료수 얼려 먹기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DP]1로 만들기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DP]개미전사.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DP]바닥공사.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DP]피보나치 수열.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[DP]효율적인 화폐 구성.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현] 상하좌우.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현]게임 개발.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현]럭키 스트레이트.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현]문자열 압축.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현]문자열 재정렬.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현]시각.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[구현]왕실의 나이트.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그래프이론]서로소 집합 알고리즘 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그래프이론]서로소 집합을 활용한 사이클 판별 소스.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그래프이론]크루스칼 알고리즘.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그리디] 숫자 카드 게임.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그리디]곱하기 혹은 더하기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그리디]만들 수 없는 금액.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그리디]모험가 길드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[그리디]문자열 뒤집기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[이진 탐색]부품찾기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[이진탐색]떡볶이 떡 만들기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[이진탐색]반복문 이진 탐색.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[이진탐색]재귀함수 이진 탐색.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬] 선택 정렬 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬] 퀵정렬 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]계수 정렬 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]국영수.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]두 배열의 원소 교체.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]삽입 정렬 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]성적이 낮은 순서로 학생 출력하기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]안테나.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[정렬]위에서 아래로.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[최단 경로] 최소힙.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[최단경로]간단한 다익스트라 알고리즘 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[최단경로]개선된 다익스트라 알고리즘.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/[최단경로]플로이드 워셜 알고리즘 소스코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/선택 정렬과 기본 정렬 라이브러리의 수행 시간 비교.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/큰 수의 법칙.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../이것이 코딩테스트다 with python/한 줄 입력받아 출력.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_DFS_BFS/프로그래머스_네트워크.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_DFS_BFS/프로그래머스_네트워크_BFS_DFS.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_DFS_BFS/프로그래머스_여행경로_DFS_BFS.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_DFS_BFS/프로그래머스_타겟넘버.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_그래프/프로그래머스_그래프_가장먼노드.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_그리디/프로그래머스_구명보트_탐욕법.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_그리디/프로그래머스_조이스틱_그리디.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_그리디/프로그래머스_체육복.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_그리디/프로그래머스_탐욕법_큰 수 만들기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_동적계획법/프로그래머스_N으로 표현.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_스택_큐/프로그래머스_기능개발_스택_큐.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_스택_큐/프로그래머스_다리를지나는 트럭_스택_큐.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_스택_큐/프로그래머스_쇠막대기_스택_큐.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_스택_큐/프로그래머스_주식가격_스택_큐.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_스택_큐/프로그래머스_탑.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_스택_큐/프로그래머스_프린터.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_완전탐색/프로그래머스_소수 찾기_완전탐색.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_완전탐색/프로그래머스_완전탐색_모의고사.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_완전탐색/프로그래머스_완전탐색_카펫.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_이분탐색/프로그래머스_이분탐색_예산.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_정렬/프로그래머스_H_index_정렬.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_정렬/프로그래머스_K번째 수.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_정렬/프로그래머스_가장 큰 수 _정렬.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_해시/프로그래머스_베스트앨범_해시.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_해시/프로그래머스_완주하지못한자들.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_해시/프로그래머스_위장.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_해시/프로그래머스_전화번호_목록.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_힙/프로그래머스_더 맵게.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_힙/프로그래머스_디스크컨트롤러_힙.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/고득점 kit_힙/프로그래머스_라면공장.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/레벨2/프로그래머스_나라의 숫자_레벨2_진법변환.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/레벨2/프로그래머스_스킬체크2_숫자야구.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/레벨2/프로그래머스_스킬체크2_올바른괄호.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/레벨2/프로그래머스_스킬트리_레벨 2.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_2016년.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_가운데 글자 가져오기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_같은 숫자는 싫어.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_나누어 떨어지는 숫자.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_연습문제_가장 큰 정사각형 찾기_DP.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_연습문제_땅따먹기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_연습문제_문자열 내 마음대로 정렬하기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_연습문제_소수찾기.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_연습문제_숫자의 표현.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_연습문제_행렬의 곱셈.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/연습문제/프로그래머스_코딩테스트연습_팁스타운_짝지어제거하기_스택.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../프로그래머스/프로그래머스_소수의합.cpp" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/3. Longest Substring Without Repeating Characters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/77.Combinations.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/771. Jewels and Stones.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/937. Reorder Log files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/checkURL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="252oMxhP6UOgyeO97mQJ0hfUB3k" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -329,8 +36,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
   </component>
-  <component name="RunManager">
-    <configuration name="23. Merge k Sorted Lists" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.937. Reorder Log files">
+    <configuration name="3. Longest Substring Without Repeating Characters" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -342,7 +49,91 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/23. Merge k Sorted Lists.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3. Longest Substring Without Repeating Characters.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="771. Jewels and Stones" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jeonje\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/771. Jewels and Stones.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="77.Combinations" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jeonje\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/77.Combinations.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="937. Reorder Log files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jeonje\anaconda3\envs\py37_32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/937. Reorder Log files.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="checkURL" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\jeonje\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/checkURL.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,7 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.23. Merge k Sorted Lists" />
+        <item itemvalue="Python.937. Reorder Log files" />
+        <item itemvalue="Python.77.Combinations" />
+        <item itemvalue="Python.checkURL" />
+        <item itemvalue="Python.3. Longest Substring Without Repeating Characters" />
+        <item itemvalue="Python.771. Jewels and Stones" />
       </list>
     </recent_temporary>
   </component>
@@ -369,22 +164,39 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1899" height="275" key="GridCell.Tab.0.bottom" timestamp="1644734975658">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2284" y="570" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1650243936686">
+      <screen x="1920" y="0" width="1011" height="1920" />
     </state>
-    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644734975658" />
-    <state width="1899" height="275" key="GridCell.Tab.0.center" timestamp="1644734975658">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2284" y="570" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1011.1920/-1858.4.1858.1080@1920.0.1011.1920" timestamp="1650243936686" />
+    <state x="2612" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040/-1920.4.1920.1040@1920.0.1920.1040" timestamp="1649252015687" />
+    <state width="990" height="565" key="GridCell.Tab.0.bottom" timestamp="1650247168476">
+      <screen x="1920" y="0" width="1011" height="1920" />
     </state>
-    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644734975658" />
-    <state width="1899" height="275" key="GridCell.Tab.0.left" timestamp="1644734975658">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="990" height="565" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1011.1920/-1858.4.1858.1080@1920.0.1011.1920" timestamp="1650247168476" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040/-1920.4.1920.1040@1920.0.1920.1040" timestamp="1649253069248" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644820065856" />
+    <state width="1899" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1645606159207" />
+    <state width="990" height="565" key="GridCell.Tab.0.center" timestamp="1650247168475">
+      <screen x="1920" y="0" width="1011" height="1920" />
     </state>
-    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644734975658" />
-    <state width="1899" height="275" key="GridCell.Tab.0.right" timestamp="1644734975658">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="990" height="565" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1011.1920/-1858.4.1858.1080@1920.0.1011.1920" timestamp="1650247168475" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040/-1920.4.1920.1040@1920.0.1920.1040" timestamp="1649253069248" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644820065856" />
+    <state width="1899" height="275" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1645606159207" />
+    <state width="990" height="565" key="GridCell.Tab.0.left" timestamp="1650247168475">
+      <screen x="1920" y="0" width="1011" height="1920" />
     </state>
-    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644734975658" />
+    <state width="990" height="565" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1011.1920/-1858.4.1858.1080@1920.0.1011.1920" timestamp="1650247168475" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040/-1920.4.1920.1040@1920.0.1920.1040" timestamp="1649253069248" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644820065856" />
+    <state width="1899" height="275" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1645606159207" />
+    <state width="990" height="565" key="GridCell.Tab.0.right" timestamp="1650247168476">
+      <screen x="1920" y="0" width="1011" height="1920" />
+    </state>
+    <state width="990" height="565" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1011.1920/-1858.4.1858.1080@1920.0.1011.1920" timestamp="1650247168476" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040/-1920.4.1920.1040@1920.0.1920.1040" timestamp="1649253069248" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1644820065856" />
+    <state width="1899" height="275" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1645606159207" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1644734639947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
