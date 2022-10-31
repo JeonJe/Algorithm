@@ -1,2 +1,2 @@
 
-        return distance + graph[cur_node][0]
+        for i in range(4):
