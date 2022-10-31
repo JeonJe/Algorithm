@@ -18,8 +18,7 @@ def dfs(i,j,k):
     
     while queue:
         x,y = queue.popleft()
-        visited[x][y] = True
-
+        
         for i in range(4):
             ny = y + dy[i]
             nx = x + dx[i]
@@ -27,7 +26,6 @@ def dfs(i,j,k):
             if 0 <= nx < N and 0 <= ny < N:
                 if not visited[nx][ny] and graph[nx][ny] > k:
                     visited[nx][ny] = True 
-                    
                     queue.append((nx,ny))
     return cnt
 
