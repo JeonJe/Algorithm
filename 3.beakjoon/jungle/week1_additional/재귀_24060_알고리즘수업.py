@@ -25,7 +25,6 @@ def merge(arr, left, mid,right):
     j = mid+1
     t = 0
     temp = []
-
     while i<=mid and j <=right:
         if arr[i] <= arr[j]:
             temp.append(arr[i])
@@ -46,6 +45,8 @@ def merge(arr, left, mid,right):
     while i <= right:
         arr[i] = temp[t]
         cnt+=1
+        # 시간초과
+        #    res.append(arr[i])
 
         if cnt == K:
             res = arr[i]
