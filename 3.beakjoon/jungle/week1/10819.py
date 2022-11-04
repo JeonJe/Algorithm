@@ -3,7 +3,6 @@ def dfs(cur_node,cnt,l):
 
     if False not in visited:
         sum = 0
-  
         for i in range(n-1):
             sum += abs(l[i] - l[i+1])
         res = max(res,sum)

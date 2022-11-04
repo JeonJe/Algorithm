@@ -10,23 +10,23 @@ flag_b = [False] * (2*n-1)
 flag_c = [False] * (2*n-1) 
 
 
-def queen(x):
-    global cnt
-    #y는 몇번쨰 행인지 나타냄 
-    for y in range(n):
-        #flag_b : 오른쪽 위 , 왼쪽 아래 대각선 확인 - j행 i열의 값은 i+j 
-        #flag_c : 왼쪽 위, 오른쪽 아래 대각선 확인 -  j행의 i열의 값은 i - j + (n-1)
-        if  not flag_a[y] and not flag_b[x+y] and not flag_c[x - y + (n-1) ]:
-            # pos[x] = y 
-            if x == (n-1):
-                cnt+=1
-            else:
-                flag_a[y] = flag_b[x+y] = flag_c[x-y+(n-1)] = True 
-                queen(x + 1)
-                flag_a[y] = flag_b[x+y] = flag_c[x-y+(n-1)] = False
+# def queen(x):
+#     global cnt
+#     #y는 몇번쨰 행인지 나타냄 
+#     for y in range(n):
+#         #flag_b : 오른쪽 위 , 왼쪽 아래 대각선 확인 - j행 i열의 값은 i+j 
+#         #flag_c : 왼쪽 위, 오른쪽 아래 대각선 확인 -  j행의 i열의 값은 i - j + (n-1)
+#         if  not flag_a[y] and not flag_b[x+y] and not flag_c[x - y + (n-1) ]:
+#             # pos[x] = y 
+#             if x == (n-1):
+#                 cnt+=1
+#             else:
+#                 flag_a[y] = flag_b[x+y] = flag_c[x-y+(n-1)] = True 
+#                 queen(x + 1)
+#                 flag_a[y] = flag_b[x+y] = flag_c[x-y+(n-1)] = False
 
-queen(0)
-print(cnt)
+# queen(0)
+# print(cnt)
 
 # n = int(input())
 
