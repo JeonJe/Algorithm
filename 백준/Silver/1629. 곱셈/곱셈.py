@@ -11,7 +11,9 @@ def my_pow(A,B,C):
             return half * half % C
         else:
             half = my_pow(A,(B // 2),C)
-            return A * half * half % C 
+            # return A * my_pow(A,(B // 2),C) * my_pow(A,(B // 2),C) % C
+            # temp = (A%C) * my_pow(A,(B // 2),C) * my_pow(A,(B // 2),C) % C
+            return A * half * half % C
         
 
 print(my_pow(A,B,C))
