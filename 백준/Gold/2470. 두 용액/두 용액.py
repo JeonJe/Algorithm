@@ -16,15 +16,15 @@ find_min = sys.maxsize
 mixed = 0
 res = []
 while left < right:
-   
     cur_l = arr[left] 
     cur_r = arr[right] 
-    #음수 + 음수 
     mixed = cur_l + cur_r
+
     if mixed == 0:
         print(cur_l, cur_r)
         exit()
 
+    #용액이 0과 얼마나 차이나는지 확인하고 제일 작다면 갱신 
     if abs(mixed) < find_min:
         find_min = abs(mixed)
         res = [cur_l, cur_r]
