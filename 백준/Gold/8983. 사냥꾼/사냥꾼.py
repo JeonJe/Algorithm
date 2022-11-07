@@ -5,13 +5,12 @@ sadae = list(map(int,sys.stdin.readline().split()))
 animal = [ list(map(int,sys.stdin.readline().split())) for _ in range(N) ]
 
 sadae.sort()
-# animal.sort(key= lambda x : x[0])
 cnt = 0
 for a in animal:
     x = a[0]
     y = a[1]
 
-    if y > x+L: continue
+    if y > L: continue
 
     l_bound = x+y-L
     u_bound = x-y+L
