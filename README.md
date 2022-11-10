@@ -1,2 +1,2 @@
 # Algorithm
-ALgorithm 풀이
+Algorithm 풀이
