@@ -1,2 +1,2 @@
 
-sadae = list(map(int,input().split
+    if len(min_heap) == 1:
