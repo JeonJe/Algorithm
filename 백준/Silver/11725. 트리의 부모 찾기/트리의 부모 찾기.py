@@ -1,12 +1,12 @@
 import sys
-
+input = sys.stdin.readline
 sys.setrecursionlimit(100000) 
 
 n = int(input())
 visited = [False] * (n+1)
 parent = [0] * (n+1)
 que = []
-def dfs(v):
+def bfs(v):
     visited[v] = True
     que.append(v)
 
@@ -19,7 +19,6 @@ def dfs(v):
                 que.append(i)
                 parent[i] = p
 
-
 graph = [ [] for _ in range(n+1) ]
 
 for _ in range(n-1):
@@ -28,8 +27,7 @@ for _ in range(n-1):
     graph[fr].append(to)
     graph[to].append(fr)
 
-
-dfs(1)
+bfs(1)
 
 for i in range(2,len(parent)):
     print(parent[i])
