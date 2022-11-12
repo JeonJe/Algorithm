@@ -10,7 +10,7 @@ global res_max
 res_min = sys.maxsize
 res_max = -sys.maxsize
 
-def dfs(depth, sum, arr_cal, arr):
+def dfs(depth, sum):
     global res_min
     global res_max 
 
@@ -21,28 +21,28 @@ def dfs(depth, sum, arr_cal, arr):
         
         if arr_cal[0] > 0:
             arr_cal[0] -= 1
-            dfs(depth+1, sum+arr[depth],arr_cal,arr)
+            dfs(depth+1, sum+arr[depth])
             arr_cal[0] += 1
         
         if arr_cal[1] > 0:
             arr_cal[1] -= 1
-            dfs(depth+1, sum-arr[depth],arr_cal,arr)
+            dfs(depth+1, sum-arr[depth])
             arr_cal[1] += 1
         
         if arr_cal[2] > 0:
             arr_cal[2] -= 1
-            dfs(depth+1, sum*arr[depth],arr_cal,arr)
+            dfs(depth+1, sum*arr[depth])
             arr_cal[2] += 1
 
         if arr_cal[3] > 0:
             arr_cal[3] -= 1
             if sum < 0 and arr[depth] > 0:
-                 dfs(depth+1, -1*(-1*sum // arr[depth]),arr_cal,arr)
+                 dfs(depth+1, -1*(-1*sum // arr[depth]))
             else:
-                 dfs(depth+1, sum//arr[depth],arr_cal,arr)
+                 dfs(depth+1, sum//arr[depth])
             arr_cal[3] += 1
         
 
-dfs(1,arr[0],arr_cal,arr)
+dfs(1,arr[0])
 print(res_max)
 print(res_min)
