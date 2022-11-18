@@ -1,38 +1,63 @@
 import sys
-sys.setrecursionlimit(10**5)
+from collections import deque
 input = sys.stdin.readline
-# a[i] == 1 -> i는 실내
-# a[i] == 0 -> i는 실외
-# 시작 & 끝점  => 실내 반드시
-# 서로 다른 산책 경로 수 출력
-N =int(input())
-place = [int(i) for i in input().strip()]
-l = [[]for _ in range(N+1)]
-ans = 0
-tmp = 0
-def dfs(cnt):
-    global tmp
-    isUsed[cnt] = True
-    for i in l[cnt]:
-            if not isUsed[i]:
-                if place[i-1] ==0:
-                    dfs(i)
-                else:
-                    tmp+=1
-            # if  place[i-1] == 1: tmp += 1
-            # elif place[i-1] ==0 and not isUsed[i]: dfs(i)
+# R행 C열
+# 비어있는 곳 . / 물이차있는 곳 * / 돌 X
+# 비버 D / 고슴도치 S/
+# 물이 매분마다 확장
+R,C = map(int,input().split())
+l =[[i for i in input().strip()]for _ in range(R)]
+memo=[[sys.maxsize for _ in range(C)]for i in range(R)]
+dx = [1,0,-1,0]
+dy = [0,-1,0,1]
+water = deque()
+q =deque()
+def check(a,b):
+    if a<0 or b<0 or a>=R or b>=C: return False
+    else: return True
+def checkWater():
+    waters = len(water)
+    for _ in range(waters):
+        a,b = water.popleft()
+        for i in range(4):
+            ax = a+dx[i]
+            by = b+dy[i]
+            if check(ax,by):
+                if l[ax][by] == '.'or l[ax][by]=='S':
+                    l[ax][by] = '*'
+                    water.append((ax,by))
+def checkHome():
+    length = len(q)
+    for _ in range(length):
+        x,y = q.popleft()
+        for i in range(4):
+            xx= x+dx[i]
+            yy= y+dy[i]
+            if check(xx,yy) and memo[xx][yy] > memo[x][y]:
+                if l[xx][yy] == '.':
+                    memo[xx][yy] = memo[x][y] + 1
+                    q.append((xx,yy))
+                elif l[xx][yy] == 'D':
+                    print(memo[x][y]+1)
+                    exit(0)
+def BFS(start):
+    memo[start[0]][start[1]] = 0
+    q.append(start)
+    while q:
+        checkWater()
+        checkHome()
+        
+for i in range(R):
+    for j in range(C):
+        if l[i][j] =='*':
+            memo[i][j] = 0
+            water.append((i,j))
+        elif l[i][j] == 'S':
+            memo[i][j] = 0
+            start = (i,j)
+        elif l[i][j] == 'X':
+            memo[i][j] = 0
 
-for _ in range(1,N):
-    a,b = map(int,input().split())
-    l[a].append(b)
-    l[b].append(a)
-    if place[a-1] == 1 and place[b-1] == 1:
-        ans +=2
 
-isUsed =[False]*(N+1)
-for i in range(1,N+1):
-    tmp = 0
-    if place[i-1] == 0 and not isUsed[i]:
-        dfs(i)
-    ans += tmp*(tmp-1)
-print(ans)
+BFS(start)
+print('KAKTUS')
