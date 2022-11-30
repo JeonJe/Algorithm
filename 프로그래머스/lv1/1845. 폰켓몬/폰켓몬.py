@@ -5,7 +5,6 @@ catch = defaultdict(int)
 
 def solution(nums):
     answer = 0
-    
     max_num = len(nums)//2 
     
     for i in range(len(nums)):
@@ -14,14 +13,13 @@ def solution(nums):
         else:
             dict[nums[i]] += 1
     
-    for n in dict:
-        
-        if n not in catch:
-            # dict[n] -= 1
-            catch[n] += 1
-            answer+=1
-        if answer >= max_num:
-            return max_num
-    return answer
+    
+    # for n in dict:
+    #     if n not in catch:
+    #         catch[n] += 1
+    #         answer+=1
+    #     if answer >= max_num:
+    #         return max_num
+    return min(max_num, len(dict))
 
 
