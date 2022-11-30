@@ -12,8 +12,7 @@ reverse_arr= dict(map(reversed,arr.items()))
 
 for i in range(m):
     ins = input().rstrip()
-
-
+    
     if ins.isalpha():
         print(arr[ins])
     else:
