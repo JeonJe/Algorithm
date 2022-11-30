@@ -54,20 +54,27 @@ s,n = input().split()
 s = int(s)
 n = n.rstrip()
 
+#3차원 배열로 사용됨 
 arr = []
 
 for z in n:
     digital_num = [[' '] * (s+2) for _ in range(2*s+3)]
     draw(int(z), digital_num)
+    ## digital_num에는 z의 디지털 숫자가 들어가 있음
     arr.append(digital_num)
+
 
 ans = [[] for _ in range(2*s + 3)]
 
+
 for i in range(0, 2*s + 3):
     for idx in range(len(arr)):
+        #arr[idx] 에는 각 자리수의 digital 숫자가 2차원으로 담겨있음
+        #arr[idx][i] 는 arr[idx]의 i번째 row들의 값이 담겨있음 
         ans[i] += arr[idx][i]
+        #각수자들의 i번째 row들을 모두 ans[i]에 덧붙임
         ans[i].append(' ')
 
-
+#각 줄별 리스트 내용 스트링으로 출력
 for c_arr in ans:
     print(''.join(c_arr))
