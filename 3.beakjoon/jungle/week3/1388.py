@@ -8,6 +8,7 @@ graph = [ list(input()) for _ in range(N) ]
 visited = [ [False]*M for _ in range(N) ]
 global cnt 
 cnt = 0
+
 def bfs(x,y):
     que = deque()
     que.append((x,y))
@@ -28,7 +29,6 @@ def bfs(x,y):
                 if not visited[nx][ny] and graph[nx][ny] == pattern:
                     visited[nx][ny] = True
                     que.append((nx,ny))
-        
 
 
 for i in range(N):
