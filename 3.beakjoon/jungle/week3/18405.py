@@ -29,7 +29,7 @@ for i in range(N):
     for j in range(N):
         if graph[i][j] != 0:
             virus.append((graph[i][j],i, j, 0))
-
+#바이러스 번호 낮은 순부터 확인
 virus.sort()
 bfs()
 print(graph[X-1][Y-1])
