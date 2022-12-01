@@ -1,17 +1,14 @@
-n = int(input())
-arr = list(map(int,input().split()))
-arr.insert(0,0)
-dp = [0] * (1001)
-dp[1] = 1
+N = int(input())
 
-for i in range(2,n+1):
-    max_temp = 0
+sequence = list(map(int,input().split()))
+dp = [0] * (N+1)
+dp[0] = 1
 
-    #현재 확인중인 인덱스보다 작은 인덱스들을 확인하여
-    #조건을 만족하는 가장 긴 부분수열의 값을 찾음
-    for k in range(i-1, 0, -1):
-        if arr[i] > arr[k]:
-            max_temp = max(max_temp,dp[k])
-    dp[i] = max_temp + 1
+for i in range(1,N):
+    m = 0
+    for j in range(i-1,-1,-1):
+        if sequence[j] < sequence[i]:
+            m = max(m, dp[j])
+    dp[i] = m+1
 
 print(max(dp))
