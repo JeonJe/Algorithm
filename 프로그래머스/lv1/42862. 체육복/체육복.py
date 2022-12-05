@@ -1,13 +1,14 @@
 def solution(n, lost, reserve):
-
-    set_reserve = list(set(reserve)-set(lost))
-    set_lost = list(set(lost)-set(reserve))
-    ans = n - len(set_lost)
-    for i in range(len(set_lost)):
-        for j in range(len(set_reserve)):
-            if abs(set_lost[i] - set_reserve[j]) <= 1:
+    ans = n - len(lost)
+    lost.sort()
+    reserve.sort()
+    
+    for i in range(len(lost)):
+        len_reserve = len(reserve)
+        for j in range(len_reserve):
+            if abs(lost[i] - reserve[j]) <= 1:
                 ans += 1
-                del set_reserve[j]
+                del reserve[j]
                 break
+    # print(ans)
     return ans
-            
