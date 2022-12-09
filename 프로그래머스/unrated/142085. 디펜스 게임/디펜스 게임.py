@@ -1,9 +1,10 @@
 
 def check(enemy , n, k):
-    enemy.sort(reverse=True)
     if k >= len(enemy):
         return True 
-        
+
+    enemy.sort(reverse=True)
+    
     for i in range(k):
         enemy[i] = 0
     
