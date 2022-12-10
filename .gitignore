@@ -1,7 +1,8 @@
 ﻿################################################################################
 # 이 .gitignore 파일은 Microsoft(R) Visual Studio에서 자동으로 만들어졌습니다.
 ################################################################################
-
+/Users/premise/Desktop/github/Algorithm/JAVA_algorithm/JAVA_algorithm/out
+/Users/premise/Desktop/github/Algorithm/JAVA_algorithm/JAVA_algorithm/JAVA_algorithm.iml
 /Quick/Quick.VC.db
 /Quick/Quick.sln
 /Quick/Quick/Quick.vcxproj.filters
