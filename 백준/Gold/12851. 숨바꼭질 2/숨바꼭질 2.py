@@ -3,7 +3,7 @@ import sys
 
 N, K = map(int,input().split())
 
-end = 100000
+end = (100001)
 visited = [False] * (end+1)
 res = defaultdict(int)
 min_time = sys.maxsize
@@ -16,16 +16,18 @@ while que:
     cx,ct = que.popleft()
     visited[cx] = True
 
-    if cx == K:
-        min_time = min(min_time,ct)
-        ways += 1
-
     if ct > min_time:
         break
+
+    if cx == K:
+        min_time = min(min_time,ct)
+        res[min_time] +=1
 
     for nx in (cx*2, cx+1, cx-1):
         if 0 <= nx < end+1 and not visited[nx]:
             que.append((nx,ct+1))
 
-print(min_time)
-print(ways)
+for key in res.keys():
+    print(key)
+    print(res[key])
+ 
