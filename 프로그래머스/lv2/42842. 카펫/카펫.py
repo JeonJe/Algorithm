@@ -7,7 +7,7 @@ def solution(brown, yellow):
         if total_area % i == 0:
             x = i 
             y = total_area // x 
-            # print(x , y)
+
             if x >=y :
                 yellow_x = x-2
                 yellow_y = y-2
