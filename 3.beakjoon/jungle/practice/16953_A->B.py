@@ -1,9 +1,6 @@
 A,B = map(int,input().split())
 
-
-
 def dfs(x,cnt):
-    
     if x == B:
         print(cnt)
         exit()
@@ -15,6 +12,3 @@ def dfs(x,cnt):
 
 dfs(A,1)
 print(-1)
-
-# dfs(B//2)
-# dfs(B//10)
