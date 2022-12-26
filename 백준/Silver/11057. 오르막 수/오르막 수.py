@@ -10,7 +10,7 @@ for i in range(1,n):
     for j in range(10):
         temp = 0
         for k in range(j+1):
-            temp += dp[i-1][k] 
+            temp += dp[i-1][k]%(10007)
         dp[i][j] = temp 
 
 
