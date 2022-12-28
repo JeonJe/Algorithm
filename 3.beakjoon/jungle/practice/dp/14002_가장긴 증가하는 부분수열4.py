@@ -9,8 +9,8 @@ for i in range(1,n+1):
         if arr[j] <  arr[i]:
             dp_max = max(dp_max,dp[j])
     dp[i] = dp_max + 1
+    
 print(max(dp))
-
 order = max(dp)
 for i in range(n, 0,-1):
     if dp[i] == order:

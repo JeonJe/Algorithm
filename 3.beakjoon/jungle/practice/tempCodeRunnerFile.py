@@ -1,1 +1,0 @@
-seq = list(reversed(seq))
