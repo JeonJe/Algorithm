@@ -18,7 +18,8 @@ def dijkstra(x,y,k):
 
     while que:
         c_distance,cx,cy = heapq.heappop(que)
-
+        if cx == n-1 and cy == n-1:
+            break 
         if distance[cx][cy] < c_distance:
             continue
 
