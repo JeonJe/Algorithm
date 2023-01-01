@@ -1,43 +1,43 @@
-from collections import deque 
+from collections import deque
+#가로의 크기 N, 세로의 크기 M
+M , N  = map(int,input().split())
 
-N, M = map(int,input().split())
+visited = [ [False] * (M) for _ in range(N)]
+graph = [ list(input()) for _ in range(N) ]
 
-graph = [ input() for _ in range(M) ]
-visited = [ [False] * N for _ in range(M) ]
+blue, white = 0, 0
 
-dx = [0,0,-1,1]
-dy = [1,-1,0,0]
+dx = [-1,1,0,0]
+dy = [0,0,-1,1]
 
-def bfs(i,j):
+def bfs(x, y):
+    visited[x][y] = True
     que = deque()
-    visited [i][j] = True
-    que.append((i,j))
-    n = 1
-    cur_color = graph[i][j]
+    que.append((x,y))
+    cur = graph[x][y]
+    cnt = 1
     while que:
-        x, y = que.pop()
-        
+        cx,cy = que.popleft()
         for i in range(4):
-            nx = x + dx[i]
-            ny = y + dy[i]
+            nx = cx + dx[i]
+            ny = cy + dy[i]
 
-            if 0<=nx<M and 0<=ny<N and not visited[nx][ny] and graph[nx][ny] == cur_color:
-                visited[nx][ny] = True 
-                que.append((nx,ny))
-                n += 1
-    return n 
+            if 0<= nx < N and 0<= ny <M:
+                if not visited[nx][ny] and graph[nx][ny] == cur:
+                    visited[nx][ny] = True
+                    que.append((nx,ny))
+                    cnt+=1
+    return cnt ** 2
 
 
 
-white, blue = 0,0 
-for i in range(M):
-    for j in range(N):
+for i in range(N):
+    for j in range(M):
         if not visited[i][j]:
-            n = 0
-            n = bfs(i,j)
+            s = bfs(i,j)
             if graph[i][j] == 'W':
-                white += n ** 2
+                white += s
             else:
-                blue += n ** 2
+                blue += s
 
 print(white, blue)
