@@ -1,0 +1,2 @@
+
+            nqueen(depth+1)
