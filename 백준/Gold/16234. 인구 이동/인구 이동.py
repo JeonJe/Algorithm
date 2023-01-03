@@ -35,9 +35,8 @@ def bfs(x,y):
     return open_country
 
 def day():
-    global open_country,visited,graph
+    global visited,graph
     change_country_num = 0
-
 
     for i in range(N):
         for j in range(N):
@@ -49,7 +48,7 @@ def day():
                 s = 0
                 for x,y in open_countrys:
                     s += graph[x][y]
-                avg = math.floor(s / len(open_countrys))
+                avg = s // len(open_countrys)
 
                 for x,y in open_countrys:
                     graph[x][y] = avg
@@ -65,7 +64,6 @@ def day():
 
 cnt = 0
 while True:
-    open_country = []
     visited = [[False]*(N) for _ in range(N)]
     
     if day():
