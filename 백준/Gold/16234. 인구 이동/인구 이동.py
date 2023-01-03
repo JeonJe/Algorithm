@@ -1,12 +1,8 @@
 from collections import deque 
-import math
+global visited, graph
 
 N, L, R = map(int,input().split())
-
-global open_country,visited,graph
 graph = [list(map(int,input().split())) for _ in range(N)]
-
-open_country = []
 
 dx = [0,-1,0,1]
 dy = [1,0,-1,0]
@@ -60,8 +56,6 @@ def day():
     else:
         return False
   
-
-
 cnt = 0
 while True:
     visited = [[False]*(N) for _ in range(N)]
