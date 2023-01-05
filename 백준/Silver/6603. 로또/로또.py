@@ -1,21 +1,18 @@
 
-def dfs (depth,temp,S):
-   
-        
+def dfs (depth,temp,S):        
     if len(temp) == 6:
         print(*temp)
         return 
+
     if depth >= len(S):
         return 
-    #depth 숫자를 선택하거나
     
     temp.append(S[depth])
     dfs(depth+1,temp,S) 
-
     temp.pop()
+
     #dpeht의 숫자를 선택하지 않거나 
     dfs(depth+1,temp,S)
-    return 
 
 while True :
     commands = list(map(int,input().split()))
