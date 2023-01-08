@@ -1,26 +1,26 @@
+primes = [True] * (10001)
+
 M = int(input())
 N = int(input())
-primes = [True]*(10001)
 
 def eratos():
-    primes[0] = False
-    primes[1] = False
-    
-    for i in range(2, int(len(primes) ** (1/2)) + 1):
-        for j in range(2*i,len(primes), i ):
+    primes[0],primes[1] = False,False
+
+    for i in range(2,int(len(primes) ** (1/2))+1):
+        for j in range(2*i,len(primes),i):
             primes[j] = False
+
+sum_primes = 0
+min_primes = 1e9
 eratos()
-
-sum = 0
-min_prime = 0
-for i in range(N,M-1,-1):
+for i in range(M,N+1):
     if primes[i]:
-        sum += i
-        min_prime = i
-if sum >= 2 and min_prime >= 2:
+        sum_primes += i
+        min_primes = min(min_primes,i)
 
-    print(sum)
-    print(min_prime)
-else:
+if sum_primes == 0:
     print(-1)
-        
+else:
+    print(sum_primes)
+    print(min_primes)
+
