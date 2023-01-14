@@ -25,3 +25,4 @@ def solution(n, k, enemy):
             right = mid
     
     return left
+
