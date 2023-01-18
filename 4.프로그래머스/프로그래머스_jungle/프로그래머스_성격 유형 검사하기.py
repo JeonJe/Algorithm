@@ -35,8 +35,6 @@ def solution(survey, choices):
     else:
         answer+='N'
 
-        
-
     return answer
 
 
