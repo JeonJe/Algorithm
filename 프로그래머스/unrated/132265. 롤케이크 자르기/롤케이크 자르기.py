@@ -2,7 +2,6 @@ from collections import defaultdict
 
 def solution(topping):
     answer = 0
-    num_of_topping = len(set(topping))
     brother = defaultdict(int)
     me = defaultdict(int)
         
