@@ -1,2 +1,1 @@
-
-    dfs(depth+1,S, res)
+visited[0][0] = True
