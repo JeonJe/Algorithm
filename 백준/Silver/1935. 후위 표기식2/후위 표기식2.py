@@ -3,12 +3,13 @@ from collections import defaultdict
 n = int(input())
 postfix = input()
 nums = defaultdict(int)
+
 for i in range(n):
     v = int(input())
     nums[chr(65+i)] = v
 
 stack = []
-for idx, p in enumerate(postfix):
+for p in postfix:
     
     if p.isalpha():
         stack.append(nums[p])
