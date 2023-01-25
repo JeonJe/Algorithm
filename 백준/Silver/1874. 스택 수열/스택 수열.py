@@ -1,13 +1,10 @@
 n = int(input())
 
 target = [int(input()) for _ in range(n)]
-infos = [ i for i in range(n+1) ]
 stack = []
 res = []
 
-
 for i in range(1,n+1):
-    
     res.append('+')
     stack.append(i)
 
@@ -22,5 +19,3 @@ if len(stack) != 0:
 
 for operation in res:
     print(operation)
-
-
