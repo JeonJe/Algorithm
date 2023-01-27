@@ -1,4 +1,3 @@
-
 #수열의 길이 M
 N,M = map(int,input().split())
 
