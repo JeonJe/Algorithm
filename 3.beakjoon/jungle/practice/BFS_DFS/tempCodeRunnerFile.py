@@ -1,1 +1,1 @@
-visited[0][0] = True
+1
