@@ -1,5 +1,6 @@
+import sys 
+sys.setrecursionlimit(10**6)
 def solution(n):
-    
     def dfs(n):
         global cnt 
         if n == 0:
