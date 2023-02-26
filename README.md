@@ -36,7 +36,7 @@ Algorithm repo
 
 **문제 출처**
   - 백준 : BOJ
-  - 프로그래머스 : Programmers
+  - 프로그래머스 : Prog
   - LeetCode : Leet
   - Inflearn : Inflearn
   - 그 외 : 영대문자 시작, 그 외 소문자로 작성
@@ -51,11 +51,11 @@ Algorithm repo
 자동으로 커밋되는 문제를 제외하고 아래 규칙에 따라 커밋 메시지 작성
 > prefix : 파일이름
 
-> ex) RH : 백준_1149_RGB거리.py
+> ex) RH : BOJ_1149_RGB거리.py
 
-> ex) S : 백준_19465_스티커.py
+> ex) S : BOJ_19465_스티커.py
 
-> ex) R : BOJ_연습문제_무인도여행.py
+> ex) R : Prog_연습문제_무인도여행.py
 
 **prefix** 
 - R : Review가 되어야 할 문제, (+노션으로 정리)
