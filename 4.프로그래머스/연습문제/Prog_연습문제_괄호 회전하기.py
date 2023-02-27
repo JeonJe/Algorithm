@@ -28,7 +28,6 @@ def solution(s):
     for i in range(len(temp_s)):
         shift_s = temp_s[i:] + temp_s[:i]
         if isRight(shift_s):
-            print(''.join(shift_s))
             answer +=1
 
     return answer
