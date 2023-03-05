@@ -13,13 +13,11 @@ def solution(cacheSize, cities):
 
     #chace miss 
         else:
-
             if  len(cache) < cacheSize:
                 cache.append(city)
             elif cacheSize > 0 :
                 cache.popleft()
                 cache.append(city)
-            
             answer += 5
 
     return answer
