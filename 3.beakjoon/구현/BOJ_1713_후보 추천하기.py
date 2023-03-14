@@ -17,7 +17,7 @@ for i in range(tot):
             del dict[sorted_dict[0][0]]
         dict[cur_candi] = [1,i]
         
-sorted_dict = sorted(dict.items(), key=lambda x : int(x[0]))
+sorted_dict = sorted(dict.items(), key=lambda x : (x[0]))
 
 for k, v in sorted_dict:
         print(k, end=' ')
