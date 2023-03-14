@@ -1,38 +1,40 @@
-from collections import deque 
+import sys 
+sys.setrecursionlimit(10**6)
+height, width, num_trash = map(int,input().split())
 
-n, m, k = map(int,input().split())
+graph = [ ['.'] * width for _ in range( height )]
+visited = [ [False]*width for _ in range(height) ]
 
-graph = [ ['.'] * m for _ in range( n ) ]
-visited = [[False]*m for _ in range(n)]
+global cnt
+answer = 0
 
-for _ in range(k):
-    i, j = map(int,input().split())
-    graph[i-1][j-1] = '#'
+dx = [0,1,0,-1]
+dy = [1,0,-1,0]
 
-dx = [0,0,1,-1]
-dy = [-1,1,0,0]
-
-def bfs(i,j):
-    visited[i][j] = True
-    que = deque()
-    que.append((i,j))
-    cnt = 1
-    while que:
-        qx,qy = que.popleft()
-
-        for i in range(4):
-            nx = qx + dx[i]
-            ny = qy + dy[i]
-
-            if 0<=nx<n and 0<=ny<m and not visited[nx][ny] and graph[nx][ny] == '#':
-                visited[nx][ny] = True 
-                que.append((nx,ny))
-                cnt += 1
-    return cnt
+def dfs(x,y):
+    global cnt 
     
-k = 0
-for i in range(n):
-    for j in range(m):
+    for i in range(4):
+        nx = x + dx[i]
+        ny = y + dy[i]
+
+        if 0<= nx < height and 0<= ny < width and not visited[nx][ny] and graph[nx][ny] == "#":
+            visited[nx][ny] = True
+            cnt+=1
+            dfs(nx,ny)
+    
+    return 
+                
+for _ in range(num_trash):
+    x,y = map(int,input().split())
+    graph[x-1][y-1] = "#"
+
+for i in range(height):
+    for j in range(width):
         if not visited[i][j] and graph[i][j] == '#':
-            k = max(k, bfs(i,j))
-print(k)
+            visited[i][j] = True
+            cnt = 1
+            dfs(i,j)
+            answer = max(answer, cnt)
+
+print(answer)
