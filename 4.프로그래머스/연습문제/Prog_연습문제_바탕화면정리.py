@@ -1,5 +1,4 @@
 def solution(wallpaper):
-    answer = []
     min_x,min_y,max_x,max_y = 1e9,1e9,0,0
     
     for i in range(len(wallpaper)):
@@ -10,10 +9,8 @@ def solution(wallpaper):
                 min_y = min(min_y,j)
                 max_x = max(max_x,i)
                 max_y = max(max_y,j)
-                
-    print(min_x,min_y,max_x+1,max_y+1)
-                
-    return answer
+                                
+    return [min_x,min_y,max_x+1,max_y+1]
 
 
 wallpaper = ["..........", ".....#....", "......##..", "...##.....", "....#....."]
