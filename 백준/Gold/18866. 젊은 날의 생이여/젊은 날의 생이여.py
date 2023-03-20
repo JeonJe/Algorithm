@@ -38,5 +38,6 @@ for i in range(n - 1, 0, -1):
 
     if young_happy > old_happy and young_tired < old_tired and cnt < i:
         cnt = i
+        break
 
 print(cnt)
