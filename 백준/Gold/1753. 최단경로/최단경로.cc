@@ -5,12 +5,9 @@
 
 using namespace std;
 
-vector<vector<pair<int, int>>> graph(200001);
-vector<int> dist(200001, numeric_limits<int>::max());
-priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
-
-void dijkstra(int start)
+void dijkstra(int start, int v, vector<vector<pair<int, int>>> &graph, vector<int> &dist)
 {
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
     dist[start] = 0;
     pq.push(make_pair(dist[start], start));
 
@@ -43,31 +40,31 @@ void dijkstra(int start)
 
 int main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-    cout.tie(NULL);
-
     int v, e, k;
-    cin >> v >> e >> k;
+    scanf("%d %d %d", &v, &e, &k);
+
+    vector<vector<pair<int, int>>> graph(v + 1);
+    vector<int> dist(v + 1, numeric_limits<int>::max());
+
 
     for (int i = 0; i < e; i++)
     {
         int u, v, w;
-        cin >> u >> v >> w;
+        scanf("%d %d %d", &u, &v, &w);
         graph[u].push_back(make_pair(v, w));
     }
 
-    dijkstra(k);
+    dijkstra(k, v, graph, dist);
 
     for (int i = 1; i <= v; i++)
     {
         if (dist[i] == numeric_limits<int>::max())
         {
-            cout << "INF" << endl;
+            printf("INF\n");
         }
         else
         {
-            cout << dist[i] << endl;
+            printf("%d\n", dist[i]);
         }
     }
 
