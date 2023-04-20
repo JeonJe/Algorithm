@@ -1,27 +1,33 @@
-stack1 = list(input())
-stack2 = []
+from collections import deque 
+
+data = input()
 n = int(input())
-commands = [ input() for _ in range(n) ]
 
-for command in commands:
-    c = ""
-    if len(command) > 1:
-        command, c = command.split()
-    if command == 'L':
-        if stack1:
-            stack2.append(stack1.pop())
-    elif command == 'D':
-        if stack2:
-            stack1.append(stack2.pop())
-    elif command == 'B':
-        if stack1:
-            stack1.pop()
+right_que = deque()
+
+left_stack = []
+right_stack = []
+
+for i in data:
+    left_stack.append(i)
+
+for i in range(n):
+    command_str = input()
+    first_chr = command_str[0]
+    if first_chr == "P":
+        command, param = command_str.split()
+        left_stack.append(param)
+    elif first_chr == "L":
+        if len(left_stack) > 0:
+            right_que.appendleft(left_stack.pop())
+
+    elif first_chr == "B":
+        if len(left_stack) > 0:
+            left_stack.pop()
     else:
-        stack1.append(c)
+        if len(right_que) > 0:
+            left_stack.append(right_que.popleft())
 
-stack1.extend(reversed(stack2))
-print( ''.join(stack1))
-   
-
-            
-    
+answer = ''
+answer += "".join(left_stack) + "".join(right_que)
+print(answer)
