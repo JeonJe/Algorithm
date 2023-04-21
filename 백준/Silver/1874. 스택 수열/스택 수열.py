@@ -1,14 +1,13 @@
 n = int(input())
 
 sequen = [int(input()) for _ in range(n)]
-origin = [i+1 for i in range(n)]
 
 stack = []
 answer = []
 j = 0
 
-for i in range(len(origin)):
-    stack.append(origin[i])
+for i in range(1,n+1):
+    stack.append(i)
     answer.append("+")
 
     while stack and stack[-1] == sequen[j]:
