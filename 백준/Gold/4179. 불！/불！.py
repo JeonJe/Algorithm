@@ -1,9 +1,9 @@
 from collections import deque
 import sys
-# input = sys.stdin.readline
+input = sys.stdin.readline
 
 R,C = map(int,input().split())
-maps = [list(input().strip()) for _ in range(R)]
+maps = [list(input().rstrip()) for _ in range(R)]
 visited = [[False for _ in range(C)] for _ in range(R)]
 dx = [-1,0,1,0]
 dy = [0,1,0,-1]
