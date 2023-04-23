@@ -1,23 +1,24 @@
 n = int(input())
 
-target = [int(input()) for _ in range(n)]
+sequen = [int(input()) for _ in range(n)]
+
 stack = []
-res = []
+answer = []
+j = 0
 
 for i in range(1,n+1):
-    res.append('+')
     stack.append(i)
+    answer.append("+")
 
-    while len(target) > 0 and len(stack) > 0 and stack[-1] == target[0] :        
-        res.append('-')
+    while stack and stack[-1] == sequen[j]:
         stack.pop()
-        target.pop(0)
+        answer.append("-")
+        j+=1
 
-if len(stack) != 0:
+if stack:
     print("NO")
     exit()
-
-for operation in res:
-    print(operation)
+for seq in answer:
+    print(seq)
 
 
