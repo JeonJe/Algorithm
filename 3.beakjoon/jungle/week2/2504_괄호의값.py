@@ -1,17 +1,34 @@
-arr = input()
 
+S = list(input())
 stack = []
+answer = 0
+temp = 1
 
-num_parentheses = 0
-num_curly = 0
+for idx, char in enumerate(S):
+    if char == "(":
+        stack.append(char)
+        temp *= 2
+    elif char == "[":
+        stack.append(char)
+        temp *= 3
+    elif char == ")":
+        if not stack or stack[-1] == "[":
+            print(0)
+            exit()
+        if S[idx-1] == "(":
+            answer += temp 
+        stack.pop()
+        temp //= 2
+        
+    else:
+        #case : char == "]" 
+        if not stack or stack[-1] == "(":
+            print(0)
+            exit()
+        if S[idx-1] == "[":
+            answer += temp  
+        stack.pop()
+        temp //= 3
 
-for i in range(len(arr)):
-    if arr[i] == "(":
-        stack.append("(")
-        num_parentheses += 1
-    elif arr[i] == ")":
-        num_parentheses = 0
-    elif arr[i] == "[":
-        num_curly += 1
-    elif arr[i] == "]":
-        num_curly = 0
+print(answer if not stack else 0)
+
