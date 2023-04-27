@@ -1,20 +1,16 @@
-N,M = map(int,input().split())
+N, M = map(int,input().split())
 
-arr = [ i for i in range(1, N+1)]
+nums = [i for i in range(1,N+1)]
 
-def dfs(depth, start, temp):
-    if len(temp) == M:
-        print(*temp)
-        return
-    
-    if depth >= len(arr):
+def dfs(start_idx, path):
+    if len(path) >= M:
+        print(*path)
         return 
     
-    for i in range(start, N+1):
-        if temp[-1] < i:
-            temp.append(i)
-            dfs(depth+1, i, temp)
-            temp.remove(i)
+    for i in range(start_idx+1, len(nums)):
+        path.append(nums[i])
+        dfs(i, path)
+        path.pop()
 
-for i in range(1,N+1):
-    dfs(0,i,[i])
+for i in range(len(nums)):
+    dfs(i,[nums[i]])
