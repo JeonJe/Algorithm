@@ -1,19 +1,18 @@
 
-#수열의 길이 M
 N,M = map(int,input().split())
-
 nums = [i for i in range(1,N+1)]
 
-
-def dfs(start, depth, temp):
-    if depth == M:
-        print(*temp)
+def dfs(idx, path):
+    if len(path) >= M:
+        print(*path)
         return 
-    
-    for i in range(start,len(nums)+1):
-        temp.append(i)
-        dfs(i,depth+1, temp)
-        temp.remove(i)
 
-for i in nums:
-    dfs(i,1, [i])
+    for i in range(len(nums)):
+        if idx <= nums[i]:
+            path.append(nums[i])
+            dfs(nums[i],path)
+            path.pop()
+
+for i in range(len(nums)):
+    dfs(nums[i], [nums[i]])
+
