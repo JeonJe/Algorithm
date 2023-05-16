@@ -1,3 +1,6 @@
+import sys 
+input = sys.stdin.readline
+
 def eratos():
     primes[0], primes[1] = False, False
     n = len(primes)
@@ -11,7 +14,7 @@ primes = [True] * (int(B ** (1/2))+1)
 eratos()
 
 answer = 0
-for i in range(1, len(primes)):
+for i in range(2, len(primes)):
     if primes[i]:
         temp = i * i 
         while True:
