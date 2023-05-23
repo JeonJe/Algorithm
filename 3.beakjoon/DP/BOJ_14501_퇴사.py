@@ -13,7 +13,8 @@ for i in range(n):
 dp = [0]*(n+1)
 for i in range(n-1,-1,-1):
     if i + Ti[i] <= n:
-        dp[i] = max(Pi[i]+ dp[i+Ti[i]], dp[i+1])
+        dp[i] = max(dp[i+1], dp[i+Ti[i]]+Pi[i])
     else:
         dp[i] = dp[i+1]
+
 print(max(dp))
