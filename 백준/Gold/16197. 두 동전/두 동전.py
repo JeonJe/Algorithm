@@ -1,55 +1,50 @@
-import sys
 from collections import deque 
-#세로의 크기 N
-#가로의 크기 M
 
-N,M = map(int,input().split())
+height, width = map(int,input().split())
 
-dx = [0,0,-1,1]
-dy = [-1,1,0,0]
+dx = [1,0,-1,0]
+dy = [0,1,0,-1]
 
-graph = [input() for _ in range(N)]
-coins = []
+graph = [ list(input()) for _ in range(height) ]
+coin_points = []
+for i in range(height):
+    for j in range(width):
+        if graph[i][j] == "o":
+            coin_points.append((i, j))
 
-que = deque()
-cnt = 0
+coinA = coin_points[0]
+coinB = coin_points[1]
+
 def bfs():
+    
+    que = deque()
+    que.append((coinA[0],coinA[1], coinB[0],coinB[1],0))
+
     while que:
-        x1,y1, x2, y2, cnt = que.popleft()
+        coinA_x, coinA_y, coinB_x, coinB_y, cnt = que.popleft()
+      
         if cnt >= 10:
             return -1 
-        for i in range(4):
-            nx1 = x1 + dx[i]
-            ny1 = y1 + dy[i]
-            nx2 = x2 + dx[i]
-            ny2 = y2 + dy[i]
         
-            #동전의 다음 이동이 판 안쪽인 경우 
-            if 0<= nx1 < N and 0 <= ny1 < M and 0<=nx2<N and 0<= ny2 <M:
-                if graph[nx1][ny1] == '#':
-                    nx1 = x1 
-                    ny1 = y1
-                if graph[nx2][ny2] == '#':
-                    nx2 = x2 
-                    ny2 = y2
-                que.append((nx1,ny1,nx2,ny2,cnt+1))
-            #동전의 다음 이동이 바깥쪽인 경우
-            #2번 동전이 밖으로 떨어진 경우 
-            elif 0<= nx1 < N and 0 <= ny1 < M:
-                return cnt + 1
-            #1번 동전이 밖으로 떨어진 경우 
-            elif 0<= nx2 < N and 0 <= ny2 < M:
-                return cnt + 1
+        for i in range(4):
+            coinA_nx = coinA_x + dx[i]
+            coinA_ny = coinA_y + dy[i]
+            coinB_nx = coinB_x + dx[i]
+            coinB_ny = coinB_y + dy[i]
 
+            if 0 <= coinA_nx < height and 0<= coinA_ny < width and 0 <= coinB_nx < height and 0<= coinB_ny < width:
+                if graph[coinA_nx][coinA_ny] == "#":
+                    coinA_nx, coinA_ny = coinA_x, coinA_y
+                if graph[coinB_nx][coinB_ny] == "#":
+                    coinB_nx, coinB_ny = coinB_x, coinB_y
+                que.append((coinA_nx, coinA_ny, coinB_nx, coinB_ny,cnt+1))
+                
+            elif 0 <= coinA_nx < height and 0<= coinA_ny < width:
+                return cnt+1
+            elif 0 <= coinB_nx < height and 0<= coinB_ny < width:
+                return cnt+1
             else:
                 continue
+                    
 
-
-for i in range(N):
-    for j in range(M):
-        if graph[i][j] == 'o':
-            coins.append((i,j))
-
-que.append((coins[0][0],coins[0][1],coins[1][0], coins[1][1],0))
 print(bfs())
-
