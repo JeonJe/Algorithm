@@ -19,16 +19,11 @@ def shortest_path(start):
             if new_weight < distance[adj_node]:
                 distance[adj_node] = new_weight
                 heapq.heappush(min_heap, (new_weight, adj_node))
-
-def find_rational_path(node):
-    
-    if dp[node] == 0:
-        for adj_node, _ in graph[node]:
-            if distance[node] > distance[adj_node]:
-                dp[node] += find_rational_path(adj_node)
-    
-    return dp[node]
-
+            
+            #adj_node 까지 최단거리가, 현재 이동거리보다 짧으면 adj_node까지 합리적인 이동경로는 
+            #current_node의 합리적인 이동경로에 포함된다
+            if current_weight > distance[adj_node]:
+                dp[current_node] += dp[adj_node]
 
 if __name__ == "__main__":
     N, M = map(int,input().split())
@@ -46,5 +41,4 @@ if __name__ == "__main__":
     dp[end] = 1
 
     shortest_path(end)
-    find_rational_path(start)
     print(dp[start])
