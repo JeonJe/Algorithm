@@ -10,9 +10,6 @@ que = deque()
 que.append((n,0))
 visited = defaultdict(bool)
 
-left_limit = -300000
-right_limit = 300000
-
 while que:
     cx, time = que.popleft()
         
@@ -22,11 +19,11 @@ while que:
 
     if not visited[cx]:
         visited[cx] = True
-    if cx*2 <= right_limit and not visited[cx*2]:
+    if cx*2 <= 2*m and not visited[cx*2]:
         que.append((cx*2, time))
-    if cx-1 >= left_limit and not visited[cx-2]:
+    if cx-1 >= -2*m and not visited[cx-2]:
         que.append((cx-1, time+1))
-    if cx+1 <= right_limit and not visited[cx+1]:
+    if cx+1 <= 2*m and not visited[cx+1]:
         que.append((cx+1, time+1))
 
 
