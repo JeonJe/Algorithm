@@ -19,11 +19,11 @@ while que:
 
     if not visited[cx]:
         visited[cx] = True
-    if cx*2 <= 2*m and not visited[cx*2]:
-        que.append((cx*2, time))
-    if cx-1 >= -2*m and not visited[cx-2]:
-        que.append((cx-1, time+1))
-    if cx+1 <= 2*m and not visited[cx+1]:
-        que.append((cx+1, time+1))
 
-
+    for next in [cx*2, cx-1, cx+1]:
+        if 0 <= next <= 100000 and not visited[next]:
+            if next == cx*2:
+                que.appendleft((next, time))
+            else:
+                que.append((next, time+1))
+        
