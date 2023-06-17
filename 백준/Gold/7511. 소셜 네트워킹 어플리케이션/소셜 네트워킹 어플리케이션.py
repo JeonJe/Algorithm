@@ -1,3 +1,6 @@
+import sys
+input = sys.stdin.readline
+
 def find(parent, x):
     if parent[x] == x:
         return parent[x]
