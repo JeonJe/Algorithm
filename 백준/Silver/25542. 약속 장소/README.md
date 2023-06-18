@@ -1,14 +1,14 @@
-# [Silver II] 약속 장소 - 25542 
+# [Silver I] 약속 장소 - 25542 
 
 [문제 링크](https://www.acmicpc.net/problem/25542) 
 
 ### 성능 요약
 
-메모리: 114328 KB, 시간: 128 ms
+메모리: 116672 KB, 시간: 168 ms
 
 ### 분류
 
-브루트포스 알고리즘(bruteforcing), 구현(implementation), 문자열(string)
+브루트포스 알고리즘, 구현, 문자열
 
 ### 문제 설명
 

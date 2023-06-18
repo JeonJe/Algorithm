@@ -1,32 +1,37 @@
+import sys
+input = sys.stdin.readline 
+
 n, l = map(int,input().split())
+remember = list(input() for _ in range(n))
 
-candi = [list(input()) for _ in range(n) ]
+answer = []
 
-# standard = candi[0]
-
-# -> digit 
-for i in range(l):
+#depth에 current라는 알파벳을 넣었을 때 이름 후보 조건을 만족하는지 
+def check(depth, path):
+    for i in range(n):
+        diff = 0
+        for j in range(depth+1):
+            if remember[i][j] != path[j]:
+                diff += 1
+        if diff >= 2:
+            return False
+    return True
     
-    #row
-    digit_diff  = 0
-    for j in range(1,n):
-        #각 자리별로 몇개의 문자가 다른지 확인 
-        if candi[j][i] != candi[0][i]:
-            digit_diff += 1
 
-        #현재와 
-        row_diff = 0
-        for k in range(l):
-            if candi[0][k] != candi[j][k]:
-                row_diff +=1
-        if row_diff > 2:
-            print("CALL FRIEND")
-            exit()
+    
+def dfs(depth, path):
+    if depth >= l:
+        answer.append("".join(path))
+        return 
 
-    if digit_diff == n-1 :
-        candi[0][i] = candi[-1][i]
-            
+    for i in range(26):
+        cur = chr(ord('A') + i)
+                
+        path.append(cur)
+        if check(depth,path):
+            dfs(depth+1, path)
+        path.pop()
 
+dfs(0,[])
 
-print(''.join(candi[0]))
-   
+print(answer[0] if len(answer) >= 1 else "CALL FRIEND")
