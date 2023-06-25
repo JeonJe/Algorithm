@@ -1,56 +1,44 @@
-from collections import defaultdict,deque
+import sys
+sys.setrecursionlimit(10**6)
+input = sys.stdin.readline
 
-#사람수, 파티수
-N, M = map(int,input().split())
-already_know_info = input()
+n, m = map(int, input().split())
+p_arr = list(map(int, input().split()))
 
-if already_know_info[0] != "0":
-    already_know_persion = list(map(int,already_know_info.split()))[1:]
-else:
-    already_know_persion = None
+parent = list(int(i) for i in range(n+1))
 
-graph = [ [] for _ in range(N+1)]
-partys = []
-for i in range(M):
-    data = list(map(int,input().split()))
-    people = data[1:]
-    partys.append(people)
+def find(a):
+    if parent[a] == a: return a
+    parent[a] = find(parent[a])
+    return parent[a]
 
-    #참석자 연결관계 그래프 
-    for i in range(len(people)-1):
-        for j in range(i+1,len(people)):    
-            graph[people[i]].append(people[j])
-            graph[people[j]].append(people[i])
-cnt = 0
+def union(a, b):
+    a = find(a)
+    b = find(b)
+    if a==b: return
+    if a<b: parent[b] = a
+    else: parent[a] = b
 
-if already_know_persion is None:
-    print(M)
-    exit(0)
-    
-for i in range(len(partys)):
-    visited = [ False for i in range(N+1) ]
-    que = deque()
+for i in range(1, p_arr[0]):
+    union(p_arr[i], p_arr[i+1])
 
-    if partys[i][0] not in already_know_persion:
-        que.append(partys[i][0])
-        visited[partys[i][0]] = True
-    else:
+party = []
+for i in range(m):
+    p = list(map(int, input().split()))
+    party.append(p)
+    if p[0]==1:
+        #p[1] = parent[p[1]]
         continue
-    
-    is_ok = True
+    else:
+        for j in range(1, p[0]):
+            union(p[j], p[j+1])
 
-    while que:
-        current = que.pop()
+cnt = 0
+if p_arr[0] == 0:
+    cnt = m
+else:
+    for i in range(m):
+        if find(party[i][1]) != find(p_arr[1]):
+            cnt += 1
 
-        for adj in graph[current]:
-            if adj in already_know_persion:
-                is_ok = False
-                break
-            if not visited[adj]:
-                visited[adj] = True
-                que.append(adj)
-
-    if is_ok:
-        cnt += 1
-    
 print(cnt)
