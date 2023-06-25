@@ -3,7 +3,7 @@ from collections import defaultdict
 seq = input()
 dict = defaultdict(int)
 
-sound = ['q','u','a','c','k']
+sound = 'quack'
 position = defaultdict(int)
 
 for i in range(len(sound)):
@@ -11,8 +11,10 @@ for i in range(len(sound)):
 
 answer = 0
 for i in range(len(seq)):
+
     current = seq[i]
     dict[current] += 1
+    
     if current == sound[0]:
         answer = max(answer, dict[sound[0]])
 
@@ -33,6 +35,3 @@ for i in range(len(sound)):
         exit(0)
     
 print(answer)
-
-
-
