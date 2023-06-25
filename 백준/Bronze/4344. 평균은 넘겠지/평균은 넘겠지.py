@@ -1,8 +1,4 @@
-from decimal import Decimal, ROUND_HALF_UP
 
-def custom_round(value, digits):
-    rounded = Decimal(value).quantize(Decimal('0.' + '0' * digits), rounding=ROUND_HALF_UP)
-    return float(rounded)
 
 t = int(input())
 
@@ -15,9 +11,11 @@ for _ in range(t):
         if s > avg:
             cnt += 1
 
-    result = custom_round(cnt / len(seq) * 100, 3)
-    print(f'{result:.3f}%')
-
-
+    percent = cnt / len(seq) * 100
+    four = int(percent * (10**4)) % 10
+    if four >= 5:
+        percent = int(percent*(10**3)+1) / (10**3)
     
+    print(f'{percent:.3f}%')
+
     
