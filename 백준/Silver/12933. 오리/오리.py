@@ -4,15 +4,22 @@ seq = input()
 dict = defaultdict(int)
 
 sound = ['q','u','a','c','k']
-answer = 0
+position = defaultdict(int)
 
+for i in range(len(sound)):
+    position[sound[i]] = i
+
+answer = 0
 for i in range(len(seq)):
-    dict[seq[i]] += 1
-    if seq[i] == sound[0]:
+    current = seq[i]
+    dict[current] += 1
+    if current == sound[0]:
         answer = max(answer, dict[sound[0]])
 
-    for j in range(1,len(sound)):
-        if dict[sound[j-1]]< dict[sound[j]]:
+    if position[current] > 0:
+        cur_idx = position[current]
+        prev_idx = position[current] - 1
+        if dict[sound[prev_idx]] < dict[sound[cur_idx]]:
             print(-1)
             exit(0)
 
