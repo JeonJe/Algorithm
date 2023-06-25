@@ -1,5 +1,8 @@
-def roundTraditional(val, digits):
-    return round(val+10**(-len(str(val))-1), digits)
+from decimal import Decimal, ROUND_HALF_UP
+
+def custom_round(value, digits):
+    rounded = Decimal(value).quantize(Decimal('0.' + '0' * digits), rounding=ROUND_HALF_UP)
+    return float(rounded)
 
 t = int(input())
 
@@ -12,7 +15,7 @@ for _ in range(t):
         if s > avg:
             cnt += 1
 
-    result = roundTraditional(cnt / len(seq) * 100, 3)
+    result = custom_round(cnt / len(seq) * 100, 3)
     print(f'{result:.3f}%')
 
 
