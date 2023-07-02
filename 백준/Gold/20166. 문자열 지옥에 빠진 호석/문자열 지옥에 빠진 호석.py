@@ -17,8 +17,8 @@ def dfs(x,y,depth,path):
     str_map[path] += 1
         
     for i in range(8):
-        nx = (x + dx[i] + N) % N 
-        ny = (y + dy[i] + M) % M    
+        nx = (x + dx[i] ) % N 
+        ny = (y + dy[i] ) % M    
         dfs(nx, ny, depth+1, path + board[nx][ny])
 
 for i in range(N):
