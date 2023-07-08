@@ -1,17 +1,13 @@
-import heapq 
 
 n = int(input())
 drinks = list(map(int,input().split()))
 
-heap = []
-for d in drinks:
-    heapq.heappush(heap, -d)
+drinks.sort()
 
-while len(heap) >= 2:
-    f = heapq.heappop(heap) * -1
-    s = heapq.heappop(heap) * -1
-    mixed = (s / 2) + f
-    heapq.heappush(heap, -mixed)
+res = 0
+for i in range(n-1):
+    res += drinks[i] / 2
 
+res += drinks[-1]
 
-print(f'{heapq.heappop(heap) * -1}')
+print(res)
