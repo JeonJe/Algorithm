@@ -1,21 +1,28 @@
 N, L, R, X = map(int,input().split())
 problems = list(map(int,input().split()))
-problems.sort()
 
-def dfs(depth, idx, min_d, max_d, sum_diff):
-    global answer
-    if sum_diff > R:
-        return 
-    if depth >= 2 and L <= sum_diff <= R:
-        if max_d - min_d  >= X:
-            answer += 1
+def check(case):
+    min_diff = 10**6
+    max_diff = 1
+    cnt, sum_diff = 0, 0 
+
+    # case로 표현된 문제 선택조합에서 선택된 문제 수 최대 문제 난이도, 최소 문제 난이도, 난이도 합을 구함
+    for i in range(N):
+        flag = case & ( 1 << i )
+
+        #i번쨰 문제가 선택 된 경우 
+        if flag:
+            min_diff = min(min_diff, problems[i]) 
+            max_diff = max(max_diff, problems[i])        
+            sum_diff += problems[i]
+            cnt += 1
     
-    for i in range(idx+1, N):
-        if min_d == -1:
-            dfs(depth+1, i, problems[i], max_d, sum_diff + problems[i])
-        else:
-            dfs(depth+1, i, min_d, problems[i], sum_diff + problems[i])
+    if L <= sum_diff <= R and cnt >= 2 and max_diff - min_diff >= X:
+        return True
+    return False 
 
 answer = 0
-dfs(0, -1, -1, -1, 0)
+for case in range(2**N):
+    if check(case):
+        answer += 1
 print(answer)
