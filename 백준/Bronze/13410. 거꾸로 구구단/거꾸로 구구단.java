@@ -16,10 +16,10 @@ public class Main {
     maxValue = -1;
     
     for (int i = 1; i < K+1; i++) {
-      String currentValue = String.valueOf(N*i);
-      StringBuffer sb = new StringBuffer(currentValue);
-      int reversedValue = Integer.parseInt(sb.reverse().toString());
-      maxValue = Math.max(maxValue, reversedValue);
+      String currentValue = Integer.toString(N*i);
+      StringBuilder sb = new StringBuilder(currentValue);
+      int reveredValue = Integer.parseInt(sb.reverse().toString());
+      maxValue = Math.max(maxValue, reveredValue);
     }
 
     System.out.println(maxValue);
