@@ -17,7 +17,7 @@ class Solution {
               if (isFirst) {
                   isFirst = false;
               }  
-            } else if ( Character.toString(ch).equals(" ") ) {
+            } else if ( ch == ' ' ) {
                 isFirst = true;
             } 
             result.append(ch);
