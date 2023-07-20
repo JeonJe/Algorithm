@@ -18,18 +18,13 @@ class Solution {
     }
     
     private void dfs(int[][] computers, int start) {
-        Queue<Integer> que = new LinkedList<Integer>();
-        que.offer(start);
-        
-        while (!que.isEmpty()) {
-            int current = que.poll();
-            for (int i = 0; i < computers[current].length; i++) {
-                if (computers[current][i] == 1 && !visited[i]) {
+
+            for (int i = 0; i < computers[start].length; i++) {
+                if (computers[start][i] == 1 && !visited[i]) {
                     visited[i] = true;
-                    que.offer(i);
+                    dfs(computers, i);
                 }
             }    
-        }
         
     }
 }
