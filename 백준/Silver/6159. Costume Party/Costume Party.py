@@ -1,4 +1,3 @@
-
 n, s = map(int,input().split())
 
 cows = [int(input()) for _ in range(n)]
