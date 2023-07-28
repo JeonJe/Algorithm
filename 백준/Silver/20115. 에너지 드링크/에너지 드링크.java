@@ -1,34 +1,33 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+import java.util.Arrays;
 
-import java.io.*;
-import java.util.*;
- 
 public class Main {
-    static int atoi(String str){
-        return Integer.parseInt(str);
-    }
-    public static void main(String args[]) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+    public static void main(String[] args) throws NumberFormatException, IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));        
+        
+        int N = Integer.parseInt(br.readLine());
+        int [] arr = new int[N];
+
         StringTokenizer st = new StringTokenizer(br.readLine());
- 
-        int size = atoi(st.nextToken());
- 
-        int arr[] = new int[size];
-        int max = -1;
-        double sum = 0; // 소수점 써야해서 double 써야할 듯
- 
-        st = new StringTokenizer(br.readLine());
- 
-        for(int i = 0; i < size; i++){
-            int bottleSize = atoi(st.nextToken());
-            if(bottleSize > max) max = bottleSize;
-            arr[i] = bottleSize;
+        
+        int maxValue = 0;
+        for (int i = 0; i < N; i++){
+            arr[i] = Integer.parseInt(st.nextToken());
+            if (arr[i] > maxValue) {
+                maxValue = arr[i];
+            }
         }
- 
-        for(int index : arr){
-            if(max != index) sum += (double) index / 2;
+        
+        double result = maxValue;
+        for (int i = 0; i < N; i++){
+            if (arr[i] != maxValue){
+                result += arr[i] / 2.0;
+            }
         }
-        sum += max;
-        System.out.print(sum);
-    }
+        System.out.println(result);            
+    }  
 }
- 
