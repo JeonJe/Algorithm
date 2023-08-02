@@ -1,3 +1,5 @@
+import sys
+input = sys.stdin.readline
 
 n, m = map(int,input().split())
 
@@ -23,12 +25,12 @@ def trie_check(trie, word):
 
 trie = {}
 for i in range(n):
-    word = input()
+    word = input().rstrip()
     trie_insert(trie, word)
 
 cnt = 0
 for i in range(m):
-    target = input()
+    target = input().rstrip()
     if trie_check(trie, target):
       cnt+=1
 
