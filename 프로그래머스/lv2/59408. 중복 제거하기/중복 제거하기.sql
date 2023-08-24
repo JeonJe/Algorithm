@@ -1,0 +1,3 @@
+-- 코드를 입력하세요
+SELECT COUNT(DISTINCT(ANIMAL_INS.name)) FROM ANIMAL_INS 
+WHERE ANIMAL_INS.name is not null;
