@@ -37,11 +37,7 @@ public class Main {
       }
 
       int res = bfs(board, human, fire, visited);
-      if (res > 0) {
-        System.out.println(res);
-      } else {
-        System.out.println("IMPOSSIBLE");
-      }
+      System.out.println(res > 0 ? res : "IMPOSSIBLE");
 
       // test case
     }
@@ -80,13 +76,7 @@ public class Main {
         }
       }
     }
-
-    // for (int[] array : human) {
-    //   for (int num : array) {
-    //     System.out.print(num + " ");
-    //   }
-    //   System.out.println();
-    // }
+        
     if (isExit) {
       return dist;
     }
@@ -108,7 +98,6 @@ public class Main {
         }
       }
     }
-    // System.out.println("불위치 " + Arrays.deepToString(board));
   }
   
   return -1;
