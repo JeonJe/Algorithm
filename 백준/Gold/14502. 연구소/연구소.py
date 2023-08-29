@@ -2,19 +2,18 @@ import copy
 from collections import deque
 height, width = map(int, input().split())
 board = [list(map(int, input().split())) for _ in range(height)]
-visited = [ [False for _ in range(width)] for _ in range(height)  ]
+
 dx = [1,0,-1,0]
 dy = [0,1,0,-1]
 virus = []
 empty_area = []
 
 def bfs():
-    copy_board = copy.deepcopy(board) 
-    copy_visited = copy.deepcopy(visited)
+    visited = [ [False for _ in range(width)] for _ in range(height)  ]
     for i in range(len(virus)):
         x, y = virus[i]
 
-        copy_visited[x][y] = True
+        visited[x][y] = True
         que = deque()
         que.append([x,y])
 
@@ -26,20 +25,17 @@ def bfs():
                 ny = cy + dy[i]
 
                 if 0 <= nx < height and 0 <= ny < width:
-                    if not copy_visited[nx][ny] and copy_board[nx][ny] == 0:
-                        copy_visited[nx][ny] = True
-                        copy_board[nx][ny] = 2
+                    if not visited[nx][ny] and board[nx][ny] == 0:
+                        visited[nx][ny] = True
                         que.append([nx,ny])
 
     cnt = 0
     for i in range(height):
         for j in range(width):
-            if copy_board[i][j] == 0:
+            if board[i][j] == 0 and not visited[i][j]:
               cnt += 1                    
     return cnt
 
-    
-    
 for i in range(height):
     for j in range(width):
         if board[i][j] == 2:
