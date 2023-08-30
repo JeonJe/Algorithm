@@ -1,4 +1,3 @@
-
 check = [False] * 10036
 
 def d(n):
