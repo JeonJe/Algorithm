@@ -63,4 +63,4 @@ Algorithm repo
 - S : Solved 문제 
 
 ## 알고리즘 풀이 정리(노션)
- 👉 <a href="https://premise.oopy.io/12bc812e-d1cb-4412-848d-2a1f05862982"><img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white&link=https://premise.oopy.io/12bc812e-d1cb-4412-848d-2a1f05862982"/></a>
+ 👉 <a href="https://www.notion.so/91f5eac67f6342dc8c75e3d8c2d1bae6"><img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white&link=https://www.notion.so/91f5eac67f6342dc8c75e3d8c2d1bae6"/></a>
