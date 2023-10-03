@@ -1,39 +1,22 @@
 class Solution:
-    
-    def validate_sudoku(self, board, x, y, length):
-        #row 확인
-        for i in range(length):
-            if i == y:
-                continue
-            if board[x][i] == board[x][y]:
-                return False
-        #col 확인
-        for i in range(length):
-            if i == x :
-                continue
-            if board[i][y] == board[x][y]:                
-                return False
-            
-        #3x3 확인
-        sub_box_x = (x // 3) * 3
-        sub_box_y = (y // 3) * 3
-        print(sub_box_x, sub_box_y)
-        for i in range(sub_box_x, sub_box_x+3):
-            for j in range(sub_box_y, sub_box_y+3):
-                if i == x and j == y:
+     def isValidSudoku(self, board: List[List[str]]) -> bool:
+        cols = collections.defaultdict(set)
+        rows = collections.defaultdict(set)
+        sub_box = collections.defaultdict(set)  
+
+        for r in range(9):
+            for c in range(9):
+                if board[r][c] == ".":
                     continue
-                if board[i][j] == board[x][y]:
+                if (
+                    board[r][c] in rows[r]
+                    or board[r][c] in cols[c]
+                    or board[r][c] in sub_box[(r // 3, c // 3)]
+                ):
                     return False
                 
-        return True
-        
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
-        length = len(board)
-        for i in range(length):
-            for j in range(length):
-                print(i,j)
-                if board[i][j] != ".":
-                    if not self.validate_sudoku(board, i, j, length):
-                        return False
-        
+                cols[c].add(board[r][c])
+                rows[r].add(board[r][c])
+                sub_box[(r // 3, c // 3)].add(board[r][c])
+
         return True
