@@ -6,14 +6,12 @@ class Solution:
             if i == y:
                 continue
             if board[x][i] == board[x][y]:
-                print("row", x,i)
                 return False
         #col 확인
         for i in range(length):
             if i == x :
                 continue
             if board[i][y] == board[x][y]:                
-                print("col", i,y)
                 return False
             
         #3x3 확인
@@ -25,7 +23,6 @@ class Solution:
                 if i == x and j == y:
                     continue
                 if board[i][j] == board[x][y]:
-                    print("3x3   false",  x, y, board[x][y])
                     return False
                 
         return True
