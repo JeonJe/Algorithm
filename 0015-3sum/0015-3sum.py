@@ -6,7 +6,7 @@ class Solution:
         nums.sort()
         
         print(nums)
-        for i in range(length):
+        for i in range(length-1):
             j = i+1
             k = length-1
             
