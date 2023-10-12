@@ -5,7 +5,7 @@ class Solution:
         length = len(nums)
         nums.sort()
         
-        for i in range(length-1):
+        for i in range(length-2):
             if i > 0 and nums[i] == nums[i-1]:
                 continue 
             j = i+1
