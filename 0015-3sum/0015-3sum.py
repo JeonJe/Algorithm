@@ -7,6 +7,8 @@ class Solution:
         
         print(nums)
         for i in range(length-1):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue 
             j = i+1
             k = length-1
             
