@@ -16,7 +16,7 @@ class Solution:
                 bot = row + 1
             else:
                 break
-        if not (bot <= top):
+        if (bot > top):
             return False
 
         
