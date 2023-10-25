@@ -16,13 +16,11 @@ class Solution:
                 bot = row + 1
             else:
                 break
-        print(top, bot)
         if not (bot <= top):
             return False
 
         
         rows = matrix[row]
-        print(rows)
         l, r = 0, len(rows)-1
         
         while l <= r:
@@ -33,7 +31,6 @@ class Solution:
                 l = m + 1
             else:
                 r = m - 1
-
  
         return False
 
