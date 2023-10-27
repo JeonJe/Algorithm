@@ -1,7 +1,7 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         length = len(prices)
-        l,r = 0,1
+        l,r = 0,0
         profit = 0
         while l < length and r < length:
             profit = max(profit, prices[r] - prices[l])
