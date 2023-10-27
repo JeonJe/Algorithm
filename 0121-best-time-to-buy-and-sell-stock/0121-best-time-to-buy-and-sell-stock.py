@@ -3,8 +3,8 @@ class Solution:
         length = len(prices)
         l,r = 0,0
         profit = 0
-        while l < length:
-            
+        while l < length and r < length:
+            profit = max(profit, prices[r] - prices[l])
             #r포인터가 가리키는 값이 l포인터가 가리키는 값보다 크면
             #r을 증가시킴
             if prices[r]>= prices[l]:
@@ -13,7 +13,6 @@ class Solution:
                     break
             else:
                 l = r
-                r = l
-            profit = max(profit, prices[r] - prices[l])
-                
+                r = l+1
+            
         return profit
