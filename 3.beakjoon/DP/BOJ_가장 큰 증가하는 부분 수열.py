@@ -1,21 +1,17 @@
+
 n = int(input())
-nums = list(map(int,input().split()))
+seq = list(map(int, input().split()))
 
-if n == 1:
-    print(nums[0])
-    exit(0)
+dp = [0] * (n+1)
 
-LIS_sum = [0]*(n)
-LIS_sum[0] = nums[0]
+#i번째까지 증가하는 부분 수열의 최대 값
+dp[0] = seq[0]
 
-for i in range(1,n):
-    
-    temp = 0
-    for j in range(i-1,-1,-1):
-        if nums[j] < nums[i]:
-            temp = max(temp, LIS_sum[j])
-    
-    LIS_sum[i] = temp+nums[i]
-    
+for i in range(1,len(seq)):
+    max_sum = 0
+    for j in range(0,i):
+        if seq[j] < seq[i]:
+            max_sum = max(max_sum, dp[j])
+    dp[i] = max_sum+seq[i]
 
-print(max(LIS_sum))
+print(max(dp))
