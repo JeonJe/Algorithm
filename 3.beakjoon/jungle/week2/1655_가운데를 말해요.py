@@ -1,39 +1,24 @@
-import sys 
+import sys
 import heapq
+input = sys.stdin.readline
 
 n = int(input())
 
-min_heap = []
-max_heap = []
+left_max_heap = []
+right_min_heap = []
 
-f = int(input())
-if n == 1:
-    print(f)
-    exit()
-else:
-    heapq.heappush(max_heap,(-f,f))
-    print(f)
+for i in range(n):
+    num = int(input())
 
-for i in range(1,n):
-    f = int(sys.stdin.readline())
-    if len(max_heap) > len(min_heap):
-        heapq.heappush(min_heap, f)
+    if len(right_min_heap) == len(left_max_heap):
+        heapq.heappush(left_max_heap, num * -1)
     else:
-        heapq.heappush(max_heap, (-f,f))
-    
-    if len(min_heap) > 0 and len(max_heap) > 0:
-        min_top = min_heap[0]
-        max_top = max_heap[0][1]
+        heapq.heappush(right_min_heap, num)
 
-        if min_top < max_top:
-            heapq.heappop(min_heap)
-            heapq.heappop(max_heap)
-            heapq.heappush(max_heap, (-min_top, min_top))
-            heapq.heappush(min_heap, max_top)
-            
-        print(max_heap[0][1])
-        
-        
-    
-
-
+    if len(left_max_heap) > 0 and len(right_min_heap) > 0 and left_max_heap[0] * -1 > right_min_heap[0]:
+        temp_max = heapq.heappop(left_max_heap) * -1
+        temp_min = heapq.heappop(right_min_heap)
+        heapq.heappush(right_min_heap, temp_max)
+        heapq.heappush(left_max_heap, temp_min * -1)
+    print(left_max_heap[0] * -1)
+                                              

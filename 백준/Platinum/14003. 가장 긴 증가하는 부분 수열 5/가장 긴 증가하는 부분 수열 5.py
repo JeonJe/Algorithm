@@ -1,55 +1,47 @@
-import sys 
+import sys
 input = sys.stdin.readline
 
 n = int(input())
-arr = list(map(int,input().split()))
+seq = list(map(int,input().split()))
 
-
-# 이진탐색으로 인덱스가 들어갈 위치를 찾는다.
-def lower_bound(start, end, num):
-    while start < end:
-        mid = (start + end) // 2
-
-        if tmp[mid] < num:
-            start = mid + 1
+def lower_bound(left, right, target):
+    while left < right:
+        mid = (left + right) // 2
+        if LIS[mid] < target:
+            left = mid + 1
         else:
-            end = mid
-    return end
+            right = mid
+    return right
 
-tmp = []
-index = [[0, 0] for _ in range(n)]
+LIS = []
+LIS.append(seq[0])
+#i번째 수열의 LIS 로 들어갈 때 index위치와 값 
+index_and_value = [ [0, 0] for _ in range(n)]
+index_and_value[0][1] = seq[0]
 
-tmp.append(arr[0])
-#0번째 인자의 위치, 인덱스 값
-index[0][1] = arr[0] 
+for i in range(1, len(seq)):
+    current_num = seq[i]
+    index_and_value[i][1] = current_num
 
-for i in range(1,len(arr)):
-    num = arr[i]
-    index[i][1] = num
-
-    # if len(tmp) == 0:
-    #     tmp.append(num)
-    #     continue
-
-    if tmp[-1] < num:
-        index[i][0] = len(tmp)
-        tmp.append(num)
+    #LIS의 마지막 수열보다 크기가 클 경우, LIS뒤에 넣고, idx 위치는 LIS 길이
+    if current_num > LIS[-1]:
+        index_and_value[i][0] = len(LIS)
+        LIS.append(current_num)
     else:
-        idx = lower_bound(0, len(tmp)-1, num)
-        index[i][0] = idx
-        tmp[idx] = num
-
+    #lower bound로 current_num이 들어갈 적절한 위치를 찾음
+        idx = lower_bound(0, len(LIS)-1, current_num)
+        index_and_value[i][0] = idx
+        LIS[idx] = current_num
 
 answer = []
-order = len(tmp)-1
-for i in range(len(index)-1, -1, -1):
+order = len(LIS) - 1
+
+for i in range(len(index_and_value)-1,-1,-1):
     if order == -1:
         break
-
-    if order == index[i][0]:
-        answer.append(index[i][1])
+    if order  == index_and_value[i][0]:
+        answer.append(index_and_value[i][1])
         order -= 1
 
-print(len(tmp))
+print(len(LIS))
 print(*answer[::-1])
-    
