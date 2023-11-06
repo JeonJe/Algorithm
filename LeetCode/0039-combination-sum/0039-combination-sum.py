@@ -12,9 +12,10 @@ class Solution:
                 return
 
             for i in range(len(candidates)):
-                path.append(candidates[i])
-                dfs(path, sum_path + candidates[i])
-                path.pop()
+                if (sum_path + candidates[i] <= target):
+                    path.append(candidates[i])
+                    dfs(path, sum_path + candidates[i])
+                    path.pop()
 
         answer = []
         dfs([], 0)
