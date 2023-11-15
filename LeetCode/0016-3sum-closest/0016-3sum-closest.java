@@ -1,4 +1,5 @@
 import java.util.Arrays;
+
 class Solution {
     public int threeSumClosest(int[] nums, int target) {
         int answer = 0;
@@ -9,9 +10,9 @@ class Solution {
             int left = cur+1;
             int right = nums.length-1;
          
-            
             while (left < right) {
                int threeSum = nums[cur]+nums[left]+nums[right];
+                
                 if(threeSum == target) {
                     return target;
                 } else if(threeSum > target) {
@@ -19,8 +20,9 @@ class Solution {
                 } else {
                     left += 1;
                 }
-                if ( Math.abs(threeSum - target) < diff ) {
-                    diff = Math.abs(threeSum - target);
+                int absDiff = Math.abs(threeSum - target);
+                if ( absDiff < diff ) {
+                    diff = absDiff;
                     answer = threeSum;
                 }    
             }
