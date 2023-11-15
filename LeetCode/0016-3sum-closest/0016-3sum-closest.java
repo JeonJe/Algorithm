@@ -4,7 +4,6 @@ class Solution {
         int answer = 0;
         int diff = Integer.MAX_VALUE;
         Arrays.sort(nums);
-        System.out.println(Arrays.toString(nums));
         
         for (int cur = 0; cur < nums.length-2; cur++){
             int left = cur+1;
