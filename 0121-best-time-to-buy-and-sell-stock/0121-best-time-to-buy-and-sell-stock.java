@@ -10,7 +10,7 @@ class Solution {
                 maxProfit = Math.max(maxProfit, profit);
                 right++;
             } else {
-                left++;
+                left = right;
                 right = left+1;
             }
             
