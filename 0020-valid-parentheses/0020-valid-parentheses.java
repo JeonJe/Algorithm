@@ -2,21 +2,19 @@ class Solution {
     public boolean isValid(String s) {
         Stack<Character> stack  = new Stack<>();
 
-        Map<Character, Character> characterMapping = new HashMap<>();
-        characterMapping.put('}', '{');
-        characterMapping.put(']', '[');
-        characterMapping.put(')', '(');
-        List<Character> opens = List.of('{', '[', '(');
+        Map<Character, Character> brackets = new HashMap<>();
+        brackets.put('}', '{');
+        brackets.put(']', '[');
+        brackets.put(')', '(');
+
+        List<Character> openBrackets = List.of('{', '[', '(');
 
         for(int i = 0; i < s.length(); i++){
             char current = s.charAt(i);
-            if(opens.contains(current)){
+            if(openBrackets.contains(current)){
                 stack.add(current);
             } else {
-                if(stack.isEmpty()){
-                    return false;
-                }
-                if(stack.pop() != characterMapping.get(current)){
+                if (stack.isEmpty() || stack.pop() != brackets.get(current)) {
                     return false;
                 }
             }
