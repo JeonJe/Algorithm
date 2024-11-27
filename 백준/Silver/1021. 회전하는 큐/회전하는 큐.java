@@ -26,30 +26,29 @@ class Main {
             int targetNum = Integer.parseInt(st.nextToken());
             findMinimumDistance(targetNum);
         }
-
         System.out.println(result);
-
     }
 
     private static void findMinimumDistance(int targetNum) {
         int targetNumIndex = deque.indexOf(targetNum);
-        int rolateLeft = targetNumIndex;
-        int roateRight = deque.size() - targetNumIndex;
+        int rotateCountToLeft = targetNumIndex;
+        int totateCountToRight = deque.size() - targetNumIndex;
 
-        if (rolateLeft <= roateRight) {
-            while (rolateLeft > 0) {
+        if (rotateCountToLeft <= totateCountToRight) {
+            while (rotateCountToLeft > 0) {
                 Integer front = deque.remove(0);
                 deque.add(front);
-                rolateLeft--;
+                rotateCountToLeft--;
                 result++;
             }
             deque.remove(0);
             return;
         }
-        while (roateRight > 0) {
+        
+        while (totateCountToRight > 0) {
             Integer back = deque.remove(deque.size() - 1);
             deque.add(0, back);
-            roateRight--;
+            totateCountToRight--;
             result++;
         }
         deque.remove(0);
