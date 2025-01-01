@@ -1,5 +1,6 @@
 import java.util.*;
-
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
@@ -7,24 +8,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        double division = (double) a / b;
-        double factor = Math.pow(10, 21);
-        double floored = Math.floor(division * factor) / factor;
+        BigDecimal dividend = new BigDecimal(a);
+        BigDecimal divisor = new BigDecimal(b);
+     BigDecimal result = dividend.divide(divisor, 20, RoundingMode.DOWN);
         
-        String result = Double.toString(floored);
-        
-        int dotIndex = result.indexOf(".");
-        if (dotIndex == -1) {
-            result += ".";
-            dotIndex = result.indexOf(".");
-        }
-        
-        int decimalPlaces = result.length() - dotIndex - 1;
-        while (decimalPlaces < 20) {
-            result += "0"; 
-            decimalPlaces++;
-        }
-        System.out.println(result);
+System.out.println(result.toPlainString());
 
 
 
