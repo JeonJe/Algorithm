@@ -9,7 +9,7 @@ public class Main {
         int b = Integer.parseInt(inputs[1]);
 
         StringBuilder sb = new StringBuilder();
-        for(int i = 1; i < b+1; i+=2) {
+        for(int i = a; i < b+1; i+=2) {
             sb.append(i + " ");
         }
         System.out.print(sb.toString());
