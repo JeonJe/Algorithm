@@ -4,11 +4,15 @@ public class Main {
         int a = 5;
         int b = 6;
         int c = 7;
+        
+        int temp = b;
         b = a;
-        c = b;
         a = c;
-        System.out.println("a");
-              System.out.println("b");
-                    System.out.println("c");
+        c = temp;
+     
+
+        System.out.println(a);
+              System.out.println(b);
+                    System.out.println(c);
     }
 }
