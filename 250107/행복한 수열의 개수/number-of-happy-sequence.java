@@ -13,7 +13,7 @@ public class Main {
                 board[i][j] = sc.nextInt();
             }
         }
-        int result = 0;
+        int result = 1;
 
         for(int i = 0; i < n; i++) {
             int prev = board[i][0];
