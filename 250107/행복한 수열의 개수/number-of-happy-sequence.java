@@ -13,8 +13,12 @@ public class Main {
                 board[i][j] = sc.nextInt();
             }
         }
-        int result = 1;
-
+    
+        int result = 0;
+        if(n == 1 && m == 1) {
+            System.out.println(2);
+            return;
+        }
         for(int i = 0; i < n; i++) {
             int prev = board[i][0];
             int continueCount = 1;
