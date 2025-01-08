@@ -23,7 +23,7 @@ public class Main {
         int gainGoldCount = 0;
         for (int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
-                for(int k = 0; k < n; k++) {
+                for(int k = 0; k <= n; k++) {
                     gainGoldCount = Math.max(gainGoldCount, mining(i, j, k));
                 }
             }
@@ -36,16 +36,12 @@ public class Main {
         int cellCount = 0;
         int goldCount = 0;
 
-        for(int dx = -k; dx <= k; dx++) {
-            int dy = k - Math.abs(dx);
-            if(isValid(x + dx,y + dy)) {
-                if(board[x + dx][y + dy] == 1) {
-                    goldCount++;
-                }
-            }
-            if(dy != 0 && isValid(x + dx, y - dy)) {
-                if(board[x + dx][y - dy] == 1) {
-                    goldCount++;
+        for (int dx = -k; dx <= k; dx++) {
+            for (int dy = -(k - Math.abs(dx)); dy <= (k - Math.abs(dx)); dy++) {
+                if (isValid(x + dx, y + dy)) {
+                    if (board[x + dx][y + dy] == 1) {
+                        goldCount++;
+                    }
                 }
             }
         }
