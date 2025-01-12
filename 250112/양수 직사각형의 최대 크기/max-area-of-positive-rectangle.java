@@ -27,7 +27,11 @@ class Main {
                 }
             }
         }
-        System.out.println(maxCellCount);
+        if(maxCellCount == 0) {
+            System.out.println(-1);
+        } else {
+            System.out.println(maxCellCount);
+        }
     }
 
     private static void calculate(int x, int y) {
