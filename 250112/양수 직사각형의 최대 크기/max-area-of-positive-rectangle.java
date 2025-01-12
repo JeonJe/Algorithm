@@ -40,6 +40,8 @@ class Main {
             for (int j = y; j < m; j++) {
                 if (isAllPositive(x, i, y, j)) {
                     maxCellCount = Math.max(maxCellCount, (i - x + 1) * (j - y + 1));
+                } else {
+                    break;
                 }
             }
         }
@@ -48,6 +50,8 @@ class Main {
             for (int i = x; i < n; i++) {
                 if (isAllPositive(x, i, y, j)) {
                     maxCellCount = Math.max(maxCellCount, (i - x + 1) * (j - y + 1));
+                } else {
+                    break;
                 }
             }
         }
