@@ -6,7 +6,7 @@ public class Main {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = sc.nextInt();
-    blocks = new int[n];
+    blocks = new int[n+1];
 
     int k = sc.nextInt();
 
