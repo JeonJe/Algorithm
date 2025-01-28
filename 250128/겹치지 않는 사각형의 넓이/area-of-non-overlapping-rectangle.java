@@ -38,10 +38,10 @@ public class Main {
   }
 
   private static Squre inputFrom(Scanner sc) {
-    int leftBottomX = sc.nextInt();
-    int leftBottomY = sc.nextInt();
-    int rightTopX = sc.nextInt();
-    int rightTopY = sc.nextInt();
+    int leftBottomX = sc.nextInt() + 1000;
+    int leftBottomY = sc.nextInt() + 1000;
+    int rightTopX = sc.nextInt() + 1000;
+    int rightTopY = sc.nextInt() + 1000;
     return new Squre(leftBottomX, leftBottomY, rightTopX, rightTopY);
   }
 
