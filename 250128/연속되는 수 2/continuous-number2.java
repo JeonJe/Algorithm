@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -11,8 +12,8 @@ public class Main {
     for (int i = 0; i < n; i++) {
       num[i] = sc.nextInt();
     }
-    int maxCount = 0;
-    int count = 0;
+    int maxCount = 1;
+    int count = 1;
     for (int i = 0; i < n; i++) {
       if (i == 0 || num[i - 1] != num[i]) {
         count = 1;
@@ -28,3 +29,5 @@ public class Main {
   }
 
 }
+
+
