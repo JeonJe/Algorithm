@@ -24,7 +24,7 @@ public class Main {
       }
       currentTime += time;
     }
-
+    int maxTime = currentTime;
     currentTime = 1;
     for (int i = 0; i < moveBCount; i++) {
       String direction = sc.next();
@@ -39,12 +39,17 @@ public class Main {
       currentTime += time;
     }
 
-    for (int i = 1; i < MAX_TIME; i++) {
+    print(maxTime);
+  }
+
+  private static void print(int maxTime) {
+    for (int i = 1; i < maxTime; i++) {
       if (timeLineA[i] == timeLineB[i]) {
         System.out.println(i);
         return;
       }
     }
+    System.out.println(-1);
   }
 }
 
