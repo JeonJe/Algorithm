@@ -1,8 +1,9 @@
+
 import java.util.Scanner;
 
 public class Main {
 
-  private static int MAX_TIME = 1000;
+  private static int MAX_TIME = 1_000_000;
   static int[] timeLineA = new int[MAX_TIME];
   static int[] timeLineB = new int[MAX_TIME];
 
