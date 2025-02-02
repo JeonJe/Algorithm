@@ -1,31 +1,32 @@
-
 import java.util.*;
 
 public class Main {
 
-  static int MAX_BOARD_SIZE = 2000;
+  static int MAX_BOARD_SIZE = 100_000;
   public static int[] arr = new int[MAX_BOARD_SIZE];
 
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int numOfCommand = sc.nextInt();
 
-    int curPosition = 1;
+    int curPosition = 5_000;
     for (int i = 0; i < numOfCommand; i++) {
       int numOfFlip = sc.nextInt();
       String dir = sc.next();
       if (dir.equals("R")) {
-        for (int j = curPosition; j < curPosition + numOfFlip; j++) {
+        int boundOfRight = Math.min(curPosition + numOfFlip, MAX_BOARD_SIZE);
+        for (int j = curPosition; j < boundOfRight; j++) {
           arr[j] = 1;
         }
-        curPosition = curPosition + numOfFlip - 1;
+        curPosition = boundOfRight - 1;
       }
 
       if (dir.equals("L")) {
-        for (int j = curPosition; j > curPosition - numOfFlip; j--) {
+        int boundOfLeft = Math.max(curPosition - numOfFlip, 1);
+        for (int j = curPosition; j > boundOfLeft; j--) {
           arr[j] = -1;
         }
-        curPosition = curPosition - numOfFlip + 1;
+        curPosition = boundOfLeft + 1;
       }
     }
 
