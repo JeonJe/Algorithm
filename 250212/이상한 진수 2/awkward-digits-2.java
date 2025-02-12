@@ -27,10 +27,10 @@ public class Main {
   }
 
   private static void toDecimal(char[] charArray) {
-    int sum = 0;
-    for(int i = 0; i < charArray.length; i++) {
-      sum += (int) ((charArray[i] - '0') * Math.pow(2, charArray.length - 1 - i));
+    int num = 0;
+    for (char c : charArray) {
+      num = (num * 2) + Character.getNumericValue(c);
     }
-    maxValue = Math.max(maxValue, sum);
+    maxValue = Math.max(maxValue, num);
   }
 }
