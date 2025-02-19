@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class Main {
@@ -27,6 +28,7 @@ public class Main {
         }
       }
     }
+    minDiff = minDiff == Integer.MAX_VALUE ? -1 : minDiff;
     System.out.print(minDiff);
   }
 
