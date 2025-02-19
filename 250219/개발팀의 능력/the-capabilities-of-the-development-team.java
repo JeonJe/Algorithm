@@ -14,9 +14,12 @@ public class Main {
     }
     int minDiff = Integer.MAX_VALUE;
     for (int i = 0; i < 5; i++) {
-      for (int j = i + 1; j < 5; j++) {
-        for (int a = j + 1; a < 5; a++) {
-          for (int b = a + 1; b < 5; b++) {
+      for (int j = 0; j < 5; j++) {
+        for (int a = 0; a < 5; a++) {
+          for (int b = 0; b < 5; b++) {
+            if(i == j || i == a || i == b || j == a || j == b || a == b) {
+              continue;
+            }
             int teamA = arr[i] + arr[j];
             int teamB = arr[a] + arr[b];
             int teamC = total - teamA - teamB;
