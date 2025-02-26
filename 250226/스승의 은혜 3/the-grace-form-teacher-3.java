@@ -16,38 +16,37 @@ public class Main {
 
     priceAndShipment = new int[n][2];
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
       int price = sc.nextInt();
       int shipment = sc.nextInt();
       priceAndShipment[i][0] = price;
       priceAndShipment[i][1] = shipment;
     }
 
-    for(int i = 0; i < n; i++) {
-      applyDiscount(i);
+    Arrays.sort(priceAndShipment,
+        Comparator.comparing(arr -> arr[0] + arr[1])
+    );
+
+    for (int i = 0; i < n; i++) {
+      int disCountPrice = priceAndShipment[i][0] / 2;
+      priceAndShipment[i][0] = disCountPrice;
+      int count = getCountPerson(priceAndShipment, budget);
+      numerOfPerson = Math.max(numerOfPerson, count);
+      priceAndShipment[i][0] = priceAndShipment[i][0] * 2;
     }
 
     System.out.println(numerOfPerson);
 
   }
-
-  private static void applyDiscount(int target) {
-    int[][] temp = priceAndShipment.clone();
-    int tempBudget = budget;
-
-    temp[target][0] = temp[target][0] / 2;
-
-    Arrays.sort(temp, Comparator.comparing((int[] arr) -> arr[0])
-        .thenComparing((int[] arr) -> arr[1]));
-
+  private static int getCountPerson(int[][] temp, int budget) {
     int countPerson = 0;
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
       int totalPrice = temp[i][0] + temp[i][1];
-      if(tempBudget - totalPrice >= 0) {
-        tempBudget -= totalPrice;
+      if (budget - totalPrice >= 0) {
+        budget -= totalPrice;
         countPerson++;
       }
     }
-    numerOfPerson = Math.max(numerOfPerson, countPerson);
+    return countPerson;
   }
 }
