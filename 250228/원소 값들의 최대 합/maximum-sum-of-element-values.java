@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
 
@@ -13,7 +14,7 @@ public class Main {
     // Please write your code here.
 
     int maxSum = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 1; i <= n; i++) {
       int sum = 0;
       int curIndex = i;
       for (int count = 0; count < m; count++) {
