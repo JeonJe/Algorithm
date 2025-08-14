@@ -36,14 +36,14 @@ def is_excluded(rel: str) -> bool:
 def is_included(rel: str) -> bool:
     return pathlib.Path(rel).suffix in INCLUDE_EXTS and not is_excluded(rel)
 
-def recent_changed_files(limit: int) -> List[Tuple[str,str]]:
+def recent_changed_files(limit: int) -> List[Tuple[str, str]]:
     """
     returns list of (date, relative_path) by most recent commit that touched each file.
     """
-    # --name-only 으로 전체 파일 히스토리를 시간 역순으로 쭉 받고, 한 파일당 가장 최신 등장만 채택
+    # 전체 히스토리에서 파일 변경을 시간 역순으로 훑고, 파일당 가장 최신 등장만 채택
     log = sh("git", "log", "--name-only", "--pretty=format:%H|%cd", "--date=short", "--", ".")
     seen = set()
-    items: List[Tuple[str,str]] = []
+    items: List[Tuple[str, str]] = []
     for block in log.split("\n\n"):
         lines = [ln for ln in block.splitlines() if ln.strip()]
         if not lines or "|" not in lines[0]:
@@ -89,7 +89,7 @@ def platform_guess(rel: str) -> str:
     parts = pathlib.Path(rel).parts
     return parts[0] if parts else ""
 
-def build_table(rows: List[Tuple[str,str]]) -> str:
+def build_table(rows: List[Tuple[str, str]]) -> str:
     if not rows:
         return "_최근 변경된 풀이 파일을 찾지 못했습니다._"
     lines = [
@@ -97,11 +97,13 @@ def build_table(rows: List[Tuple[str,str]]) -> str:
         "|---|---|---|---|",
     ]
     for date, rel in rows:
-        title = read_problem_title(ROOT / rel)
+        # 제목에 | 가 있으면 표가 깨지므로 이스케이프
+        title = read_problem_title(ROOT / rel).replace("|", r"\|")
         plat = platform_guess(rel)
         url = f"./{rel}"
+        safe_url = f"<{url}>"  # 공백/특수문자 포함 경로 안전 처리
         display_loc = plat if plat else "-"
-        lines.append(f"| {date} | **{title}** | {display_loc} | [코드]({url}) |")
+        lines.append(f"| {date} | **{title}** | {display_loc} | [코드]({safe_url}) |")
     return "\n".join(lines)
 
 def replace_between(text: str, start_tag: str, end_tag: str, replacement: str) -> str:
