@@ -1,90 +1,119 @@
 #!/usr/bin/env python3
-import subprocess, re, pathlib, itertools
+import os, subprocess, re, pathlib
+from typing import List, Tuple
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
-TARGET_DIRS = ["LeetCode", "Programmers", "Baekjoon"]
-EXTS = {".java", ".py", ".kt", ".js", ".ts", ".cpp", ".c"}
-LIMIT = 10
+LIMIT = int(os.environ.get("LIMIT", "20"))
 
-def sh(*args):
+# 제외할 경로/파일 패턴
+EXCLUDE_DIRS = {".git", ".github", "scripts", "docs", "node_modules", "build", "out", "dist", "__pycache__"}
+EXCLUDE_FILES = {"README.md", "README.MD", "readme.md"}
+EXCLUDE_EXTS = {".md", ".yml", ".yaml", ".json", ".lock", ".txt"}
+# 허용 언어 확장자
+INCLUDE_EXTS = {".java", ".kt", ".py", ".js", ".ts", ".cpp", ".c", ".go", ".rs"}
+
+START_TAG = "<!-- RECENT_SOLUTIONS:START -->"
+END_TAG   = "<!-- RECENT_SOLUTIONS:END -->"
+
+def sh(*args: str) -> str:
     return subprocess.check_output(args, cwd=ROOT).decode("utf-8", "ignore")
 
-def recent_changed_files(limit=LIMIT):
-    log = sh("git", "log", "--name-only", "--pretty=format:%H|%cd", "--date=short", "--", *TARGET_DIRS)
+def is_excluded(rel: str) -> bool:
+    p = pathlib.Path(rel)
+    # 디렉토리 제외
+    for part in p.parts:
+        if part in EXCLUDE_DIRS:
+            return True
+    # 파일명 제외
+    if p.name in EXCLUDE_FILES:
+        return True
+    # 확장자 제외
+    if p.suffix in EXCLUDE_EXTS:
+        return True
+    return False
+
+def is_included(rel: str) -> bool:
+    return pathlib.Path(rel).suffix in INCLUDE_EXTS and not is_excluded(rel)
+
+def recent_changed_files(limit: int) -> List[Tuple[str,str]]:
+    """
+    returns list of (date, relative_path) by most recent commit that touched each file.
+    """
+    # --name-only 으로 전체 파일 히스토리를 시간 역순으로 쭉 받고, 한 파일당 가장 최신 등장만 채택
+    log = sh("git", "log", "--name-only", "--pretty=format:%H|%cd", "--date=short", "--", ".")
     seen = set()
-    items = []
+    items: List[Tuple[str,str]] = []
     for block in log.split("\n\n"):
-        if "|" not in block: 
+        lines = [ln for ln in block.splitlines() if ln.strip()]
+        if not lines or "|" not in lines[0]:
             continue
-        header, *files = block.splitlines()
+        header = lines[0]
         _, date = header.split("|", 1)
-        for f in files:
-            if not f or f.startswith(" "): 
+        for f in lines[1:]:
+            rel = f.strip()
+            if not rel or rel.endswith("/"):
                 continue
-            p = (ROOT / f)
-            if not p.exists(): 
+            if rel in seen:
                 continue
-            if p.suffix not in EXTS: 
+            if not is_included(rel):
                 continue
-            # 최상위 폴더로 플랫폼 판별
-            parts = pathlib.Path(f).parts
-            if not parts: 
-                continue
-            top = parts[0]
-            if top not in TARGET_DIRS: 
-                continue
-            rel = "/".join(parts)
-            if rel in seen: 
+            # 실제 파일 존재하는 최신 스냅샷만
+            if not (ROOT / rel).exists():
                 continue
             seen.add(rel)
-            items.append((date, rel, top))
+            items.append((date, rel))
             if len(items) >= limit:
                 return items
     return items
 
-def read_title(path: pathlib.Path):
+def read_problem_title(path: pathlib.Path) -> str:
+    """
+    파일 첫 5줄에서 'Problem:' 또는 '문제:' 주석 패턴을 찾으면 제목 사용, 없으면 파일명.
+    """
     try:
         with open(path, "r", encoding="utf-8", errors="ignore") as fp:
             for _ in range(5):
                 line = fp.readline()
-                if not line: break
+                if not line:
+                    break
                 m = re.search(r"(?:Problem|문제)\s*:\s*(.+)", line, re.I)
                 if m:
                     return m.group(1).strip()
     except Exception:
         pass
-    # 없으면 파일명에서 추정
-    name = path.stem
-    return name
+    return path.stem
 
-def platform_of(top_folder: str):
-    return {"LeetCode":"LeetCode", "Programmers":"Programmers", "Baekjoon":"Baekjoon"}.get(top_folder, top_folder)
+def platform_guess(rel: str) -> str:
+    # 상위 폴더명으로 대략 추정(없으면 빈칸)
+    parts = pathlib.Path(rel).parts
+    return parts[0] if parts else ""
 
-def build_table(rows):
+def build_table(rows: List[Tuple[str,str]]) -> str:
     if not rows:
-        return "_최근 변경된 풀이가 없어요._"
-    lines = ["| 날짜 | 문제 | 플랫폼 | 링크 |",
-             "|---|---|---|---|"]
-    for date, rel, top in rows:
-        title = read_title(ROOT / rel)
-        plat = platform_of(top)
+        return "_최근 변경된 풀이 파일을 찾지 못했습니다._"
+    lines = [
+        "| 날짜 | 문제 | 위치 | 링크 |",
+        "|---|---|---|---|",
+    ]
+    for date, rel in rows:
+        title = read_problem_title(ROOT / rel)
+        plat = platform_guess(rel)
         url = f"./{rel}"
-        lines.append(f"| {date} | **{title}** | {plat} | [코드]({url}) |")
+        display_loc = plat if plat else "-"
+        lines.append(f"| {date} | **{title}** | {display_loc} | [코드]({url}) |")
     return "\n".join(lines)
 
-def replace_between(text, start_tag, end_tag, replacement):
+def replace_between(text: str, start_tag: str, end_tag: str, replacement: str) -> str:
     import re
     pattern = re.compile(f"{re.escape(start_tag)}.*?{re.escape(end_tag)}", re.S)
     return pattern.sub(f"{start_tag}\n{replacement}\n{end_tag}", text)
 
 def main():
-    rows = recent_changed_files()
+    rows = recent_changed_files(LIMIT)
     md = build_table(rows)
-    start_tag = "<!-- RECENT_SOLUTIONS:START -->"
-    end_tag = "<!-- RECENT_SOLUTIONS:END -->"
     readme = README.read_text(encoding="utf-8")
-    updated = replace_between(readme, start_tag, end_tag, md)
+    updated = replace_between(readme, START_TAG, END_TAG, md)
     if updated != readme:
         README.write_text(updated, encoding="utf-8")
         print("README updated.")
