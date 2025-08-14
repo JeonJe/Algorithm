@@ -27,7 +27,7 @@ jobs:
 
       - name: Run updater
         run: |
-          python3 scripts/update_recent.py
+          python3 scripts/update-recent.py
 
       - name: Commit & Push if changed
         run: |
