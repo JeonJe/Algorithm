@@ -1,29 +1,42 @@
 name: Update Recent Solutions
+
 on:
   push:
     branches: [ main ]
   schedule:
-    - cron: "0 0 * * *"   # 매일 00:00 UTC (KST 09:00)
+    - cron: "0 0 * * *"  # 매일 00:00 UTC (KST 09:00)
+  workflow_dispatch:
+
 jobs:
   update:
     runs-on: ubuntu-latest
-    permissions: { contents: write }
+    permissions:
+      contents: write
+
+    env:
+      LIMIT: "20"   # 최근 항목 개수 (원하면 15, 20 등으로 변경)
+
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
+        with:
+          fetch-depth: 0   # 전체 히스토리 필요
+
       - uses: actions/setup-python@v5
-        with: { python-version: "3.x" }
-      - name: Update README recent list
+        with:
+          python-version: "3.x"
+
+      - name: Run updater
         run: |
           python3 scripts/update_recent.py
+
       - name: Commit & Push if changed
         run: |
           if git diff --quiet README.md; then
-            echo "No changes."
+            echo "No README changes."
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore(readme): update recent solutions"
+            git commit -m "chore(readme): auto-update recent solutions"
             git push
           fi
