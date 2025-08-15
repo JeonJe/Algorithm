@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-08-15 | **0342-power-of-four** | LeetCode | [코드](<./LeetCode/Easy/0342-power-of-four/0342-power-of-four.java>) |
 | 2025-08-14 | **2264-largest-3-same-digit-number-in-string** | 2264-largest-3-same-digit-number-in-string | [코드](<./2264-largest-3-same-digit-number-in-string/2264-largest-3-same-digit-number-in-string.java>) |
 | 2025-08-14 | **0200-number-of-islands** | 0200-number-of-islands | [코드](<./0200-number-of-islands/0200-number-of-islands.java>) |
 | 2025-02-13 | **G-or-H-3** | 250213 | [코드](<./250213/G or H 3/G-or-H-3.java>) |
@@ -25,5 +26,4 @@
 | 2024-03-17 | **0153-find-minimum-in-rotated-sorted-array** | 0153-find-minimum-in-rotated-sorted-array | [코드](<./0153-find-minimum-in-rotated-sorted-array/0153-find-minimum-in-rotated-sorted-array.java>) |
 | 2024-03-14 | **0875-koko-eating-bananas** | 0875-koko-eating-bananas | [코드](<./0875-koko-eating-bananas/0875-koko-eating-bananas.java>) |
 | 2024-03-09 | **0617-merge-two-binary-trees** | 0617-merge-two-binary-trees | [코드](<./0617-merge-two-binary-trees/0617-merge-two-binary-trees.java>) |
-| 2024-03-05 | **0056-merge-intervals** | 0056-merge-intervals | [코드](<./0056-merge-intervals/0056-merge-intervals.java>) |
 <!-- RECENT_SOLUTIONS:END -->
