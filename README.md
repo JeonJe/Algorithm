@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-08-17 | **0837-new-21-game** | LeetCode | [코드](<./LeetCode/Medium/0837-new-21-game/0837-new-21-game.java>) |
 | 2025-08-15 | **0342-power-of-four** | LeetCode | [코드](<./LeetCode/Easy/0342-power-of-four/0342-power-of-four.java>) |
 | 2025-08-14 | **2264-largest-3-same-digit-number-in-string** | 2264-largest-3-same-digit-number-in-string | [코드](<./2264-largest-3-same-digit-number-in-string/2264-largest-3-same-digit-number-in-string.java>) |
 | 2025-08-14 | **0200-number-of-islands** | 0200-number-of-islands | [코드](<./0200-number-of-islands/0200-number-of-islands.java>) |
@@ -25,5 +26,4 @@
 | 2024-03-22 | **0167-two-sum-ii-input-array-is-sorted** | 0167-two-sum-ii-input-array-is-sorted | [코드](<./0167-two-sum-ii-input-array-is-sorted/0167-two-sum-ii-input-array-is-sorted.java>) |
 | 2024-03-17 | **0153-find-minimum-in-rotated-sorted-array** | 0153-find-minimum-in-rotated-sorted-array | [코드](<./0153-find-minimum-in-rotated-sorted-array/0153-find-minimum-in-rotated-sorted-array.java>) |
 | 2024-03-14 | **0875-koko-eating-bananas** | 0875-koko-eating-bananas | [코드](<./0875-koko-eating-bananas/0875-koko-eating-bananas.java>) |
-| 2024-03-09 | **0617-merge-two-binary-trees** | 0617-merge-two-binary-trees | [코드](<./0617-merge-two-binary-trees/0617-merge-two-binary-trees.java>) |
 <!-- RECENT_SOLUTIONS:END -->
