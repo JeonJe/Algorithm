@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-08-22 | **1277-count-square-submatrices-with-all-ones** | LeetCode | [코드](<./LeetCode/Medium/1277-count-square-submatrices-with-all-ones/1277-count-square-submatrices-with-all-ones.java>) |
 | 2025-08-17 | **0837-new-21-game** | LeetCode | [코드](<./LeetCode/Medium/0837-new-21-game/0837-new-21-game.java>) |
 | 2025-08-15 | **0342-power-of-four** | LeetCode | [코드](<./LeetCode/Easy/0342-power-of-four/0342-power-of-four.java>) |
 | 2025-08-14 | **2264-largest-3-same-digit-number-in-string** | 2264-largest-3-same-digit-number-in-string | [코드](<./2264-largest-3-same-digit-number-in-string/2264-largest-3-same-digit-number-in-string.java>) |
@@ -25,5 +26,4 @@
 | 2024-03-25 | **0003-longest-substring-without-repeating-characters** | 0003-longest-substring-without-repeating-characters | [코드](<./0003-longest-substring-without-repeating-characters/0003-longest-substring-without-repeating-characters.java>) |
 | 2024-03-22 | **0167-two-sum-ii-input-array-is-sorted** | 0167-two-sum-ii-input-array-is-sorted | [코드](<./0167-two-sum-ii-input-array-is-sorted/0167-two-sum-ii-input-array-is-sorted.java>) |
 | 2024-03-17 | **0153-find-minimum-in-rotated-sorted-array** | 0153-find-minimum-in-rotated-sorted-array | [코드](<./0153-find-minimum-in-rotated-sorted-array/0153-find-minimum-in-rotated-sorted-array.java>) |
-| 2024-03-14 | **0875-koko-eating-bananas** | 0875-koko-eating-bananas | [코드](<./0875-koko-eating-bananas/0875-koko-eating-bananas.java>) |
 <!-- RECENT_SOLUTIONS:END -->
