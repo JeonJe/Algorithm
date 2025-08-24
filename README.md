@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-08-24 | **1493-longest-subarray-of-1s-after-deleting-one-element** | LeetCode | [코드](<./LeetCode/Medium/1493-longest-subarray-of-1s-after-deleting-one-element/1493-longest-subarray-of-1s-after-deleting-one-element.java>) |
 | 2025-08-22 | **2348-number-of-zero-filled-subarrays** | LeetCode | [코드](<./LeetCode/Medium/2348-number-of-zero-filled-subarrays/2348-number-of-zero-filled-subarrays.java>) |
 | 2025-08-22 | **1277-count-square-submatrices-with-all-ones** | LeetCode | [코드](<./LeetCode/Medium/1277-count-square-submatrices-with-all-ones/1277-count-square-submatrices-with-all-ones.java>) |
 | 2025-08-17 | **0837-new-21-game** | LeetCode | [코드](<./LeetCode/Medium/0837-new-21-game/0837-new-21-game.java>) |
@@ -25,5 +26,4 @@
 | 2024-04-13 | **0019-remove-nth-node-from-end-of-list** | 0019-remove-nth-node-from-end-of-list | [코드](<./0019-remove-nth-node-from-end-of-list/0019-remove-nth-node-from-end-of-list.java>) |
 | 2024-03-30 | **0011-container-with-most-water** | 0011-container-with-most-water | [코드](<./0011-container-with-most-water/0011-container-with-most-water.java>) |
 | 2024-03-25 | **0003-longest-substring-without-repeating-characters** | 0003-longest-substring-without-repeating-characters | [코드](<./0003-longest-substring-without-repeating-characters/0003-longest-substring-without-repeating-characters.java>) |
-| 2024-03-22 | **0167-two-sum-ii-input-array-is-sorted** | 0167-two-sum-ii-input-array-is-sorted | [코드](<./0167-two-sum-ii-input-array-is-sorted/0167-two-sum-ii-input-array-is-sorted.java>) |
 <!-- RECENT_SOLUTIONS:END -->
