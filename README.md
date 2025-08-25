@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-08-25 | **0498-diagonal-traverse** | LeetCode | [코드](<./LeetCode/Medium/0498-diagonal-traverse/0498-diagonal-traverse.java>) |
 | 2025-08-24 | **0706-design-hashmap** | LeetCode | [코드](<./LeetCode/Easy/0706-design-hashmap/0706-design-hashmap.java>) |
 | 2025-08-24 | **0707-design-linked-list** | LeetCode | [코드](<./LeetCode/Medium/0707-design-linked-list/0707-design-linked-list.java>) |
 | 2025-08-24 | **0705-design-hashset** | LeetCode | [코드](<./LeetCode/Easy/0705-design-hashset/0705-design-hashset.java>) |
@@ -25,5 +26,4 @@
 | 2024-05-02 | **0039-combination-sum** | 0039-combination-sum | [코드](<./0039-combination-sum/0039-combination-sum.java>) |
 | 2024-04-22 | **0033-search-in-rotated-sorted-array** | 0033-search-in-rotated-sorted-array | [코드](<./0033-search-in-rotated-sorted-array/0033-search-in-rotated-sorted-array.java>) |
 | 2024-04-15 | **0021-merge-two-sorted-lists** | 0021-merge-two-sorted-lists | [코드](<./0021-merge-two-sorted-lists/0021-merge-two-sorted-lists.java>) |
-| 2024-04-14 | **0020-valid-parentheses** | 0020-valid-parentheses | [코드](<./0020-valid-parentheses/0020-valid-parentheses.java>) |
 <!-- RECENT_SOLUTIONS:END -->
