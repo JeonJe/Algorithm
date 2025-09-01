@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-09-01 | **1792-maximum-average-pass-ratio** | 1792-maximum-average-pass-ratio | [코드](<./1792-maximum-average-pass-ratio/1792-maximum-average-pass-ratio.java>) |
 | 2025-08-28 | **3446-sort-matrix-by-diagonals** | LeetCode | [코드](<./LeetCode/Medium/3446-sort-matrix-by-diagonals/3446-sort-matrix-by-diagonals.java>) |
 | 2025-08-25 | **0498-diagonal-traverse** | LeetCode | [코드](<./LeetCode/Medium/0498-diagonal-traverse/0498-diagonal-traverse.java>) |
 | 2025-08-24 | **0706-design-hashmap** | LeetCode | [코드](<./LeetCode/Easy/0706-design-hashmap/0706-design-hashmap.java>) |
@@ -25,5 +26,4 @@
 | 2025-01-26 | **007** | 250126 | [코드](<./250126/007/007.java>) |
 | 2024-05-08 | **0268-missing-number** | 0268-missing-number | [코드](<./0268-missing-number/0268-missing-number.java>) |
 | 2024-05-02 | **0039-combination-sum** | 0039-combination-sum | [코드](<./0039-combination-sum/0039-combination-sum.java>) |
-| 2024-04-22 | **0033-search-in-rotated-sorted-array** | 0033-search-in-rotated-sorted-array | [코드](<./0033-search-in-rotated-sorted-array/0033-search-in-rotated-sorted-array.java>) |
 <!-- RECENT_SOLUTIONS:END -->
