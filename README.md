@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-09-08 | **1304-find-n-unique-integers-sum-up-to-zero** | LeetCode | [코드](<./LeetCode/Easy/1304-find-n-unique-integers-sum-up-to-zero/1304-find-n-unique-integers-sum-up-to-zero.java>) |
 | 2025-09-08 | **3516-find-closest-person** | LeetCode | [코드](<./LeetCode/Easy/3516-find-closest-person/3516-find-closest-person.java>) |
 | 2025-09-03 | **3025-find-the-number-of-ways-to-place-people-i** | 3025-find-the-number-of-ways-to-place-people-i | [코드](<./3025-find-the-number-of-ways-to-place-people-i/3025-find-the-number-of-ways-to-place-people-i.java>) |
 | 2025-09-01 | **1792-maximum-average-pass-ratio** | 1792-maximum-average-pass-ratio | [코드](<./1792-maximum-average-pass-ratio/1792-maximum-average-pass-ratio.java>) |
@@ -25,5 +26,4 @@
 | 2025-01-27 | **date-to-date** | 250127 | [코드](<./250127/Date to Date/date-to-date.java>) |
 | 2025-01-27 | **time-to-time** | 250127 | [코드](<./250127/Time to Time/time-to-time.java>) |
 | 2025-01-26 | **next-level** | 250126 | [코드](<./250126/Next Level/next-level.java>) |
-| 2025-01-26 | **007** | 250126 | [코드](<./250126/007/007.java>) |
 <!-- RECENT_SOLUTIONS:END -->
