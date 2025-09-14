@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-09-14 | **1733-minimum-number-of-people-to-teach** | LeetCode | [코드](<./LeetCode/Medium/1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 | 2025-09-11 | **1733-minimum-number-of-people-to-teach** | 1733-minimum-number-of-people-to-teach | [코드](<./1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 | 2025-09-08 | **1304-find-n-unique-integers-sum-up-to-zero** | LeetCode | [코드](<./LeetCode/Easy/1304-find-n-unique-integers-sum-up-to-zero/1304-find-n-unique-integers-sum-up-to-zero.java>) |
 | 2025-09-08 | **3516-find-closest-person** | LeetCode | [코드](<./LeetCode/Easy/3516-find-closest-person/3516-find-closest-person.java>) |
@@ -25,5 +26,4 @@
 | 2025-08-14 | **0200-number-of-islands** | 0200-number-of-islands | [코드](<./0200-number-of-islands/0200-number-of-islands.java>) |
 | 2025-02-13 | **G-or-H-3** | 250213 | [코드](<./250213/G or H 3/G-or-H-3.java>) |
 | 2025-01-27 | **date-to-date** | 250127 | [코드](<./250127/Date to Date/date-to-date.java>) |
-| 2025-01-27 | **time-to-time** | 250127 | [코드](<./250127/Time to Time/time-to-time.java>) |
 <!-- RECENT_SOLUTIONS:END -->
