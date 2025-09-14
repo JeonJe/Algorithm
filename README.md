@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-09-14 | **2785-sort-vowels-in-a-string** | LeetCode | [코드](<./LeetCode/Medium/2785-sort-vowels-in-a-string/2785-sort-vowels-in-a-string.java>) |
 | 2025-09-14 | **1733-minimum-number-of-people-to-teach** | LeetCode | [코드](<./LeetCode/Medium/1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 | 2025-09-11 | **1733-minimum-number-of-people-to-teach** | 1733-minimum-number-of-people-to-teach | [코드](<./1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 | 2025-09-08 | **1304-find-n-unique-integers-sum-up-to-zero** | LeetCode | [코드](<./LeetCode/Easy/1304-find-n-unique-integers-sum-up-to-zero/1304-find-n-unique-integers-sum-up-to-zero.java>) |
@@ -25,5 +26,4 @@
 | 2025-08-14 | **2264-largest-3-same-digit-number-in-string** | 2264-largest-3-same-digit-number-in-string | [코드](<./2264-largest-3-same-digit-number-in-string/2264-largest-3-same-digit-number-in-string.java>) |
 | 2025-08-14 | **0200-number-of-islands** | 0200-number-of-islands | [코드](<./0200-number-of-islands/0200-number-of-islands.java>) |
 | 2025-02-13 | **G-or-H-3** | 250213 | [코드](<./250213/G or H 3/G-or-H-3.java>) |
-| 2025-01-27 | **date-to-date** | 250127 | [코드](<./250127/Date to Date/date-to-date.java>) |
 <!-- RECENT_SOLUTIONS:END -->
