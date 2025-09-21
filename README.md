@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-09-21 | **0118-pascals-triangle** | 0118-pascals-triangle | [코드](<./0118-pascals-triangle/0118-pascals-triangle.java>) |
 | 2025-09-17 | **1935-maximum-number-of-words-you-can-type** | LeetCode | [코드](<./LeetCode/Easy/1935-maximum-number-of-words-you-can-type/1935-maximum-number-of-words-you-can-type.java>) |
 | 2025-09-14 | **3541-find-most-frequent-vowel-and-consonant** | LeetCode | [코드](<./LeetCode/Easy/3541-find-most-frequent-vowel-and-consonant/3541-find-most-frequent-vowel-and-consonant.java>) |
 | 2025-09-14 | **2785-sort-vowels-in-a-string** | LeetCode | [코드](<./LeetCode/Medium/2785-sort-vowels-in-a-string/2785-sort-vowels-in-a-string.java>) |
@@ -25,5 +26,4 @@
 | 2025-08-22 | **1277-count-square-submatrices-with-all-ones** | LeetCode | [코드](<./LeetCode/Medium/1277-count-square-submatrices-with-all-ones/1277-count-square-submatrices-with-all-ones.java>) |
 | 2025-08-17 | **0837-new-21-game** | LeetCode | [코드](<./LeetCode/Medium/0837-new-21-game/0837-new-21-game.java>) |
 | 2025-08-15 | **0342-power-of-four** | LeetCode | [코드](<./LeetCode/Easy/0342-power-of-four/0342-power-of-four.java>) |
-| 2025-08-14 | **2264-largest-3-same-digit-number-in-string** | 2264-largest-3-same-digit-number-in-string | [코드](<./2264-largest-3-same-digit-number-in-string/2264-largest-3-same-digit-number-in-string.java>) |
 <!-- RECENT_SOLUTIONS:END -->
