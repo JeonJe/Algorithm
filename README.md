@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-09-29 | **0812-largest-triangle-area** | 0812-largest-triangle-area | [코드](<./0812-largest-triangle-area/0812-largest-triangle-area.java>) |
 | 2025-09-28 | **0976-largest-perimeter-triangle** | LeetCode | [코드](<./LeetCode/Easy/0976-largest-perimeter-triangle/0976-largest-perimeter-triangle.java>) |
 | 2025-09-23 | **0165-compare-version-numbers** | 0165-compare-version-numbers | [코드](<./0165-compare-version-numbers/0165-compare-version-numbers.java>) |
 | 2025-09-23 | **3005-count-elements-with-maximum-frequency** | 3005-count-elements-with-maximum-frequency | [코드](<./3005-count-elements-with-maximum-frequency/3005-count-elements-with-maximum-frequency.java>) |
@@ -25,5 +26,4 @@
 | 2025-08-24 | **0707-design-linked-list** | LeetCode | [코드](<./LeetCode/Medium/0707-design-linked-list/0707-design-linked-list.java>) |
 | 2025-08-24 | **0705-design-hashset** | LeetCode | [코드](<./LeetCode/Easy/0705-design-hashset/0705-design-hashset.java>) |
 | 2025-08-24 | **1493-longest-subarray-of-1s-after-deleting-one-element** | LeetCode | [코드](<./LeetCode/Medium/1493-longest-subarray-of-1s-after-deleting-one-element/1493-longest-subarray-of-1s-after-deleting-one-element.java>) |
-| 2025-08-22 | **2348-number-of-zero-filled-subarrays** | LeetCode | [코드](<./LeetCode/Medium/2348-number-of-zero-filled-subarrays/2348-number-of-zero-filled-subarrays.java>) |
 <!-- RECENT_SOLUTIONS:END -->
