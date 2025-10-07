@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-10-07 | **2221-find-triangular-sum-of-an-array** | LeetCode | [코드](<./LeetCode/Medium/2221-find-triangular-sum-of-an-array/2221-find-triangular-sum-of-an-array.java>) |
 | 2025-10-05 | **1518-water-bottles** | LeetCode | [코드](<./LeetCode/Easy/1518-water-bottles/1518-water-bottles.java>) |
 | 2025-10-05 | **0011-container-with-most-water** | LeetCode | [코드](<./LeetCode/Medium/0011-container-with-most-water/0011-container-with-most-water.java>) |
 | 2025-09-29 | **0812-largest-triangle-area** | 0812-largest-triangle-area | [코드](<./0812-largest-triangle-area/0812-largest-triangle-area.java>) |
@@ -25,5 +26,4 @@
 | 2025-08-28 | **3446-sort-matrix-by-diagonals** | LeetCode | [코드](<./LeetCode/Medium/3446-sort-matrix-by-diagonals/3446-sort-matrix-by-diagonals.java>) |
 | 2025-08-25 | **0498-diagonal-traverse** | LeetCode | [코드](<./LeetCode/Medium/0498-diagonal-traverse/0498-diagonal-traverse.java>) |
 | 2025-08-24 | **0706-design-hashmap** | LeetCode | [코드](<./LeetCode/Easy/0706-design-hashmap/0706-design-hashmap.java>) |
-| 2025-08-24 | **0707-design-linked-list** | LeetCode | [코드](<./LeetCode/Medium/0707-design-linked-list/0707-design-linked-list.java>) |
 <!-- RECENT_SOLUTIONS:END -->
