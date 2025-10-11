@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-10-11 | **3494-find-the-minimum-amount-of-time-to-brew-potions** | LeetCode | [코드](<./LeetCode/Medium/3494-find-the-minimum-amount-of-time-to-brew-potions/3494-find-the-minimum-amount-of-time-to-brew-potions.java>) |
 | 2025-10-09 | **2300-successful-pairs-of-spells-and-potions** | LeetCode | [코드](<./LeetCode/Medium/2300-successful-pairs-of-spells-and-potions/2300-successful-pairs-of-spells-and-potions.java>) |
 | 2025-10-07 | **2221-find-triangular-sum-of-an-array** | LeetCode | [코드](<./LeetCode/Medium/2221-find-triangular-sum-of-an-array/2221-find-triangular-sum-of-an-array.java>) |
 | 2025-10-05 | **1518-water-bottles** | LeetCode | [코드](<./LeetCode/Easy/1518-water-bottles/1518-water-bottles.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-03 | **3025-find-the-number-of-ways-to-place-people-i** | 3025-find-the-number-of-ways-to-place-people-i | [코드](<./3025-find-the-number-of-ways-to-place-people-i/3025-find-the-number-of-ways-to-place-people-i.java>) |
 | 2025-09-01 | **1792-maximum-average-pass-ratio** | 1792-maximum-average-pass-ratio | [코드](<./1792-maximum-average-pass-ratio/1792-maximum-average-pass-ratio.java>) |
 | 2025-08-28 | **3446-sort-matrix-by-diagonals** | LeetCode | [코드](<./LeetCode/Medium/3446-sort-matrix-by-diagonals/3446-sort-matrix-by-diagonals.java>) |
-| 2025-08-25 | **0498-diagonal-traverse** | LeetCode | [코드](<./LeetCode/Medium/0498-diagonal-traverse/0498-diagonal-traverse.java>) |
 <!-- RECENT_SOLUTIONS:END -->
