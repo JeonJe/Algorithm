@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-10-14 | **3349-adjacent-increasing-subarrays-detection-i** | LeetCode | [코드](<./LeetCode/Easy/3349-adjacent-increasing-subarrays-detection-i/3349-adjacent-increasing-subarrays-detection-i.java>) |
 | 2025-10-13 | **2273-find-resultant-array-after-removing-anagrams** | LeetCode | [코드](<./LeetCode/Easy/2273-find-resultant-array-after-removing-anagrams/2273-find-resultant-array-after-removing-anagrams.java>) |
 | 2025-10-11 | **3494-find-the-minimum-amount-of-time-to-brew-potions** | LeetCode | [코드](<./LeetCode/Medium/3494-find-the-minimum-amount-of-time-to-brew-potions/3494-find-the-minimum-amount-of-time-to-brew-potions.java>) |
 | 2025-10-09 | **2300-successful-pairs-of-spells-and-potions** | LeetCode | [코드](<./LeetCode/Medium/2300-successful-pairs-of-spells-and-potions/2300-successful-pairs-of-spells-and-potions.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-08 | **1304-find-n-unique-integers-sum-up-to-zero** | LeetCode | [코드](<./LeetCode/Easy/1304-find-n-unique-integers-sum-up-to-zero/1304-find-n-unique-integers-sum-up-to-zero.java>) |
 | 2025-09-08 | **3516-find-closest-person** | LeetCode | [코드](<./LeetCode/Easy/3516-find-closest-person/3516-find-closest-person.java>) |
 | 2025-09-03 | **3025-find-the-number-of-ways-to-place-people-i** | 3025-find-the-number-of-ways-to-place-people-i | [코드](<./3025-find-the-number-of-ways-to-place-people-i/3025-find-the-number-of-ways-to-place-people-i.java>) |
-| 2025-09-01 | **1792-maximum-average-pass-ratio** | 1792-maximum-average-pass-ratio | [코드](<./1792-maximum-average-pass-ratio/1792-maximum-average-pass-ratio.java>) |
 <!-- RECENT_SOLUTIONS:END -->
