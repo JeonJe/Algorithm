@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-10-20 | **2011-final-value-of-variable-after-performing-operations** | 2011-final-value-of-variable-after-performing-operations | [코드](<./2011-final-value-of-variable-after-performing-operations/2011-final-value-of-variable-after-performing-operations.java>) |
 | 2025-10-14 | **3349-adjacent-increasing-subarrays-detection-i** | LeetCode | [코드](<./LeetCode/Easy/3349-adjacent-increasing-subarrays-detection-i/3349-adjacent-increasing-subarrays-detection-i.java>) |
 | 2025-10-13 | **2273-find-resultant-array-after-removing-anagrams** | LeetCode | [코드](<./LeetCode/Easy/2273-find-resultant-array-after-removing-anagrams/2273-find-resultant-array-after-removing-anagrams.java>) |
 | 2025-10-11 | **3494-find-the-minimum-amount-of-time-to-brew-potions** | LeetCode | [코드](<./LeetCode/Medium/3494-find-the-minimum-amount-of-time-to-brew-potions/3494-find-the-minimum-amount-of-time-to-brew-potions.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-11 | **1733-minimum-number-of-people-to-teach** | 1733-minimum-number-of-people-to-teach | [코드](<./1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 | 2025-09-08 | **1304-find-n-unique-integers-sum-up-to-zero** | LeetCode | [코드](<./LeetCode/Easy/1304-find-n-unique-integers-sum-up-to-zero/1304-find-n-unique-integers-sum-up-to-zero.java>) |
 | 2025-09-08 | **3516-find-closest-person** | LeetCode | [코드](<./LeetCode/Easy/3516-find-closest-person/3516-find-closest-person.java>) |
-| 2025-09-03 | **3025-find-the-number-of-ways-to-place-people-i** | 3025-find-the-number-of-ways-to-place-people-i | [코드](<./3025-find-the-number-of-ways-to-place-people-i/3025-find-the-number-of-ways-to-place-people-i.java>) |
 <!-- RECENT_SOLUTIONS:END -->
