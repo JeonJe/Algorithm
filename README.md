@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-11-04 | **3461-check-if-digits-are-equal-in-string-after-operations-i** | LeetCode | [코드](<./LeetCode/Easy/3461-check-if-digits-are-equal-in-string-after-operations-i/3461-check-if-digits-are-equal-in-string-after-operations-i.java>) |
 | 2025-11-03 | **3289-the-two-sneaky-numbers-of-digitville** | LeetCode | [코드](<./LeetCode/Easy/3289-the-two-sneaky-numbers-of-digitville/3289-the-two-sneaky-numbers-of-digitville.java>) |
 | 2025-10-20 | **2011-final-value-of-variable-after-performing-operations** | 2011-final-value-of-variable-after-performing-operations | [코드](<./2011-final-value-of-variable-after-performing-operations/2011-final-value-of-variable-after-performing-operations.java>) |
 | 2025-10-14 | **3349-adjacent-increasing-subarrays-detection-i** | LeetCode | [코드](<./LeetCode/Easy/3349-adjacent-increasing-subarrays-detection-i/3349-adjacent-increasing-subarrays-detection-i.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-14 | **2785-sort-vowels-in-a-string** | LeetCode | [코드](<./LeetCode/Medium/2785-sort-vowels-in-a-string/2785-sort-vowels-in-a-string.java>) |
 | 2025-09-14 | **1733-minimum-number-of-people-to-teach** | LeetCode | [코드](<./LeetCode/Medium/1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 | 2025-09-11 | **1733-minimum-number-of-people-to-teach** | 1733-minimum-number-of-people-to-teach | [코드](<./1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
-| 2025-09-08 | **1304-find-n-unique-integers-sum-up-to-zero** | LeetCode | [코드](<./LeetCode/Easy/1304-find-n-unique-integers-sum-up-to-zero/1304-find-n-unique-integers-sum-up-to-zero.java>) |
 <!-- RECENT_SOLUTIONS:END -->
