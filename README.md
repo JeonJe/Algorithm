@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-11-30 | **0104-maximum-depth-of-binary-tree** | LeetCode | [코드](<./LeetCode/Easy/0104-maximum-depth-of-binary-tree/0104-maximum-depth-of-binary-tree.java>) |
 | 2025-11-04 | **1768-merge-strings-alternately** | LeetCode | [코드](<./LeetCode/Easy/1768-merge-strings-alternately/1768-merge-strings-alternately.java>) |
 | 2025-11-04 | **3461-check-if-digits-are-equal-in-string-after-operations-i** | LeetCode | [코드](<./LeetCode/Easy/3461-check-if-digits-are-equal-in-string-after-operations-i/3461-check-if-digits-are-equal-in-string-after-operations-i.java>) |
 | 2025-11-03 | **3289-the-two-sneaky-numbers-of-digitville** | LeetCode | [코드](<./LeetCode/Easy/3289-the-two-sneaky-numbers-of-digitville/3289-the-two-sneaky-numbers-of-digitville.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-17 | **1935-maximum-number-of-words-you-can-type** | LeetCode | [코드](<./LeetCode/Easy/1935-maximum-number-of-words-you-can-type/1935-maximum-number-of-words-you-can-type.java>) |
 | 2025-09-14 | **3541-find-most-frequent-vowel-and-consonant** | LeetCode | [코드](<./LeetCode/Easy/3541-find-most-frequent-vowel-and-consonant/3541-find-most-frequent-vowel-and-consonant.java>) |
 | 2025-09-14 | **2785-sort-vowels-in-a-string** | LeetCode | [코드](<./LeetCode/Medium/2785-sort-vowels-in-a-string/2785-sort-vowels-in-a-string.java>) |
-| 2025-09-14 | **1733-minimum-number-of-people-to-teach** | LeetCode | [코드](<./LeetCode/Medium/1733-minimum-number-of-people-to-teach/1733-minimum-number-of-people-to-teach.java>) |
 <!-- RECENT_SOLUTIONS:END -->
