@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-12-04 | **0101-symmetric-tree** | LeetCode | [코드](<./LeetCode/Easy/0101-symmetric-tree/0101-symmetric-tree.java>) |
 | 2025-12-02 | **0100-same-tree** | LeetCode | [코드](<./LeetCode/Easy/0100-same-tree/0100-same-tree.java>) |
 | 2025-12-01 | **0111-minimum-depth-of-binary-tree** | LeetCode | [코드](<./LeetCode/Easy/0111-minimum-depth-of-binary-tree/0111-minimum-depth-of-binary-tree.java>) |
 | 2025-11-30 | **0104-maximum-depth-of-binary-tree** | LeetCode | [코드](<./LeetCode/Easy/0104-maximum-depth-of-binary-tree/0104-maximum-depth-of-binary-tree.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-23 | **0165-compare-version-numbers** | 0165-compare-version-numbers | [코드](<./0165-compare-version-numbers/0165-compare-version-numbers.java>) |
 | 2025-09-23 | **3005-count-elements-with-maximum-frequency** | 3005-count-elements-with-maximum-frequency | [코드](<./3005-count-elements-with-maximum-frequency/3005-count-elements-with-maximum-frequency.java>) |
 | 2025-09-21 | **0118-pascals-triangle** | 0118-pascals-triangle | [코드](<./0118-pascals-triangle/0118-pascals-triangle.java>) |
-| 2025-09-17 | **1935-maximum-number-of-words-you-can-type** | LeetCode | [코드](<./LeetCode/Easy/1935-maximum-number-of-words-you-can-type/1935-maximum-number-of-words-you-can-type.java>) |
 <!-- RECENT_SOLUTIONS:END -->
