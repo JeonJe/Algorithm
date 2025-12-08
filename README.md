@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-12-08 | **0070-climbing-stairs** | LeetCode | [코드](<./LeetCode/Easy/0070-climbing-stairs/0070-climbing-stairs.java>) |
 | 2025-12-04 | **0101-symmetric-tree** | LeetCode | [코드](<./LeetCode/Easy/0101-symmetric-tree/0101-symmetric-tree.java>) |
 | 2025-12-02 | **0100-same-tree** | LeetCode | [코드](<./LeetCode/Easy/0100-same-tree/0100-same-tree.java>) |
 | 2025-12-01 | **0111-minimum-depth-of-binary-tree** | LeetCode | [코드](<./LeetCode/Easy/0111-minimum-depth-of-binary-tree/0111-minimum-depth-of-binary-tree.java>) |
@@ -25,5 +26,4 @@
 | 2025-09-28 | **0976-largest-perimeter-triangle** | LeetCode | [코드](<./LeetCode/Easy/0976-largest-perimeter-triangle/0976-largest-perimeter-triangle.java>) |
 | 2025-09-23 | **0165-compare-version-numbers** | 0165-compare-version-numbers | [코드](<./0165-compare-version-numbers/0165-compare-version-numbers.java>) |
 | 2025-09-23 | **3005-count-elements-with-maximum-frequency** | 3005-count-elements-with-maximum-frequency | [코드](<./3005-count-elements-with-maximum-frequency/3005-count-elements-with-maximum-frequency.java>) |
-| 2025-09-21 | **0118-pascals-triangle** | 0118-pascals-triangle | [코드](<./0118-pascals-triangle/0118-pascals-triangle.java>) |
 <!-- RECENT_SOLUTIONS:END -->
