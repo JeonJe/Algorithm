@@ -6,6 +6,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 위치 | 링크 |
 |---|---|---|---|
+| 2025-12-15 | **0053-maximum-subarray** | LeetCode | [코드](<./LeetCode/Medium/0053-maximum-subarray/0053-maximum-subarray.java>) |
 | 2025-12-15 | **0746-min-cost-climbing-stairs** | LeetCode | [코드](<./LeetCode/Easy/0746-min-cost-climbing-stairs/0746-min-cost-climbing-stairs.java>) |
 | 2025-12-09 | **0198-house-robber** | LeetCode | [코드](<./LeetCode/Medium/0198-house-robber/0198-house-robber.java>) |
 | 2025-12-08 | **0070-climbing-stairs** | LeetCode | [코드](<./LeetCode/Easy/0070-climbing-stairs/0070-climbing-stairs.java>) |
@@ -25,5 +26,4 @@
 | 2025-10-05 | **1518-water-bottles** | LeetCode | [코드](<./LeetCode/Easy/1518-water-bottles/1518-water-bottles.java>) |
 | 2025-10-05 | **0011-container-with-most-water** | LeetCode | [코드](<./LeetCode/Medium/0011-container-with-most-water/0011-container-with-most-water.java>) |
 | 2025-09-29 | **0812-largest-triangle-area** | 0812-largest-triangle-area | [코드](<./0812-largest-triangle-area/0812-largest-triangle-area.java>) |
-| 2025-09-28 | **0976-largest-perimeter-triangle** | LeetCode | [코드](<./LeetCode/Easy/0976-largest-perimeter-triangle/0976-largest-perimeter-triangle.java>) |
 <!-- RECENT_SOLUTIONS:END -->
