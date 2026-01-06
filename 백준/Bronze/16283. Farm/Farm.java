@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-//        System.setIn(new FileInputStream("input.txt"));  // 제출 시 이 줄만 주석처리
+        //System.setIn(new FileInputStream("input.txt"));  // 제출 시 이 줄만 주석처리
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -22,12 +22,15 @@ public class Main {
         int count = 0;
         int answerX = 0, answerY = 0;
         // 양의 수
-        for (int x = 1; x <= 1000; x++) {
+        for (int x = 1; x <= n - 1; x++) {
             int y = n - x;
-            if (y >= 1 && w - a * x == b * y) {
+            if (a * x + b * y == w) {
                 count++;
                 answerX = x;
                 answerY = y;
+            }
+            if (count >= 2) {
+                break;
             }
         }
 
