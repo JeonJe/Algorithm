@@ -48,11 +48,13 @@ public class Main {
     }
 
     private static void print(List<Integer> temp) {
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < temp.size() - 1; i++) {
-            System.out.print(temp.get(i) + 1 + " ");
+            sb.append(temp.get(i) + 1 + " ");
         }
-        System.out.print(temp.get(temp.size() - 1) + 1);
-        System.out.println();
+        sb.append(temp.get(temp.size() - 1) + 1).append("\n");
+
+        System.out.print(sb.toString());
 
     }
 }
