@@ -1,22 +1,37 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.*;
-import java.io.*;
 
 public class Main {
-  public static void main(String[] args) throws Exception {
-   BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-   int  t = Integer.parseInt(reader.readLine());
-   int[] dp =  new int[11];
-    dp[1] = 1;
-    dp[2] = 2;
-    dp[3] = 4;
+    private static int count = 0;
 
-    for (int i = 4; i < 11; i++) {
-      dp[i] = dp[i-1] + dp[i-2] + dp[i-3];
+    public static void main(String[] args) throws Exception {
+//        System.setIn(new FileInputStream("input.txt"));  // 제출 시 이 줄만 주석처리
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int T = Integer.parseInt(br.readLine());
+
+        for (int i = 1; i <= T; i++) {
+            int target = Integer.parseInt(br.readLine());
+
+            count = 0;
+            dfs(1, target);
+            dfs(2, target);
+            dfs(3, target);
+            System.out.println(count);
+        }
     }
 
-   for (int tc = 0; tc < t; tc++){
-    int n = Integer.parseInt(reader.readLine());
-    System.out.println(dp[n]);
-   }
-  }
+    public static void dfs(int sum, int target) {
+        if (sum > target) {
+            return;
+        }
+        if (sum == target) {
+            count++;
+            return;
+        }
+
+        dfs(sum + 1, target);
+        dfs(sum + 2, target);
+        dfs(sum + 3, target);
+    }
 }
