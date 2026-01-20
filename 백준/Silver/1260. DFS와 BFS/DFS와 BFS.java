@@ -1,82 +1,79 @@
-
-
 import java.io.BufferedReader;
-import java.io.IOException;
+import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Deque;
-import java.util.StringTokenizer;
+import java.util.*;
 
-class Main {
+public class Main {
 
-    static int n, m, y;
-    static int[][] graph;
-    static boolean[] visited;
-    static StringBuilder sb = new StringBuilder();
+    private static StringBuilder sb = new StringBuilder();
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer stringTokenizer = new StringTokenizer(reader.readLine());
-        n = Integer.parseInt(stringTokenizer.nextToken());
-        m = Integer.parseInt(stringTokenizer.nextToken());
-        y = Integer.parseInt(stringTokenizer.nextToken());
+    public static void main(String[] args) throws Exception {
+        //System.setIn(new FileInputStream("input.txt"));  // 제출 시 이 줄만 주석처리
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
 
-        graph = new int[n + 1][n + 1];
+        int n = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        int v = Integer.parseInt(st.nextToken());
 
+        List<Integer>[] graph = new ArrayList[n + 1];
+        for (int i = 0; i <= n; i++) {
+            graph[i] = new ArrayList<>();
+        }
         for (int i = 0; i < m; i++) {
-            stringTokenizer = new StringTokenizer(reader.readLine());
-            int start = Integer.parseInt(stringTokenizer.nextToken());
-            int end = Integer.parseInt(stringTokenizer.nextToken());
+            st = new StringTokenizer(br.readLine());
+            int from = Integer.parseInt(st.nextToken());
+            int to = Integer.parseInt(st.nextToken());
 
-            graph[start][end] = 1;
-            graph[end][start] = 1;
+            graph[from].add(to);
+            graph[to].add(from);
+        }
+        for (int i = 1; i <= n; i++) {
+            Collections.sort(graph[i]);
         }
 
-        visited = new boolean[n + 1];
+        //dfs
+        List<Integer> temp = new ArrayList<>();
+        boolean[] visited = new boolean[n + 1];
+        visited[v] = true;
+        dfs(v, graph, temp, visited);
+        System.out.println(sb.substring(0, sb.length() - 1));
 
-        dfs(y);
-        System.out.println(sb.toString());
-        initVariables();
-
-        bfs(y);
-        System.out.println(sb.toString());
-    }
-
-    private static void dfs(int start) {
-        visited[start] = true;
-        sb.append(start + " ");
-
-        for (int i = 0; i < n + 1; i++) {
-            if (graph[start][i] == 1 && !visited[i]) {
-                dfs(i);
-            }
-        }
-    }
-
-    private static void bfs(int start) {
-        Deque<Integer> que = new ArrayDeque<>();
-        visited[start] = true;
-        que.offer(start);
-        sb.append(start + " ");
-
-        while (!que.isEmpty()) {
-            Integer current = que.poll();
-
-            for (int adj = 0; adj < n + 1; adj++) {
-                if (graph[current][adj] == 1 && !visited[adj]) {
-                    que.offer(adj);
-                    visited[adj] = true;
-                    sb.append(adj + " ");
-                }
-            }
-        }
-    }
-
-    private static void initVariables() {
-        Arrays.fill(visited, false);
+        //bfs
         sb.setLength(0);
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
+        deque.offer(v);
+        Arrays.fill(visited, false);
+        visited[v] = true;
+
+
+        while (!deque.isEmpty()) {
+            int cur = deque.poll();
+            sb.append(cur).append(" ");
+
+            for (int adj : graph[cur]) {
+                if (visited[adj]) {
+                    continue;
+                }
+                visited[adj] = true;
+                deque.offer(adj);
+            }
+        }
+        System.out.println(sb.substring(0, sb.length() - 1));
+    }
+
+    private static void dfs(int v, List<Integer>[] graph, List<Integer> temp, boolean[] visited) {
+        sb.append(v).append(" ");
+
+        for (Integer adj : graph[v]) {
+            if (visited[adj]) {
+                continue;
+            }
+            visited[adj] = true;
+            temp.add(adj);
+            dfs(adj, graph, temp, visited);
+            temp.remove(temp.size() - 1);
+        }
+
     }
 }
-
-
