@@ -1,5 +1,5 @@
 import java.io.BufferedReader;
-import java.io.FileInputStream;
+//import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.*;
 
@@ -14,13 +14,14 @@ public class Main {
 
         for (int i = 0; i < 10; i++) {
             sum += Integer.parseInt(br.readLine());
-            if (Math.abs(100 - sum) < Math.abs(100 - answer) ||
-                    (Math.abs(100 - sum) == Math.abs(100 - answer) && sum >= 100)) {
+            if (Math.abs(100 - sum) < Math.abs(100 - answer) || (sum >= 100 && Math.abs(100 - sum) == Math.abs(100 - answer))) {
                 answer = sum;
             }
-        }
 
+        }
         System.out.println(answer);
+
+
     }
 
 
