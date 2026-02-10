@@ -1,4 +1,3 @@
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
@@ -11,21 +10,26 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int n = Integer.parseInt(br.readLine());
-
-        int result = 0;
-        for (int i = n; i > 0; i--) {
-            int sum = i;
-            int cur = i;
-            while (sum < n) {
-                cur--;
-                sum += cur;
-            }
-
-            if (n == sum) {
-                result++;
+        int left = 1, right = 1;
+        int sum = 1;
+        int count = 0;
+        while (left <= n && right <= n) {
+            if (sum == n) {
+                count++;
+                sum -= left;
+                left++;
+            } else if (sum < n) {
+                right++;
+                sum += right;
+            } else {
+                sum -= left;
+                left++;
             }
         }
-        System.out.println(result);
+
+        System.out.println(count);
+
+
     }
 
 
