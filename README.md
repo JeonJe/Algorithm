@@ -1,6 +1,21 @@
 # 알고리즘 
 알고리즘을 풀고 정리하는 Repository입니다.🕵️
 
+## 📊 활동
+[![GitHub Streak](https://streak-stats.demolab.com?user=JeonJe&locale=ko&date_format=%5BY.%5Dn.j)](https://git.io/streak-stats)
+
+[![JeonJe's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=JeonJe&theme=github-compact)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+## 🧾 풀이 요약
+<!-- SOLUTION_SUMMARY:START -->
+| 플랫폼 | 풀이 수 | 최근 풀이일 |
+|---|---:|---|
+| Baekjoon | 405 | 2026-02-18 |
+| Programmers | 207 | 2026-02-12 |
+| LeetCode | 64 | 2025-12-16 |
+| CodeTree | 111 | 2025-02-28 |
+| **Total** | **787** | - |
+<!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
