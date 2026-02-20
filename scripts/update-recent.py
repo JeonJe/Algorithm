@@ -92,6 +92,8 @@ def recent_changed_dirs(limit=LIMIT):
     try:
         log = sh(
             "git",
+            "-c",
+            "core.quotepath=false",
             "log",
             "--name-only",
             f"--pretty=format:{COMMIT_PREFIX}%cd|%s",
