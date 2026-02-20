@@ -22,6 +22,12 @@ START_TAG = "<!-- RECENT_SOLUTIONS:START -->"
 END_TAG = "<!-- RECENT_SOLUTIONS:END -->"
 COMMIT_PREFIX = "__COMMIT__"
 LEETCODE_SLUG = re.compile(r"^\d{4}-[a-z0-9-]+$")
+DATE_DIR_SLUG = re.compile(r"^\d{6}$")
+IGNORE_SUBJECT_PATTERNS = (
+    re.compile(r"^chore:\s*reorganize solution folders", re.I),
+    re.compile(r"^chore\(readme\):\s*refresh recent solutions list", re.I),
+    re.compile(r"^chore\(readme\):\s*auto-update recent solutions", re.I),
+)
 
 
 def sh(*args):
@@ -37,6 +43,43 @@ def platform_from_parts(parts):
     return None
 
 
+def should_ignore_subject(subject):
+    return any(pattern.search(subject) for pattern in IGNORE_SUBJECT_PATTERNS)
+
+
+def resolve_current_file_path(rel_path):
+    path = pathlib.Path(rel_path)
+    current = ROOT / path
+    if current.exists():
+        return path
+
+    parts = path.parts
+    if not parts:
+        return None
+
+    top = parts[0]
+
+    # LeetHub 구형 구조: 0001-xxx/... -> LeetCode/0001-xxx/...
+    if LEETCODE_SLUG.fullmatch(top):
+        mapped = pathlib.Path("LeetCode") / path
+        if (ROOT / mapped).exists():
+            return mapped
+
+    # CodeTree 날짜 구조: 250101/... -> CodeTree/250101/...
+    if DATE_DIR_SLUG.fullmatch(top):
+        mapped = pathlib.Path("CodeTree") / path
+        if (ROOT / mapped).exists():
+            return mapped
+
+    # Java/백준/... -> 백준/...
+    if len(parts) >= 3 and parts[0] == "Java" and parts[1] in {"백준", "Baekjoon"}:
+        mapped = pathlib.Path("백준").joinpath(*parts[2:])
+        if (ROOT / mapped).exists():
+            return mapped
+
+    return None
+
+
 def title_from_rel_dir(rel_dir):
     return pathlib.Path(rel_dir).name.replace(" ", " ").strip()
 
@@ -47,33 +90,46 @@ def encode_rel_path(rel_dir):
 
 def recent_changed_dirs(limit=LIMIT):
     try:
-        log = sh("git", "log", "--name-only", f"--pretty=format:{COMMIT_PREFIX}%cd", "--date=short")
+        log = sh(
+            "git",
+            "log",
+            "--name-only",
+            f"--pretty=format:{COMMIT_PREFIX}%cd|%s",
+            "--date=short",
+        )
     except Exception:
         return fallback_recent_dirs(limit)
 
     seen = set()
     rows = []
     date = ""
+    ignore_commit = False
 
     for line in log.splitlines():
         if not line:
             continue
         if line.startswith(COMMIT_PREFIX):
-            date = line[len(COMMIT_PREFIX) :].strip()
+            payload = line[len(COMMIT_PREFIX) :].strip()
+            if "|" in payload:
+                date, subject = payload.split("|", 1)
+            else:
+                date, subject = payload, ""
+            date = date.strip()
+            ignore_commit = should_ignore_subject(subject.strip())
             continue
-        if not date:
+        if not date or ignore_commit:
             continue
 
-        parts = pathlib.Path(line).parts
-        if not parts:
+        resolved = resolve_current_file_path(line)
+        if not resolved:
             continue
 
-        platform = platform_from_parts(parts)
+        platform = platform_from_parts(resolved.parts)
         if not platform:
             continue
 
-        file_path = ROOT / line
-        if not file_path.exists() or file_path.suffix not in EXTS:
+        file_path = ROOT / resolved
+        if file_path.suffix not in EXTS:
             continue
 
         rel_dir = file_path.parent.relative_to(ROOT).as_posix()
