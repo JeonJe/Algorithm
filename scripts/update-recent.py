@@ -20,9 +20,12 @@ EXTS = {".java", ".py", ".kt", ".js", ".ts", ".cpp", ".c", ".sql", ".go", ".rs"}
 
 START_TAG = "<!-- RECENT_SOLUTIONS:START -->"
 END_TAG = "<!-- RECENT_SOLUTIONS:END -->"
+SUMMARY_START_TAG = "<!-- SOLUTION_SUMMARY:START -->"
+SUMMARY_END_TAG = "<!-- SOLUTION_SUMMARY:END -->"
 COMMIT_PREFIX = "__COMMIT__"
 LEETCODE_SLUG = re.compile(r"^\d{4}-[a-z0-9-]+$")
 DATE_DIR_SLUG = re.compile(r"^\d{6}$")
+PLATFORM_ORDER = ["Baekjoon", "Programmers", "LeetCode", "CodeTree"]
 IGNORE_SUBJECT_PATTERNS = (
     re.compile(r"^chore:\s*reorganize solution folders", re.I),
     re.compile(r"^chore\(readme\):\s*refresh recent solutions list", re.I),
@@ -145,6 +148,93 @@ def recent_changed_dirs(limit=LIMIT):
     return rows
 
 
+def collect_solution_count(base_dir):
+    if not base_dir.exists():
+        return 0
+    dirs = set()
+    for path in base_dir.rglob("*"):
+        if path.is_file() and path.suffix in EXTS:
+            dirs.add(path.parent.resolve())
+    return len(dirs)
+
+
+def latest_dates_by_platform():
+    try:
+        log = sh(
+            "git",
+            "-c",
+            "core.quotepath=false",
+            "log",
+            "--name-only",
+            f"--pretty=format:{COMMIT_PREFIX}%cd|%s",
+            "--date=short",
+        )
+    except Exception:
+        return {}
+
+    latest = {}
+    date = ""
+    ignore_commit = False
+    target_count = len(PLATFORM_ORDER)
+
+    for line in log.splitlines():
+        if not line:
+            continue
+        if line.startswith(COMMIT_PREFIX):
+            payload = line[len(COMMIT_PREFIX) :].strip()
+            if "|" in payload:
+                date, subject = payload.split("|", 1)
+            else:
+                date, subject = payload, ""
+            date = date.strip()
+            ignore_commit = should_ignore_subject(subject.strip())
+            continue
+        if not date or ignore_commit:
+            continue
+
+        resolved = resolve_current_file_path(line)
+        if not resolved:
+            continue
+
+        platform = platform_from_parts(resolved.parts)
+        if not platform or platform in latest:
+            continue
+
+        file_path = ROOT / resolved
+        if not file_path.exists() or file_path.suffix not in EXTS:
+            continue
+
+        latest[platform] = date
+        if len(latest) >= target_count:
+            break
+
+    return latest
+
+
+def build_summary_table():
+    roots = {
+        "Baekjoon": ROOT / "백준",
+        "Programmers": ROOT / "프로그래머스",
+        "LeetCode": ROOT / "LeetCode",
+        "CodeTree": ROOT / "CodeTree",
+    }
+    counts = {platform: collect_solution_count(path) for platform, path in roots.items()}
+    latest = latest_dates_by_platform()
+
+    total = 0
+    lines = [
+        "| 플랫폼 | 풀이 수 | 최근 풀이일 |",
+        "|---|---:|---|",
+    ]
+    for platform in PLATFORM_ORDER:
+        count = counts.get(platform, 0)
+        total += count
+        last = latest.get(platform, "-")
+        lines.append(f"| {platform} | {count} | {last} |")
+    lines.append(f"| **Total** | **{total}** | - |")
+    return "\n".join(lines)
+
+
 def fallback_recent_dirs(limit=LIMIT):
     by_dir = {}
     for top, platform in TARGET_DIRS.items():
@@ -190,10 +280,12 @@ def replace_between(text, start_tag, end_tag, replacement):
 
 def main():
     rows = recent_changed_dirs()
-    md = build_table(rows)
+    recent_md = build_table(rows)
+    summary_md = build_summary_table()
 
     readme = README.read_text(encoding="utf-8")
-    updated = replace_between(readme, START_TAG, END_TAG, md)
+    updated = replace_between(readme, SUMMARY_START_TAG, SUMMARY_END_TAG, summary_md)
+    updated = replace_between(updated, START_TAG, END_TAG, recent_md)
     if updated != readme:
         README.write_text(updated, encoding="utf-8")
         print("README updated.")
