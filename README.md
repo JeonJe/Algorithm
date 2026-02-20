@@ -6,24 +6,24 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
-| 2026-02-20 | **007** | CodeTree | [코드](./CodeTree/250126/007) |
-| 2026-02-20 | **Next Level** | CodeTree | [코드](./CodeTree/250126/Next%20Level) |
-| 2026-02-20 | **Date to Date** | CodeTree | [코드](./CodeTree/250127/Date%20to%20Date) |
-| 2026-02-20 | **Time to Time** | CodeTree | [코드](./CodeTree/250127/Time%20to%20Time) |
-| 2026-02-20 | **G or H 3** | CodeTree | [코드](./CodeTree/250213/G%20or%20H%203) |
-| 2026-02-20 | **0003-longest-substring-without-repeating-characters** | LeetCode | [코드](./LeetCode/0003-longest-substring-without-repeating-characters) |
-| 2026-02-20 | **0011-container-with-most-water** | LeetCode | [코드](./LeetCode/0011-container-with-most-water) |
-| 2026-02-20 | **0019-remove-nth-node-from-end-of-list** | LeetCode | [코드](./LeetCode/0019-remove-nth-node-from-end-of-list) |
-| 2026-02-20 | **0020-valid-parentheses** | LeetCode | [코드](./LeetCode/0020-valid-parentheses) |
-| 2026-02-20 | **0021-merge-two-sorted-lists** | LeetCode | [코드](./LeetCode/0021-merge-two-sorted-lists) |
-| 2026-02-20 | **0033-search-in-rotated-sorted-array** | LeetCode | [코드](./LeetCode/0033-search-in-rotated-sorted-array) |
-| 2026-02-20 | **0039-combination-sum** | LeetCode | [코드](./LeetCode/0039-combination-sum) |
-| 2026-02-20 | **0056-merge-intervals** | LeetCode | [코드](./LeetCode/0056-merge-intervals) |
-| 2026-02-20 | **0121-best-time-to-buy-and-sell-stock** | LeetCode | [코드](./LeetCode/0121-best-time-to-buy-and-sell-stock) |
-| 2026-02-20 | **0153-find-minimum-in-rotated-sorted-array** | LeetCode | [코드](./LeetCode/0153-find-minimum-in-rotated-sorted-array) |
-| 2026-02-20 | **0167-two-sum-ii-input-array-is-sorted** | LeetCode | [코드](./LeetCode/0167-two-sum-ii-input-array-is-sorted) |
-| 2026-02-20 | **0200-number-of-islands** | LeetCode | [코드](./LeetCode/0200-number-of-islands) |
-| 2026-02-20 | **0207-course-schedule** | LeetCode | [코드](./LeetCode/0207-course-schedule) |
-| 2026-02-20 | **0268-missing-number** | LeetCode | [코드](./LeetCode/0268-missing-number) |
-| 2026-02-20 | **0349-intersection-of-two-arrays** | LeetCode | [코드](./LeetCode/0349-intersection-of-two-arrays) |
+| 2025-12-16 | **0121-best-time-to-buy-and-sell-stock** | LeetCode | [코드](./LeetCode/Easy/0121-best-time-to-buy-and-sell-stock) |
+| 2025-12-15 | **0053-maximum-subarray** | LeetCode | [코드](./LeetCode/Medium/0053-maximum-subarray) |
+| 2025-12-15 | **0746-min-cost-climbing-stairs** | LeetCode | [코드](./LeetCode/Easy/0746-min-cost-climbing-stairs) |
+| 2025-12-09 | **0198-house-robber** | LeetCode | [코드](./LeetCode/Medium/0198-house-robber) |
+| 2025-12-08 | **0070-climbing-stairs** | LeetCode | [코드](./LeetCode/Easy/0070-climbing-stairs) |
+| 2025-12-04 | **0101-symmetric-tree** | LeetCode | [코드](./LeetCode/Easy/0101-symmetric-tree) |
+| 2025-12-02 | **0100-same-tree** | LeetCode | [코드](./LeetCode/Easy/0100-same-tree) |
+| 2025-12-01 | **0111-minimum-depth-of-binary-tree** | LeetCode | [코드](./LeetCode/Easy/0111-minimum-depth-of-binary-tree) |
+| 2025-11-30 | **0104-maximum-depth-of-binary-tree** | LeetCode | [코드](./LeetCode/Easy/0104-maximum-depth-of-binary-tree) |
+| 2025-11-04 | **1768-merge-strings-alternately** | LeetCode | [코드](./LeetCode/Easy/1768-merge-strings-alternately) |
+| 2025-11-04 | **3461-check-if-digits-are-equal-in-string-after-operations-i** | LeetCode | [코드](./LeetCode/Easy/3461-check-if-digits-are-equal-in-string-after-operations-i) |
+| 2025-11-03 | **3289-the-two-sneaky-numbers-of-digitville** | LeetCode | [코드](./LeetCode/Easy/3289-the-two-sneaky-numbers-of-digitville) |
+| 2025-10-20 | **2011-final-value-of-variable-after-performing-operations** | LeetCode | [코드](./2011-final-value-of-variable-after-performing-operations) |
+| 2025-10-14 | **3349-adjacent-increasing-subarrays-detection-i** | LeetCode | [코드](./LeetCode/Easy/3349-adjacent-increasing-subarrays-detection-i) |
+| 2025-10-13 | **2273-find-resultant-array-after-removing-anagrams** | LeetCode | [코드](./LeetCode/Easy/2273-find-resultant-array-after-removing-anagrams) |
+| 2025-10-11 | **3494-find-the-minimum-amount-of-time-to-brew-potions** | LeetCode | [코드](./LeetCode/Medium/3494-find-the-minimum-amount-of-time-to-brew-potions) |
+| 2025-10-09 | **2300-successful-pairs-of-spells-and-potions** | LeetCode | [코드](./LeetCode/Medium/2300-successful-pairs-of-spells-and-potions) |
+| 2025-10-07 | **2221-find-triangular-sum-of-an-array** | LeetCode | [코드](./LeetCode/Medium/2221-find-triangular-sum-of-an-array) |
+| 2025-10-05 | **1518-water-bottles** | LeetCode | [코드](./LeetCode/Easy/1518-water-bottles) |
+| 2025-10-05 | **0011-container-with-most-water** | LeetCode | [코드](./LeetCode/Medium/0011-container-with-most-water) |
 <!-- RECENT_SOLUTIONS:END -->
