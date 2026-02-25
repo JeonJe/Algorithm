@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 407 | 2026-02-24 |
+| Baekjoon | 408 | 2026-02-25 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **789** | - |
+| **Total** | **790** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-02-25 | **25180. 썸 팰린드롬** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/25180.%E2%80%85%EC%8D%B8%E2%80%85%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC) |
 | 2026-02-24 | **29615. 알파빌과 베타빌** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/29615.%E2%80%85%EC%95%8C%ED%8C%8C%EB%B9%8C%EA%B3%BC%E2%80%85%EB%B2%A0%ED%83%80%EB%B9%8C) |
 | 2026-02-20 | **32752. 수열이에요？** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/32752.%E2%80%85%EC%88%98%EC%97%B4%EC%9D%B4%EC%97%90%EC%9A%94%EF%BC%9F) |
 | 2026-02-18 | **14568. 2017 연세대학교 프로그래밍 경시대회** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/14568.%E2%80%852017%E2%80%85%EC%97%B0%EC%84%B8%EB%8C%80%ED%95%99%EA%B5%90%E2%80%85%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%E2%80%85%EA%B2%BD%EC%8B%9C%EB%8C%80%ED%9A%8C) |
@@ -40,5 +41,4 @@
 | 2026-01-13 | **15650. N과 M （2）** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/15650.%E2%80%85N%EA%B3%BC%E2%80%85M%E2%80%85%EF%BC%882%EF%BC%89) |
 | 2026-01-13 | **15649. N과 M （1）** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/15649.%E2%80%85N%EA%B3%BC%E2%80%85M%E2%80%85%EF%BC%881%EF%BC%89) |
 | 2026-01-06 | **16283. Farm** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/16283.%E2%80%85Farm) |
-| 2026-01-06 | **17945. 통학의 신** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/17945.%E2%80%85%ED%86%B5%ED%95%99%EC%9D%98%E2%80%85%EC%8B%A0) |
 <!-- RECENT_SOLUTIONS:END -->
