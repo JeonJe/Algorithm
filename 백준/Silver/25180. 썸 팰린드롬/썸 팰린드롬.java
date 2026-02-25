@@ -14,16 +14,12 @@ public class Main {
         // n = 15라면 한 자리(최대 값 9)로는 안되고 최소 2자리부터 시작
         int k = (int) Math.ceil((double) n / 9);
 
-        while (true) {
-            //k
-            // 짝수 자릿수를 가지면, 홀수 N을 절대 만들 수 없음
+ 
             if (k % 2 == 0 && n % 2 != 0) {
                 k++;
-            } else {
+            } 
                 System.out.println(k);
-                break;
-            }
-        }
+            
 
         br.close();
     }
