@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 408 | 2026-02-25 |
+| Baekjoon | 409 | 2026-02-26 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **790** | - |
+| **Total** | **791** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-02-26 | **2920. 음계** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2920.%E2%80%85%EC%9D%8C%EA%B3%84) |
 | 2026-02-25 | **25180. 썸 팰린드롬** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/25180.%E2%80%85%EC%8D%B8%E2%80%85%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC) |
 | 2026-02-24 | **29615. 알파빌과 베타빌** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/29615.%E2%80%85%EC%95%8C%ED%8C%8C%EB%B9%8C%EA%B3%BC%E2%80%85%EB%B2%A0%ED%83%80%EB%B9%8C) |
 | 2026-02-20 | **32752. 수열이에요？** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/32752.%E2%80%85%EC%88%98%EC%97%B4%EC%9D%B4%EC%97%90%EC%9A%94%EF%BC%9F) |
@@ -40,5 +41,4 @@
 | 2026-01-13 | **9095. 1， 2， 3 더하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/9095.%E2%80%851%EF%BC%8C%E2%80%852%EF%BC%8C%E2%80%853%E2%80%85%EB%8D%94%ED%95%98%EA%B8%B0) |
 | 2026-01-13 | **15650. N과 M （2）** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/15650.%E2%80%85N%EA%B3%BC%E2%80%85M%E2%80%85%EF%BC%882%EF%BC%89) |
 | 2026-01-13 | **15649. N과 M （1）** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/15649.%E2%80%85N%EA%B3%BC%E2%80%85M%E2%80%85%EF%BC%881%EF%BC%89) |
-| 2026-01-06 | **16283. Farm** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/16283.%E2%80%85Farm) |
 <!-- RECENT_SOLUTIONS:END -->
