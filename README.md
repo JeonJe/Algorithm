@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 413 | 2026-03-04 |
+| Baekjoon | 414 | 2026-03-05 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **795** | - |
+| **Total** | **796** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-03-05 | **1417. 국회의원 선거** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/1417.%E2%80%85%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90%E2%80%85%EC%84%A0%EA%B1%B0) |
 | 2026-03-04 | **1145. 적어도 대부분의 배수** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/1145.%E2%80%85%EC%A0%81%EC%96%B4%EB%8F%84%E2%80%85%EB%8C%80%EB%B6%80%EB%B6%84%EC%9D%98%E2%80%85%EB%B0%B0%EC%88%98) |
 | 2026-03-03 | **2508. 사탕 박사 고창영** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/2508.%E2%80%85%EC%82%AC%ED%83%95%E2%80%85%EB%B0%95%EC%82%AC%E2%80%85%EA%B3%A0%EC%B0%BD%EC%98%81) |
 | 2026-03-02 | **17252. 삼삼한 수** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/17252.%E2%80%85%EC%82%BC%EC%82%BC%ED%95%9C%E2%80%85%EC%88%98) |
@@ -40,5 +41,4 @@
 | 2026-01-27 | **84512. 모음 사전** | Programmers | [코드](./%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/84512.%E2%80%85%EB%AA%A8%EC%9D%8C%E2%80%85%EC%82%AC%EC%A0%84) |
 | 2026-01-26 | **2178. 미로 탐색** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/2178.%E2%80%85%EB%AF%B8%EB%A1%9C%E2%80%85%ED%83%90%EC%83%89) |
 | 2026-01-20 | **1260. DFS와 BFS** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/1260.%E2%80%85DFS%EC%99%80%E2%80%85BFS) |
-| 2026-01-19 | **2309. 일곱 난쟁이** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2309.%E2%80%85%EC%9D%BC%EA%B3%B1%E2%80%85%EB%82%9C%EC%9F%81%EC%9D%B4) |
 <!-- RECENT_SOLUTIONS:END -->
