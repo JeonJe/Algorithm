@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 416 | 2026-03-09 |
+| Baekjoon | 417 | 2026-03-10 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **798** | - |
+| **Total** | **799** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-03-10 | **1189. 컴백홈** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/1189.%E2%80%85%EC%BB%B4%EB%B0%B1%ED%99%88) |
 | 2026-03-09 | **10655. 마라톤 1** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/10655.%E2%80%85%EB%A7%88%EB%9D%BC%ED%86%A4%E2%80%851) |
 | 2026-03-06 | **23351. 물 주기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/23351.%E2%80%85%EB%AC%BC%E2%80%85%EC%A3%BC%EA%B8%B0) |
 | 2026-03-05 | **1417. 국회의원 선거** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/1417.%E2%80%85%EA%B5%AD%ED%9A%8C%EC%9D%98%EC%9B%90%E2%80%85%EC%84%A0%EA%B1%B0) |
@@ -40,5 +41,4 @@
 | 2026-02-04 | **2851. 슈퍼 마리오** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2851.%E2%80%85%EC%8A%88%ED%8D%BC%E2%80%85%EB%A7%88%EB%A6%AC%EC%98%A4) |
 | 2026-02-03 | **138476. 귤 고르기** | Programmers | [코드](./%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/138476.%E2%80%85%EA%B7%A4%E2%80%85%EA%B3%A0%EB%A5%B4%EA%B8%B0) |
 | 2026-01-28 | **6131. 완전 제곱수** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/6131.%E2%80%85%EC%99%84%EC%A0%84%E2%80%85%EC%A0%9C%EA%B3%B1%EC%88%98) |
-| 2026-01-27 | **84512. 모음 사전** | Programmers | [코드](./%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/2/84512.%E2%80%85%EB%AA%A8%EC%9D%8C%E2%80%85%EC%82%AC%EC%A0%84) |
 <!-- RECENT_SOLUTIONS:END -->
