@@ -32,12 +32,7 @@ public class Main {
             int maxLength = 0;
 
             //0 부터 length까지 정방향 postfix랑,  역방향 prefix 를 짤라서 같다면 그때 length 추가
-            if (s.equals(reverse)) {
-                System.out.println(s);
-                continue;
-            }
-
-            for (int j = 1; j < s.length(); j++) {
+            for (int j = 1; j <= s.length(); j++) {
                 String a = s.substring(s.length() - j);
                 String b = reverse.substring(0, j);
                 if (a.equals(b)) {
