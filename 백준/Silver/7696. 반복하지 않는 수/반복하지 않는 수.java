@@ -38,7 +38,7 @@ public class Main {
 
         int cur = 1;
         int idx = 1;
-        while(idx <= 1_000_000) {
+        while (idx <= 1_000_000) {
             if (!isRepeat(cur)) {
                 arr[idx] = cur;
                 idx++;
@@ -59,16 +59,15 @@ public class Main {
     }
 
     private static boolean isRepeat(int num) {
-        for(int i = 0 ; i < 10; i++) {
-            visited[i] = false;
-        }
+        int mask = 0;
 
         while (num > 0) {
             int digit = num % 10;
-            if(visited[digit]) {
+            if ((mask & (1 << digit)) != 0) {
                 return true;
             }
-            visited[digit] = true;
+
+            mask |= (1 << digit);
             num /= 10;
         }
         return false;
