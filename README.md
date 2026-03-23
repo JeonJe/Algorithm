@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 424 | 2026-03-20 |
+| Baekjoon | 425 | 2026-03-23 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **806** | - |
+| **Total** | **807** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-03-23 | **16159. 전광판의 숫자** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/16159.%E2%80%85%EC%A0%84%EA%B4%91%ED%8C%90%EC%9D%98%E2%80%85%EC%88%AB%EC%9E%90) |
 | 2026-03-20 | **30684. 모르고리즘 회장 정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/30684.%E2%80%85%EB%AA%A8%EB%A5%B4%EA%B3%A0%EB%A6%AC%EC%A6%98%E2%80%85%ED%9A%8C%EC%9E%A5%E2%80%85%EC%A0%95%ED%95%98%EA%B8%B0) |
 | 2026-03-19 | **2798. 블랙잭** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2798.%E2%80%85%EB%B8%94%EB%9E%99%EC%9E%AD) |
 | 2026-03-18 | **14697. 방 배정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/14697.%E2%80%85%EB%B0%A9%E2%80%85%EB%B0%B0%EC%A0%95%ED%95%98%EA%B8%B0) |
@@ -40,5 +41,4 @@
 | 2026-02-26 | **2920. 음계** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2920.%E2%80%85%EC%9D%8C%EA%B3%84) |
 | 2026-02-25 | **25180. 썸 팰린드롬** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/25180.%E2%80%85%EC%8D%B8%E2%80%85%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC) |
 | 2026-02-24 | **29615. 알파빌과 베타빌** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/29615.%E2%80%85%EC%95%8C%ED%8C%8C%EB%B9%8C%EA%B3%BC%E2%80%85%EB%B2%A0%ED%83%80%EB%B9%8C) |
-| 2026-02-20 | **32752. 수열이에요？** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/32752.%E2%80%85%EC%88%98%EC%97%B4%EC%9D%B4%EC%97%90%EC%9A%94%EF%BC%9F) |
 <!-- RECENT_SOLUTIONS:END -->
