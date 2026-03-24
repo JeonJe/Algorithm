@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 426 | 2026-03-24 |
+| Baekjoon | 427 | 2026-03-24 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **808** | - |
+| **Total** | **809** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-03-24 | **23056. 참가자 명단** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/23056.%E2%80%85%EC%B0%B8%EA%B0%80%EC%9E%90%E2%80%85%EB%AA%85%EB%8B%A8) |
 | 2026-03-24 | **10865. 친구 친구** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/10865.%E2%80%85%EC%B9%9C%EA%B5%AC%E2%80%85%EC%B9%9C%EA%B5%AC) |
 | 2026-03-23 | **16159. 전광판의 숫자** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/16159.%E2%80%85%EC%A0%84%EA%B4%91%ED%8C%90%EC%9D%98%E2%80%85%EC%88%AB%EC%9E%90) |
 | 2026-03-20 | **30684. 모르고리즘 회장 정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/30684.%E2%80%85%EB%AA%A8%EB%A5%B4%EA%B3%A0%EB%A6%AC%EC%A6%98%E2%80%85%ED%9A%8C%EC%9E%A5%E2%80%85%EC%A0%95%ED%95%98%EA%B8%B0) |
@@ -40,5 +41,4 @@
 | 2026-03-02 | **17252. 삼삼한 수** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/17252.%E2%80%85%EC%82%BC%EC%82%BC%ED%95%9C%E2%80%85%EC%88%98) |
 | 2026-02-27 | **33870. 빗질의 중요성** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/33870.%E2%80%85%EB%B9%97%EC%A7%88%EC%9D%98%E2%80%85%EC%A4%91%EC%9A%94%EC%84%B1) |
 | 2026-02-26 | **2920. 음계** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2920.%E2%80%85%EC%9D%8C%EA%B3%84) |
-| 2026-02-25 | **25180. 썸 팰린드롬** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/25180.%E2%80%85%EC%8D%B8%E2%80%85%ED%8C%B0%EB%A6%B0%EB%93%9C%EB%A1%AC) |
 <!-- RECENT_SOLUTIONS:END -->
