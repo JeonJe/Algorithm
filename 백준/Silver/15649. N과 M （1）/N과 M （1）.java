@@ -1,60 +1,48 @@
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.StringTokenizer;
 
 public class Main {
-    private static int N;
-    private static int M;
+    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    static StringBuilder sb = new StringBuilder();
+    static StringTokenizer st;
+    static int n = 0, m = 0;
+    static boolean[] visited;
 
     public static void main(String[] args) throws Exception {
-        //System.setIn(new FileInputStream("input.txt"));  // 제출 시 이 줄만 주석처리
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        N = Integer.parseInt(st.nextToken());
-        M = Integer.parseInt(st.nextToken());
+        st = new StringTokenizer(br.readLine());
 
-        //선택한 숫자들 표시
-        boolean[] visited = new boolean[N];
+        n = Integer.parseInt(st.nextToken());
+        m = Integer.parseInt(st.nextToken());
 
-        //현재 선택한 숫자 순서
-        List<Integer> temp = new ArrayList<>();
+        int[] arr = new int[m];
+        visited = new boolean[n+1];
 
-        dfs(visited, temp, 0);
+
+        dfs(0, arr);
 
 
     }
 
-    private static void dfs(boolean[] visited, List<Integer> temp, int count) {
-        if (count == M) {
-            print(temp);
+    static void dfs(int idx, int[] arr) {
+        if (idx == m) {
+            for(int i : arr) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
             return;
         }
 
-        for (int i = 0; i < N; i++) {
-            if (visited[i]) {
-                continue;
-            }
-            //숫자 선택
-            visited[i] = true;
-            temp.add(i);
-
-            dfs(visited, temp, count + 1);
-
-            visited[i] = false;
-            temp.remove(temp.size() - 1);
+        for (int i = 0; i < n; i++) {
+            if (visited[i + 1]) continue;
+            
+            arr[idx] = i + 1;
+            visited[i + 1] = true;
+            dfs(idx + 1, arr);
+            visited[i + 1] = false;
         }
 
     }
 
-    private static void print(List<Integer> temp) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < temp.size() - 1; i++) {
-            sb.append(temp.get(i) + 1 + " ");
-        }
-        sb.append(temp.get(temp.size() - 1) + 1).append("\n");
 
-        System.out.print(sb.toString());
-
-    }
 }
