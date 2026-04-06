@@ -19,30 +19,15 @@ public class Main {
             int start = Integer.parseInt(st.nextToken());
             int end = Integer.parseInt(st.nextToken());
 
-            if(start == end) {
-                System.out.println("Same");
-                continue;
-            }
+            int inner = (end - start + 43) % 43;
+            int outer = (start - end + 43) % 43;
 
-            int rightDirection;
-            int leftDirection;
-
-            if (start <= end) {
-                rightDirection = end - start;
-                leftDirection = 43 - end + start;
-            } else {
-                rightDirection = 43 - start + end;
-                leftDirection = start - end;
-            }
-
-            if (leftDirection < rightDirection) {
-                System.out.println("Outer circle line");
-            } else if (leftDirection > rightDirection) {
-                System.out.println("Inner circle line");
-            }
+            if (inner < outer) sb.append("Inner circle line\n");
+            else if (outer < inner) sb.append("Outer circle line\n");
+            else sb.append("Same\n");
         }
 
-
+        System.out.print(sb);
     }
 
 
