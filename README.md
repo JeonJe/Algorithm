@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 439 | 2026-04-10 |
+| Baekjoon | 440 | 2026-04-13 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **821** | - |
+| **Total** | **822** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-04-13 | **14470. 전자레인지** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/14470.%E2%80%85%EC%A0%84%EC%9E%90%EB%A0%88%EC%9D%B8%EC%A7%80) |
 | 2026-04-10 | **33937. 태권도와 복싱을 합한 운동** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/33937.%E2%80%85%ED%83%9C%EA%B6%8C%EB%8F%84%EC%99%80%E2%80%85%EB%B3%B5%EC%8B%B1%EC%9D%84%E2%80%85%ED%95%A9%ED%95%9C%E2%80%85%EC%9A%B4%EB%8F%99) |
 | 2026-04-09 | **32969. 학술대회 참가신청** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/32969.%E2%80%85%ED%95%99%EC%88%A0%EB%8C%80%ED%9A%8C%E2%80%85%EC%B0%B8%EA%B0%80%EC%8B%A0%EC%B2%AD) |
 | 2026-04-08 | **9070. 장보기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/9070.%E2%80%85%EC%9E%A5%EB%B3%B4%EA%B8%B0) |
@@ -40,5 +41,4 @@
 | 2026-03-20 | **30684. 모르고리즘 회장 정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/30684.%E2%80%85%EB%AA%A8%EB%A5%B4%EA%B3%A0%EB%A6%AC%EC%A6%98%E2%80%85%ED%9A%8C%EC%9E%A5%E2%80%85%EC%A0%95%ED%95%98%EA%B8%B0) |
 | 2026-03-19 | **2798. 블랙잭** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2798.%E2%80%85%EB%B8%94%EB%9E%99%EC%9E%AD) |
 | 2026-03-18 | **14697. 방 배정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/14697.%E2%80%85%EB%B0%A9%E2%80%85%EB%B0%B0%EC%A0%95%ED%95%98%EA%B8%B0) |
-| 2026-03-17 | **19532. 수학은 비대면강의입니다** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/19532.%E2%80%85%EC%88%98%ED%95%99%EC%9D%80%E2%80%85%EB%B9%84%EB%8C%80%EB%A9%B4%EA%B0%95%EC%9D%98%EC%9E%85%EB%8B%88%EB%8B%A4) |
 <!-- RECENT_SOLUTIONS:END -->
