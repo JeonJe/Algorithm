@@ -10,17 +10,18 @@
 <!-- SOLUTION_SUMMARY:START -->
 | 플랫폼 | 풀이 수 | 최근 풀이일 |
 |---|---:|---|
-| Baekjoon | 441 | 2026-04-14 |
+| Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
 | LeetCode | 64 | 2025-12-16 |
 | CodeTree | 111 | 2025-02-28 |
-| **Total** | **823** | - |
+| **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
 
 ## 🆕 최근 풀이
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-04-16 | **2711. 오타맨 고창영** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2711.%E2%80%85%EC%98%A4%ED%83%80%EB%A7%A8%E2%80%85%EA%B3%A0%EC%B0%BD%EC%98%81) |
 | 2026-04-14 | **34722. 출제자가 몇 명** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/34722.%E2%80%85%EC%B6%9C%EC%A0%9C%EC%9E%90%EA%B0%80%E2%80%85%EB%AA%87%E2%80%85%EB%AA%85) |
 | 2026-04-13 | **14470. 전자레인지** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/14470.%E2%80%85%EC%A0%84%EC%9E%90%EB%A0%88%EC%9D%B8%EC%A7%80) |
 | 2026-04-10 | **33937. 태권도와 복싱을 합한 운동** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/33937.%E2%80%85%ED%83%9C%EA%B6%8C%EB%8F%84%EC%99%80%E2%80%85%EB%B3%B5%EC%8B%B1%EC%9D%84%E2%80%85%ED%95%A9%ED%95%9C%E2%80%85%EC%9A%B4%EB%8F%99) |
@@ -40,5 +41,4 @@
 | 2026-03-24 | **10865. 친구 친구** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/10865.%E2%80%85%EC%B9%9C%EA%B5%AC%E2%80%85%EC%B9%9C%EA%B5%AC) |
 | 2026-03-23 | **16159. 전광판의 숫자** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/16159.%E2%80%85%EC%A0%84%EA%B4%91%ED%8C%90%EC%9D%98%E2%80%85%EC%88%AB%EC%9E%90) |
 | 2026-03-20 | **30684. 모르고리즘 회장 정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/30684.%E2%80%85%EB%AA%A8%EB%A5%B4%EA%B3%A0%EB%A6%AC%EC%A6%98%E2%80%85%ED%9A%8C%EC%9E%A5%E2%80%85%EC%A0%95%ED%95%98%EA%B8%B0) |
-| 2026-03-19 | **2798. 블랙잭** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2798.%E2%80%85%EB%B8%94%EB%9E%99%EC%9E%AD) |
 <!-- RECENT_SOLUTIONS:END -->
