@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-04-21 | **0136-single-number** | LeetCode | [코드](./0136-single-number) |
 | 2026-04-21 | **0119-pascals-triangle-ii** | LeetCode | [코드](./0119-pascals-triangle-ii) |
 | 2026-04-16 | **2711. 오타맨 고창영** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2711.%E2%80%85%EC%98%A4%ED%83%80%EB%A7%A8%E2%80%85%EA%B3%A0%EC%B0%BD%EC%98%81) |
 | 2026-04-14 | **34722. 출제자가 몇 명** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/34722.%E2%80%85%EC%B6%9C%EC%A0%9C%EC%9E%90%EA%B0%80%E2%80%85%EB%AA%87%E2%80%85%EB%AA%85) |
@@ -40,7 +41,6 @@
 | 2026-03-25 | **9417. 최대 GCD** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/9417.%E2%80%85%EC%B5%9C%EB%8C%80%E2%80%85GCD) |
 | 2026-03-24 | **23056. 참가자 명단** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/23056.%E2%80%85%EC%B0%B8%EA%B0%80%EC%9E%90%E2%80%85%EB%AA%85%EB%8B%A8) |
 | 2026-03-24 | **10865. 친구 친구** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/10865.%E2%80%85%EC%B9%9C%EA%B5%AC%E2%80%85%EC%B9%9C%EA%B5%AC) |
-| 2026-03-23 | **16159. 전광판의 숫자** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/16159.%E2%80%85%EC%A0%84%EA%B4%91%ED%8C%90%EC%9D%98%E2%80%85%EC%88%AB%EC%9E%90) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
