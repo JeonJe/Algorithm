@@ -42,3 +42,15 @@
 | 2026-03-23 | **16159. 전광판의 숫자** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/16159.%E2%80%85%EC%A0%84%EA%B4%91%ED%8C%90%EC%9D%98%E2%80%85%EC%88%AB%EC%9E%90) |
 | 2026-03-20 | **30684. 모르고리즘 회장 정하기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/30684.%E2%80%85%EB%AA%A8%EB%A5%B4%EA%B3%A0%EB%A6%AC%EC%A6%98%E2%80%85%ED%9A%8C%EC%9E%A5%E2%80%85%EC%A0%95%ED%95%98%EA%B8%B0) |
 <!-- RECENT_SOLUTIONS:END -->
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
+<!---LeetCode Topics End-->
