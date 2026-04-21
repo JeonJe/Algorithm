@@ -44,14 +44,19 @@ jobs:
           git add README.md
           git commit -m "chore(readme): auto-update recent solutions"
 
-          # 원격이 앞서있을 수 있으니 rebase 후 재시도 (최대 5회)
+          # 원격이 앞서있을 수 있으니 rebase 후 재시도 (최대 5회, jittered backoff)
           for i in 1 2 3 4 5; do
             if git push; then
               echo "Pushed on attempt $i."
               exit 0
             fi
             echo "Push rejected (attempt $i). Rebasing on latest origin/main and retrying..."
-            git pull --rebase --autostash origin main
+            if ! git pull --rebase --autostash origin main; then
+              echo "Rebase failed on attempt $i; aborting rebase." >&2
+              git rebase --abort || true
+              exit 1
+            fi
+            sleep $((RANDOM % 5 + i))
           done
           echo "Failed to push after 5 attempts." >&2
           exit 1
