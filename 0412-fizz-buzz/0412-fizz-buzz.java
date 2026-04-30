@@ -2,22 +2,26 @@ class Solution {
     public List<String> fizzBuzz(int n) {
 
         String[] answer = new String[n + 1];
+        List<String> answer2 = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                answer[i] = "FizzBuzz";
+                // answer[i] = "FizzBuzz";
+                answer.add("FizzBuzz");
             } else if (i % 3 == 0) {
-                answer[i] = "Fizz";
+                // answer[i] = "Fizz";
+                answer.add("Fizz");
             } else if (i % 5 == 0) {
-                answer[i] = "Buzz";
+                // answer[i] = "Buzz";
+                answer.add("Buzz");
             } else {
-                answer[i] = String.valueOf(i);
+                // answer[i] = String.valueOf(i);
+                answer.add(i);
             }
         }
 
-        return Arrays.stream(answer)
-                .filter(s -> s != null)
-                .toList();
+   d
+                return answer2
 
     }
 }
