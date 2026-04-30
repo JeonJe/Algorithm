@@ -1,8 +1,8 @@
 class Solution {
     public List<String> fizzBuzz(int n) {
 
-        String[] answer = new String[n + 1];
-        List<String> answer2 = new ArrayList<>();
+        // String[] answer = new String[n + 1];
+        List<String> answer = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
@@ -16,12 +16,11 @@ class Solution {
                 answer.add("Buzz");
             } else {
                 // answer[i] = String.valueOf(i);
-                answer.add(i);
+                answer.add(String.valueOf(i));
             }
         }
 
-   d
-                return answer2
+        return answer;
 
     }
 }
