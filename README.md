@@ -50,6 +50,7 @@
 | ------- | ------- |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
+| [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/JeonJe/Algorithm/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/JeonJe/Algorithm/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 ## Dynamic Programming
@@ -98,4 +99,20 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
+## Hash Table
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
+## Counting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 <!---LeetCode Topics End-->
