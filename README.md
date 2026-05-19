@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-04-30 |
+| LeetCode | 64 | 2026-05-19 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-05-19 | **0169-majority-element** | LeetCode | [코드](./0169-majority-element) |
 | 2026-04-30 | **0412-fizz-buzz** | LeetCode | [코드](./0412-fizz-buzz) |
 | 2026-04-28 | **2515-shortest-distance-to-target-string-in-a-circular-array** | LeetCode | [코드](./2515-shortest-distance-to-target-string-in-a-circular-array) |
 | 2026-04-27 | **1391-check-if-there-is-a-valid-path-in-a-grid** | LeetCode | [코드](./1391-check-if-there-is-a-valid-path-in-a-grid) |
@@ -40,7 +41,6 @@
 | 2026-04-01 | **13223. 소금 폭탄** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/13223.%E2%80%85%EC%86%8C%EA%B8%88%E2%80%85%ED%8F%AD%ED%83%84) |
 | 2026-03-31 | **19843. 수면 패턴** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/19843.%E2%80%85%EC%88%98%EB%A9%B4%E2%80%85%ED%8C%A8%ED%84%B4) |
 | 2026-03-30 | **25602. 캔 주기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/25602.%E2%80%85%EC%BA%94%E2%80%85%EC%A3%BC%EA%B8%B0) |
-| 2026-03-27 | **33011. 홀수와 짝수 게임** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/33011.%E2%80%85%ED%99%80%EC%88%98%EC%99%80%E2%80%85%EC%A7%9D%EC%88%98%E2%80%85%EA%B2%8C%EC%9E%84) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
