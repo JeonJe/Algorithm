@@ -69,6 +69,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/JeonJe/Algorithm/tree/main/0002-add-two-numbers/) | Medium |
+| [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
@@ -115,4 +116,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
 <!---LeetCode Topics End-->
