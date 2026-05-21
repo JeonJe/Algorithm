@@ -8,16 +8,16 @@ class Solution {
         int right  =  (int) Math.floor( x / 2);
 
         while(left <= right) {
-            long mid = (long) Math.floor((left + right) / 2);
+            int mid = (int) Math.floor((left + ((right-left) / 2)));
 
-            long squre = mid * mid;
+             long squre = (long) mid * mid;
 
             if(squre == x) {
-                return (int) mid;
+                return  mid;
             } else if(squre < x) {
-                left = (int)mid + 1;
+                left =  mid + 1;
             } else {
-                right = (int) mid - 1;
+                right = mid - 1;
             }
         }
 
