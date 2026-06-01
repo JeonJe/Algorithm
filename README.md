@@ -62,6 +62,7 @@
 | ------- | ------- |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
 | [0191-number-of-1-bits](https://github.com/JeonJe/Algorithm/tree/main/0191-number-of-1-bits/) | Easy |
+| [0231-power-of-two](https://github.com/JeonJe/Algorithm/tree/main/0231-power-of-two/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -71,11 +72,13 @@
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/JeonJe/Algorithm/tree/main/0002-add-two-numbers/) | Medium |
 | [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
+| [0231-power-of-two](https://github.com/JeonJe/Algorithm/tree/main/0231-power-of-two/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/JeonJe/Algorithm/tree/main/0002-add-two-numbers/) | Medium |
+| [0231-power-of-two](https://github.com/JeonJe/Algorithm/tree/main/0231-power-of-two/) | Easy |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
