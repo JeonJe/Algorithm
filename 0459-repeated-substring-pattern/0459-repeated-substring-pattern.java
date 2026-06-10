@@ -4,10 +4,7 @@ class Solution {
         for(int i = 0; i < s.length()-1; i++) {
             String cur = s.substring(0,i+1);
 
-            if( (s + cur).equals(cur + s)) {
-                System.out.println(s + cur );
-                System.out.println(cur + s );
-                
+            if( (s + cur).equals(cur + s)) {    
                 return true;
             }
         }
