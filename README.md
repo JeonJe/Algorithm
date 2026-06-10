@@ -100,6 +100,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
+| [0459-repeated-substring-pattern](https://github.com/JeonJe/Algorithm/tree/main/0459-repeated-substring-pattern/) | Easy |
 | [1071-greatest-common-divisor-of-strings](https://github.com/JeonJe/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/JeonJe/Algorithm/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 ## Simulation
@@ -127,4 +128,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
+## String Matching
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0459-repeated-substring-pattern](https://github.com/JeonJe/Algorithm/tree/main/0459-repeated-substring-pattern/) | Easy |
 <!---LeetCode Topics End-->
