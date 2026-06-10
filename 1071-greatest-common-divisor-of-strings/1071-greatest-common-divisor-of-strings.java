@@ -4,7 +4,7 @@ class Solution {
     public String gcdOfStrings(String str1, String str2) {
         String answer = ""; 
 
-        for (int i = 0; i < str1.length(); i++) {
+        for (int i = str1.length()-1; i >= 0; i--) {
             String cur = str1.substring(0, i + 1);
             
             String check1 = str1.replace(cur, "");
@@ -12,6 +12,7 @@ class Solution {
             
             if(check1.equals("") && check2.equals("")) {
                 answer = cur;
+                break;
             }
 
         }
