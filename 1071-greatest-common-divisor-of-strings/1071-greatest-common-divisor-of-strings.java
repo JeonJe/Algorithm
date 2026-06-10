@@ -6,7 +6,6 @@ class Solution {
 
         for (int i = 0; i < str1.length(); i++) {
             String cur = str1.substring(0, i + 1);
-            System.out.println(cur);
             
             String temp1 = str1;
             String temp2 = str2;
