@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-06-01 |
+| LeetCode | 64 | 2026-06-10 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-06-10 | **1071-greatest-common-divisor-of-strings** | LeetCode | [코드](./1071-greatest-common-divisor-of-strings) |
 | 2026-06-01 | **0231-power-of-two** | LeetCode | [코드](./0231-power-of-two) |
 | 2026-06-01 | **0191-number-of-1-bits** | LeetCode | [코드](./0191-number-of-1-bits) |
 | 2026-05-21 | **0069-sqrtx** | LeetCode | [코드](./0069-sqrtx) |
@@ -40,7 +41,6 @@
 | 2026-04-07 | **9094. 수학적 호기심** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/9094.%E2%80%85%EC%88%98%ED%95%99%EC%A0%81%E2%80%85%ED%98%B8%EA%B8%B0%EC%8B%AC) |
 | 2026-04-06 | **32777. 가희와 서울 지하철 2호선** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/32777.%E2%80%85%EA%B0%80%ED%9D%AC%EC%99%80%E2%80%85%EC%84%9C%EC%9A%B8%E2%80%85%EC%A7%80%ED%95%98%EC%B2%A0%E2%80%852%ED%98%B8%EC%84%A0) |
 | 2026-04-03 | **15649. N과 M （1）** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/15649.%E2%80%85N%EA%B3%BC%E2%80%85M%E2%80%85%EF%BC%881%EF%BC%89) |
-| 2026-04-02 | **25592. 바둑돌 게임** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/25592.%E2%80%85%EB%B0%94%EB%91%91%EB%8F%8C%E2%80%85%EA%B2%8C%EC%9E%84) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
