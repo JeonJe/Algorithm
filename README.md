@@ -74,6 +74,7 @@
 | [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
 | [0231-power-of-two](https://github.com/JeonJe/Algorithm/tree/main/0231-power-of-two/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
+| [1071-greatest-common-divisor-of-strings](https://github.com/JeonJe/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -99,6 +100,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
+| [1071-greatest-common-divisor-of-strings](https://github.com/JeonJe/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/JeonJe/Algorithm/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
 ## Simulation
 | Problem Name | Difficulty |
