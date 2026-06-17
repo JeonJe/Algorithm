@@ -51,6 +51,7 @@
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
+| [0605-can-place-flowers](https://github.com/JeonJe/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/JeonJe/Algorithm/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/JeonJe/Algorithm/tree/main/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/JeonJe/Algorithm/tree/main/2515-shortest-distance-to-target-string-in-a-circular-array/) | Easy |
@@ -133,4 +134,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0459-repeated-substring-pattern](https://github.com/JeonJe/Algorithm/tree/main/0459-repeated-substring-pattern/) | Easy |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0605-can-place-flowers](https://github.com/JeonJe/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 <!---LeetCode Topics End-->
