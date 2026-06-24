@@ -5,7 +5,7 @@ class Solution {
         if(nums.length == 0 || nums.length == 1) {
             return nums.length;
         }
-        
+
         int answer = 1;
 
         HashSet<Integer> set = new HashSet<>();
@@ -21,12 +21,8 @@ class Solution {
                 while (set.contains(right + 1)) {
                     right++;
                 }
-                answer = Math.max(answer, right - cur + 1);
-               
-            } else {
-
-            }
-
+                answer = Math.max(answer, right - cur + 1); 
+            } 
         }
 
         return answer;
