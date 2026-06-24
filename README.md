@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-06-23 |
+| LeetCode | 64 | 2026-06-24 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-06-24 | **0128-longest-consecutive-sequence** | LeetCode | [코드](./0128-longest-consecutive-sequence) |
 | 2026-06-23 | **0347-top-k-frequent-elements** | LeetCode | [코드](./0347-top-k-frequent-elements) |
 | 2026-06-22 | **0001-two-sum** | LeetCode | [코드](./0001-two-sum) |
 | 2026-06-22 | **0217-contains-duplicate** | LeetCode | [코드](./0217-contains-duplicate) |
@@ -40,7 +41,6 @@
 | 2026-04-21 | **0119-pascals-triangle-ii** | LeetCode | [코드](./0119-pascals-triangle-ii) |
 | 2026-04-16 | **2711. 오타맨 고창영** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2711.%E2%80%85%EC%98%A4%ED%83%80%EB%A7%A8%E2%80%85%EA%B3%A0%EC%B0%BD%EC%98%81) |
 | 2026-04-14 | **34722. 출제자가 몇 명** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/34722.%E2%80%85%EC%B6%9C%EC%A0%9C%EC%9E%90%EA%B0%80%E2%80%85%EB%AA%87%E2%80%85%EB%AA%85) |
-| 2026-04-13 | **14470. 전자레인지** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/14470.%E2%80%85%EC%A0%84%EC%9E%90%EB%A0%88%EC%9D%B8%EC%A7%80) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
