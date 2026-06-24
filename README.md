@@ -50,6 +50,7 @@
 | ------- | ------- |
 | [0001-two-sum](https://github.com/JeonJe/Algorithm/tree/main/0001-two-sum/) | Easy |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
+| [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [0217-contains-duplicate](https://github.com/JeonJe/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
@@ -96,6 +97,7 @@
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/JeonJe/Algorithm/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 ## Matrix
 | Problem Name | Difficulty |
@@ -116,6 +118,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/JeonJe/Algorithm/tree/main/0001-two-sum/) | Easy |
+| [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [0217-contains-duplicate](https://github.com/JeonJe/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/JeonJe/Algorithm/tree/main/0347-top-k-frequent-elements/) | Medium |
