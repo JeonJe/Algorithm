@@ -4,8 +4,8 @@ class Solution {
     public int rob(int[] nums) {
         int answer = 0;
 
-        // index 번째 집까지 털었을 때 최소
-        int[] dp = new int[nums.length + 1];
+        // index 번째 집까지 털었을 때 최대 
+        int[] dp = new int[nums.length];
         if (nums.length == 1) return nums[0];
         if (nums.length == 2) return Math.max(nums[0], nums[1]);
         
