@@ -108,6 +108,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0242-valid-anagram](https://github.com/JeonJe/Algorithm/tree/main/0242-valid-anagram/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
 | [0459-repeated-substring-pattern](https://github.com/JeonJe/Algorithm/tree/main/0459-repeated-substring-pattern/) | Easy |
 | [1071-greatest-common-divisor-of-strings](https://github.com/JeonJe/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
@@ -123,6 +124,7 @@
 | [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [0217-contains-duplicate](https://github.com/JeonJe/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
+| [0242-valid-anagram](https://github.com/JeonJe/Algorithm/tree/main/0242-valid-anagram/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/JeonJe/Algorithm/tree/main/0347-top-k-frequent-elements/) | Medium |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -135,6 +137,7 @@
 | ------- | ------- |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [0217-contains-duplicate](https://github.com/JeonJe/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
+| [0242-valid-anagram](https://github.com/JeonJe/Algorithm/tree/main/0242-valid-anagram/) | Easy |
 | [0347-top-k-frequent-elements](https://github.com/JeonJe/Algorithm/tree/main/0347-top-k-frequent-elements/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
