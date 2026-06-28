@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-06-25 |
+| LeetCode | 64 | 2026-06-28 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-06-28 | **0242-valid-anagram** | LeetCode | [코드](./0242-valid-anagram) |
 | 2026-06-25 | **0198-house-robber** | LeetCode | [코드](./0198-house-robber) |
 | 2026-06-24 | **0128-longest-consecutive-sequence** | LeetCode | [코드](./0128-longest-consecutive-sequence) |
 | 2026-06-23 | **0347-top-k-frequent-elements** | LeetCode | [코드](./0347-top-k-frequent-elements) |
@@ -40,7 +41,6 @@
 | 2026-04-26 | **0002-add-two-numbers** | LeetCode | [코드](./0002-add-two-numbers) |
 | 2026-04-21 | **0136-single-number** | LeetCode | [코드](./0136-single-number) |
 | 2026-04-21 | **0119-pascals-triangle-ii** | LeetCode | [코드](./0119-pascals-triangle-ii) |
-| 2026-04-16 | **2711. 오타맨 고창영** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/2711.%E2%80%85%EC%98%A4%ED%83%80%EB%A7%A8%E2%80%85%EA%B3%A0%EC%B0%BD%EC%98%81) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
