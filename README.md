@@ -63,6 +63,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0070-climbing-stairs](https://github.com/JeonJe/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0198-house-robber](https://github.com/JeonJe/Algorithm/tree/main/0198-house-robber/) | Medium |
 ## Bit Manipulation
@@ -80,6 +81,7 @@
 | ------- | ------- |
 | [0002-add-two-numbers](https://github.com/JeonJe/Algorithm/tree/main/0002-add-two-numbers/) | Medium |
 | [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
+| [0070-climbing-stairs](https://github.com/JeonJe/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 | [0231-power-of-two](https://github.com/JeonJe/Algorithm/tree/main/0231-power-of-two/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
 | [1071-greatest-common-divisor-of-strings](https://github.com/JeonJe/Algorithm/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
@@ -168,4 +170,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0347-top-k-frequent-elements](https://github.com/JeonJe/Algorithm/tree/main/0347-top-k-frequent-elements/) | Medium |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0070-climbing-stairs](https://github.com/JeonJe/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 <!---LeetCode Topics End-->
