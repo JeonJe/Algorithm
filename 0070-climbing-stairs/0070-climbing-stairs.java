@@ -1,12 +1,27 @@
 class Solution {
-    public int climbStairs(int n) {
-        int[] dp = new int[46];
-        dp[1] = 1;
-        dp[2] = 2;
+    static int[] memo = new int[46];
 
-        for(int i = 3; i <= n; i++) {
-            dp[i] = dp[i - 1] + dp[i - 2];
+
+    public int climbStairs(int n) {
+
+        if (n == 1) return 1;
+        if (n == 2) return 2;
+        memo[1] = 1;
+        memo[2] = 2;
+
+        dfs(n);
+        return memo[n];
+    }
+
+    private int dfs(int num) {
+
+        //이미 계산한적이 있으면
+        if (memo[num] != 0) {
+            return memo[num];
         }
-        return dp[n];
+
+        memo[num] = dfs(num - 1) + dfs(num - 2);
+        return memo[num];
+
     }
 }
