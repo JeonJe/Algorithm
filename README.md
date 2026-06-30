@@ -55,6 +55,7 @@
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [0198-house-robber](https://github.com/JeonJe/Algorithm/tree/main/0198-house-robber/) | Medium |
 | [0217-contains-duplicate](https://github.com/JeonJe/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
+| [0238-product-of-array-except-self](https://github.com/JeonJe/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0347-top-k-frequent-elements](https://github.com/JeonJe/Algorithm/tree/main/0347-top-k-frequent-elements/) | Medium |
 | [0605-can-place-flowers](https://github.com/JeonJe/Algorithm/tree/main/0605-can-place-flowers/) | Easy |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/JeonJe/Algorithm/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -174,4 +175,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/JeonJe/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
+## Prefix Sum
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0238-product-of-array-except-self](https://github.com/JeonJe/Algorithm/tree/main/0238-product-of-array-except-self/) | Medium |
 <!---LeetCode Topics End-->
