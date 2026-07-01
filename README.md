@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-06-30 |
+| LeetCode | 64 | 2026-07-01 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-01 | **0015-3sum** | LeetCode | [코드](./0015-3sum) |
 | 2026-06-30 | **0238-product-of-array-except-self** | LeetCode | [코드](./0238-product-of-array-except-self) |
 | 2026-06-29 | **0070-climbing-stairs** | LeetCode | [코드](./0070-climbing-stairs) |
 | 2026-06-28 | **0242-valid-anagram** | LeetCode | [코드](./0242-valid-anagram) |
@@ -40,7 +41,6 @@
 | 2026-04-30 | **0412-fizz-buzz** | LeetCode | [코드](./0412-fizz-buzz) |
 | 2026-04-28 | **2515-shortest-distance-to-target-string-in-a-circular-array** | LeetCode | [코드](./2515-shortest-distance-to-target-string-in-a-circular-array) |
 | 2026-04-27 | **1391-check-if-there-is-a-valid-path-in-a-grid** | LeetCode | [코드](./1391-check-if-there-is-a-valid-path-in-a-grid) |
-| 2026-04-26 | **0002-add-two-numbers** | LeetCode | [코드](./0002-add-two-numbers) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
