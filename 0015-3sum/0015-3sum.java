@@ -1,10 +1,6 @@
 import java.util.*;
 
 class Solution {
-    public static void main(String[] args) {
-        int[] nums = {-1, 0, 1, 2, -1, -4};
-        System.out.println(new Solution().threeSum(nums));
-    }
 
     public List<List<Integer>> threeSum(int[] nums) {
 
@@ -32,7 +28,7 @@ class Solution {
                     while (left + 1 < right && nums[left] == nums[left + 1]) {
                         left++;
                     }
-                    while (left + 1 < right && nums[right] == nums[right - 1]) {
+                    while (left < right - 1 && nums[right] == nums[right - 1]) {
                         right--;
                     }
                     left++;
