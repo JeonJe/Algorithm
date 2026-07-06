@@ -113,6 +113,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0125-valid-palindrome](https://github.com/JeonJe/Algorithm/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/JeonJe/Algorithm/tree/main/0242-valid-anagram/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
 | [0459-repeated-substring-pattern](https://github.com/JeonJe/Algorithm/tree/main/0459-repeated-substring-pattern/) | Easy |
@@ -186,6 +187,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0015-3sum](https://github.com/JeonJe/Algorithm/tree/main/0015-3sum/) | Medium |
+| [0125-valid-palindrome](https://github.com/JeonJe/Algorithm/tree/main/0125-valid-palindrome/) | Easy |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
