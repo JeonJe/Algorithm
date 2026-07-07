@@ -1,23 +1,13 @@
 class Solution {
-    public int hammingWeight(int n) {
-        
-        int cnt = 0;
+   public int hammingWeight(int n) {
+        int answer = 0;
 
-        while(n > 1) {
-            int r = n % 2;
-
-            if(r == 1) {
-                cnt++;
+        while (n > 0) {
+            if ((n & 1) == 1) {
+                answer++;
             }
-            n = n / 2;
+            n = n >>> 1;
         }
-
-        if(n == 1) {
-            cnt++;
-        }
-
-        return cnt;
-
-
+        return answer;
     }
 }
