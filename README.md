@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-07-07 |
+| LeetCode | 64 | 2026-07-08 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-08 | **0039-combination-sum** | LeetCode | [코드](./0039-combination-sum) |
 | 2026-07-07 | **0191-number-of-1-bits** | LeetCode | [코드](./0191-number-of-1-bits) |
 | 2026-07-06 | **0125-valid-palindrome** | LeetCode | [코드](./0125-valid-palindrome) |
 | 2026-07-02 | **0098-validate-binary-search-tree** | LeetCode | [코드](./0098-validate-binary-search-tree) |
@@ -40,7 +41,6 @@
 | 2026-06-01 | **0231-power-of-two** | LeetCode | [코드](./0231-power-of-two) |
 | 2026-05-21 | **0069-sqrtx** | LeetCode | [코드](./0069-sqrtx) |
 | 2026-05-19 | **0169-majority-element** | LeetCode | [코드](./0169-majority-element) |
-| 2026-04-30 | **0412-fizz-buzz** | LeetCode | [코드](./0412-fizz-buzz) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
