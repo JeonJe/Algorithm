@@ -6,20 +6,13 @@ class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         answer = new ArrayList<>();
 
-        Arrays.sort(candidates);
+        // Arrays.sort(candidates);
 
         List<Integer> bucket = new ArrayList<>();
         int curSum = 0;
 
         dfs(candidates, bucket, curSum, target, 0);
 
-        for (List<Integer> integers : answer) {
-            for (Integer integer : integers) {
-                System.out.print(integer + " ");
-            }
-            System.out.println();
-
-        }
         return answer;
     }
 
