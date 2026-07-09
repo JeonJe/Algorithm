@@ -67,6 +67,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/JeonJe/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
+| [0091-decode-ways](https://github.com/JeonJe/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0198-house-robber](https://github.com/JeonJe/Algorithm/tree/main/0198-house-robber/) | Medium |
 ## Bit Manipulation
@@ -114,6 +115,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0091-decode-ways](https://github.com/JeonJe/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0125-valid-palindrome](https://github.com/JeonJe/Algorithm/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/JeonJe/Algorithm/tree/main/0242-valid-anagram/) | Easy |
 | [0412-fizz-buzz](https://github.com/JeonJe/Algorithm/tree/main/0412-fizz-buzz/) | Easy |
