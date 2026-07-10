@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-10 | **0053-maximum-subarray** | LeetCode | [코드](./0053-maximum-subarray) |
 | 2026-07-10 | **0091-decode-ways** | LeetCode | [코드](./0091-decode-ways) |
 | 2026-07-08 | **0039-combination-sum** | LeetCode | [코드](./0039-combination-sum) |
 | 2026-07-07 | **0191-number-of-1-bits** | LeetCode | [코드](./0191-number-of-1-bits) |
@@ -40,7 +41,6 @@
 | 2026-06-10 | **0459-repeated-substring-pattern** | LeetCode | [코드](./0459-repeated-substring-pattern) |
 | 2026-06-10 | **1071-greatest-common-divisor-of-strings** | LeetCode | [코드](./1071-greatest-common-divisor-of-strings) |
 | 2026-06-01 | **0231-power-of-two** | LeetCode | [코드](./0231-power-of-two) |
-| 2026-05-21 | **0069-sqrtx** | LeetCode | [코드](./0069-sqrtx) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
