@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-07-10 |
+| LeetCode | 64 | 2026-07-13 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-13 | **0021-merge-two-sorted-lists** | LeetCode | [코드](./0021-merge-two-sorted-lists) |
 | 2026-07-10 | **0053-maximum-subarray** | LeetCode | [코드](./0053-maximum-subarray) |
 | 2026-07-10 | **0091-decode-ways** | LeetCode | [코드](./0091-decode-ways) |
 | 2026-07-08 | **0039-combination-sum** | LeetCode | [코드](./0039-combination-sum) |
@@ -40,7 +41,6 @@
 | 2026-06-11 | **1431-kids-with-the-greatest-number-of-candies** | LeetCode | [코드](./1431-kids-with-the-greatest-number-of-candies) |
 | 2026-06-10 | **0459-repeated-substring-pattern** | LeetCode | [코드](./0459-repeated-substring-pattern) |
 | 2026-06-10 | **1071-greatest-common-divisor-of-strings** | LeetCode | [코드](./1071-greatest-common-divisor-of-strings) |
-| 2026-06-01 | **0231-power-of-two** | LeetCode | [코드](./0231-power-of-two) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
