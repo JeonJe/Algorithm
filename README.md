@@ -55,6 +55,7 @@
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/JeonJe/Algorithm/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 | [0169-majority-element](https://github.com/JeonJe/Algorithm/tree/main/0169-majority-element/) | Easy |
 | [0198-house-robber](https://github.com/JeonJe/Algorithm/tree/main/0198-house-robber/) | Medium |
 | [0217-contains-duplicate](https://github.com/JeonJe/Algorithm/tree/main/0217-contains-duplicate/) | Easy |
@@ -165,6 +166,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0069-sqrtx](https://github.com/JeonJe/Algorithm/tree/main/0069-sqrtx/) | Easy |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/JeonJe/Algorithm/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
 ## String Matching
 | Problem Name | Difficulty |
 | ------- | ------- |
