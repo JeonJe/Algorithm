@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-17 | **0079-word-search** | LeetCode | [코드](./0079-word-search) |
 | 2026-07-17 | **0153-find-minimum-in-rotated-sorted-array** | LeetCode | [코드](./0153-find-minimum-in-rotated-sorted-array) |
 | 2026-07-14 | **0104-maximum-depth-of-binary-tree** | LeetCode | [코드](./0104-maximum-depth-of-binary-tree) |
 | 2026-07-13 | **0021-merge-two-sorted-lists** | LeetCode | [코드](./0021-merge-two-sorted-lists) |
@@ -40,7 +41,6 @@
 | 2026-06-22 | **0001-two-sum** | LeetCode | [코드](./0001-two-sum) |
 | 2026-06-22 | **0217-contains-duplicate** | LeetCode | [코드](./0217-contains-duplicate) |
 | 2026-06-17 | **0605-can-place-flowers** | LeetCode | [코드](./0605-can-place-flowers) |
-| 2026-06-11 | **1431-kids-with-the-greatest-number-of-candies** | LeetCode | [코드](./1431-kids-with-the-greatest-number-of-candies) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
