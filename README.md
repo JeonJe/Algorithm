@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-07-14 |
+| LeetCode | 64 | 2026-07-17 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-17 | **0153-find-minimum-in-rotated-sorted-array** | LeetCode | [코드](./0153-find-minimum-in-rotated-sorted-array) |
 | 2026-07-14 | **0104-maximum-depth-of-binary-tree** | LeetCode | [코드](./0104-maximum-depth-of-binary-tree) |
 | 2026-07-13 | **0021-merge-two-sorted-lists** | LeetCode | [코드](./0021-merge-two-sorted-lists) |
 | 2026-07-10 | **0053-maximum-subarray** | LeetCode | [코드](./0053-maximum-subarray) |
@@ -40,7 +41,6 @@
 | 2026-06-22 | **0217-contains-duplicate** | LeetCode | [코드](./0217-contains-duplicate) |
 | 2026-06-17 | **0605-can-place-flowers** | LeetCode | [코드](./0605-can-place-flowers) |
 | 2026-06-11 | **1431-kids-with-the-greatest-number-of-candies** | LeetCode | [코드](./1431-kids-with-the-greatest-number-of-candies) |
-| 2026-06-10 | **0459-repeated-substring-pattern** | LeetCode | [코드](./0459-repeated-substring-pattern) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
