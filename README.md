@@ -52,6 +52,7 @@
 | [0015-3sum](https://github.com/JeonJe/Algorithm/tree/main/0015-3sum/) | Medium |
 | [0039-combination-sum](https://github.com/JeonJe/Algorithm/tree/main/0039-combination-sum/) | Medium |
 | [0053-maximum-subarray](https://github.com/JeonJe/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
+| [0079-word-search](https://github.com/JeonJe/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
@@ -102,6 +103,7 @@
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0079-word-search](https://github.com/JeonJe/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0098-validate-binary-search-tree](https://github.com/JeonJe/Algorithm/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/JeonJe/Algorithm/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/JeonJe/Algorithm/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
@@ -118,10 +120,12 @@
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0079-word-search](https://github.com/JeonJe/Algorithm/tree/main/0079-word-search/) | Medium |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/JeonJe/Algorithm/tree/main/1391-check-if-there-is-a-valid-path-in-a-grid/) | Medium |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0079-word-search](https://github.com/JeonJe/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0091-decode-ways](https://github.com/JeonJe/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0125-valid-palindrome](https://github.com/JeonJe/Algorithm/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/JeonJe/Algorithm/tree/main/0242-valid-anagram/) | Easy |
@@ -218,4 +222,5 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0039-combination-sum](https://github.com/JeonJe/Algorithm/tree/main/0039-combination-sum/) | Medium |
+| [0079-word-search](https://github.com/JeonJe/Algorithm/tree/main/0079-word-search/) | Medium |
 <!---LeetCode Topics End-->
