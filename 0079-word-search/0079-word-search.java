@@ -1,13 +1,11 @@
-import java.util.*;
-
 class Solution {
 
-    public static char[][] board;
-    public static int m, n;
-    public static boolean[][] visited;
-    public static char[] word;
-    public static int[] dx = {-1, 1, 0, 0};
-    public static int[] dy = {0, 0, -1, 1};
+    private char[][] board;
+    private int m, n;
+    private boolean[][] visited;
+    private char[] word;
+    private static final int[] dx = {-1, 1, 0, 0};
+    private static final int[] dy = {0, 0, -1, 1};
 
 
     public boolean exist(char[][] board, String word) {
@@ -19,7 +17,6 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-
                 if (dfs(i, j, 0)) {
                     return true;
                 }
@@ -52,7 +49,6 @@ class Solution {
             }
         }
         visited[x][y] = false;
-
         return false;
     }
 }
