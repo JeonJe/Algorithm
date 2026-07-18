@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-07-17 |
+| LeetCode | 64 | 2026-07-18 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-18 | **0322-coin-change** | LeetCode | [코드](./0322-coin-change) |
 | 2026-07-17 | **0079-word-search** | LeetCode | [코드](./0079-word-search) |
 | 2026-07-17 | **0153-find-minimum-in-rotated-sorted-array** | LeetCode | [코드](./0153-find-minimum-in-rotated-sorted-array) |
 | 2026-07-14 | **0104-maximum-depth-of-binary-tree** | LeetCode | [코드](./0104-maximum-depth-of-binary-tree) |
@@ -40,7 +41,6 @@
 | 2026-06-23 | **0347-top-k-frequent-elements** | LeetCode | [코드](./0347-top-k-frequent-elements) |
 | 2026-06-22 | **0001-two-sum** | LeetCode | [코드](./0001-two-sum) |
 | 2026-06-22 | **0217-contains-duplicate** | LeetCode | [코드](./0217-contains-duplicate) |
-| 2026-06-17 | **0605-can-place-flowers** | LeetCode | [코드](./0605-can-place-flowers) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
