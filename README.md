@@ -54,6 +54,7 @@
 | [0053-maximum-subarray](https://github.com/JeonJe/Algorithm/tree/main/0053-maximum-subarray/) | Medium |
 | [0079-word-search](https://github.com/JeonJe/Algorithm/tree/main/0079-word-search/) | Medium |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/JeonJe/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0128-longest-consecutive-sequence](https://github.com/JeonJe/Algorithm/tree/main/0128-longest-consecutive-sequence/) | Medium |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/JeonJe/Algorithm/tree/main/0153-find-minimum-in-rotated-sorted-array/) | Medium |
@@ -74,6 +75,7 @@
 | [0070-climbing-stairs](https://github.com/JeonJe/Algorithm/tree/main/0070-climbing-stairs/) | Easy |
 | [0091-decode-ways](https://github.com/JeonJe/Algorithm/tree/main/0091-decode-ways/) | Medium |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/JeonJe/Algorithm/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0198-house-robber](https://github.com/JeonJe/Algorithm/tree/main/0198-house-robber/) | Medium |
 | [0322-coin-change](https://github.com/JeonJe/Algorithm/tree/main/0322-coin-change/) | Medium |
 ## Bit Manipulation
