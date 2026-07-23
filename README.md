@@ -12,7 +12,7 @@
 |---|---:|---|
 | Baekjoon | 442 | 2026-04-16 |
 | Programmers | 207 | 2026-02-12 |
-| LeetCode | 64 | 2026-07-20 |
+| LeetCode | 64 | 2026-07-23 |
 | CodeTree | 111 | 2025-02-28 |
 | **Total** | **824** | - |
 <!-- SOLUTION_SUMMARY:END -->
@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-07-23 | **0208-implement-trie-prefix-tree** | LeetCode | [코드](./0208-implement-trie-prefix-tree) |
 | 2026-07-20 | **0121-best-time-to-buy-and-sell-stock** | LeetCode | [코드](./0121-best-time-to-buy-and-sell-stock) |
 | 2026-07-18 | **0322-coin-change** | LeetCode | [코드](./0322-coin-change) |
 | 2026-07-17 | **0079-word-search** | LeetCode | [코드](./0079-word-search) |
@@ -40,7 +41,6 @@
 | 2026-06-25 | **0198-house-robber** | LeetCode | [코드](./0198-house-robber) |
 | 2026-06-24 | **0128-longest-consecutive-sequence** | LeetCode | [코드](./0128-longest-consecutive-sequence) |
 | 2026-06-23 | **0347-top-k-frequent-elements** | LeetCode | [코드](./0347-top-k-frequent-elements) |
-| 2026-06-22 | **0001-two-sum** | LeetCode | [코드](./0001-two-sum) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
