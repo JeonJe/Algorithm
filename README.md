@@ -58,4 +58,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0206-reverse-linked-list](https://github.com/JeonJe/Algorithm/tree/main/0206-reverse-linked-list/) | Easy |
+## Recursion
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0206-reverse-linked-list](https://github.com/JeonJe/Algorithm/tree/main/0206-reverse-linked-list/) | Easy |
 <!---LeetCode Topics End-->
