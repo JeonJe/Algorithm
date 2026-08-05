@@ -3,26 +3,30 @@ import java.util.*;
 class Solution {
     public int lengthOfLongestSubstring(String s) {
 
-        int answer = 0;
-        char[] charArray = s.toCharArray();
+        if (s.isEmpty()) {
+            return 0;
+        }
 
-        for(int i = 0; i < charArray.length; i++) {
+        int answer = 1;
+        int left = 0;
 
-            StringBuilder sb = new StringBuilder();
-            sb.append(charArray[i]);
-            Set<Character> temp = new HashSet<>();
-            temp.add(charArray[i]);
+        Set<Character> temp = new HashSet<>();
+        temp.add(s.charAt(0));
 
-            for (int j = i + 1; j < charArray.length; j++) {
-                if(temp.contains(charArray[j])) {
-                    break;
+        for (int right = 1; right < s.length(); right++) {
+
+            //새 문자가 set에 있으면?
+            if (temp.contains(s.charAt(right))) {
+                // 사라질때까지 s[left]를 set에서 빼며 left를 전진시킨다.
+                while (temp.contains(s.charAt(right))) {
+                    temp.remove(s.charAt(left));
+                    left++;
                 }
-
-                temp.add(charArray[j]);
-                sb.append(charArray[j]);
             }
 
-            answer = Math.max(answer, sb.length());
+            //set에 새문자를 넣고. 길이를 갱신한다
+            temp.add(s.charAt(right));
+            answer = Math.max(answer, right - left + 1);
         }
 
         return answer;
