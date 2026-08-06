@@ -4,19 +4,20 @@ class Solution {
     public int uniquePaths(int m, int n) {
 
         int[][] arr = new int[m][n];
-        arr[0][0] = 1;
 
-        for (int i = 1; i < m; i++) {
-            arr[i][0] = 1;
-        }
+        int upSide;
+        int leftSide;
 
-        for (int i = 1; i < n; i++) {
-            arr[0][i] = 1;
-        }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i == 0 && j == 0) {
+                    arr[i][j] = 1;
+                    continue;
+                }
 
-        for (int i = 1; i < m; i++) {
-            for (int j = 1; j < n; j++) {
-                arr[i][j] = arr[i - 1][j] + arr[i][j - 1];
+                upSide = i - 1 < 0 ? 0 : arr[i - 1][j];
+                leftSide = j - 1 < 0 ? 0 : arr[i][j - 1];
+                arr[i][j] = upSide + leftSide;
             }
         }
 
