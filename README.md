@@ -54,6 +54,7 @@
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0062-unique-paths](https://github.com/JeonJe/Algorithm/tree/main/0062-unique-paths/) | Medium |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 ## Bit Manipulation
 | Problem Name | Difficulty |
@@ -95,4 +96,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/JeonJe/Algorithm/tree/main/0200-number-of-islands/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/JeonJe/Algorithm/tree/main/0062-unique-paths/) | Medium |
+## Combinatorics
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0062-unique-paths](https://github.com/JeonJe/Algorithm/tree/main/0062-unique-paths/) | Medium |
 <!---LeetCode Topics End-->
