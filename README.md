@@ -50,6 +50,7 @@
 | ------- | ------- |
 | [0119-pascals-triangle-ii](https://github.com/JeonJe/Algorithm/tree/main/0119-pascals-triangle-ii/) | Easy |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
+| [0200-number-of-islands](https://github.com/JeonJe/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -78,4 +79,20 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/JeonJe/Algorithm/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+## Depth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0200-number-of-islands](https://github.com/JeonJe/Algorithm/tree/main/0200-number-of-islands/) | Medium |
+## Breadth-First Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0200-number-of-islands](https://github.com/JeonJe/Algorithm/tree/main/0200-number-of-islands/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0200-number-of-islands](https://github.com/JeonJe/Algorithm/tree/main/0200-number-of-islands/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0200-number-of-islands](https://github.com/JeonJe/Algorithm/tree/main/0200-number-of-islands/) | Medium |
 <!---LeetCode Topics End-->
