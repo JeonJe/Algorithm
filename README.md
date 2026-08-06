@@ -21,6 +21,7 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-08-06 | **0062-unique-paths** | LeetCode | [코드](./0062-unique-paths) |
 | 2026-08-06 | **0200-number-of-islands** | LeetCode | [코드](./0200-number-of-islands) |
 | 2026-08-05 | **0003-longest-substring-without-repeating-characters** | LeetCode | [코드](./0003-longest-substring-without-repeating-characters) |
 | 2026-08-05 | **0206-reverse-linked-list** | LeetCode | [코드](./0206-reverse-linked-list) |
@@ -40,7 +41,6 @@
 | 2026-03-31 | **19843. 수면 패턴** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/19843.%E2%80%85%EC%88%98%EB%A9%B4%E2%80%85%ED%8C%A8%ED%84%B4) |
 | 2026-03-30 | **25602. 캔 주기** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/25602.%E2%80%85%EC%BA%94%E2%80%85%EC%A3%BC%EA%B8%B0) |
 | 2026-03-27 | **33011. 홀수와 짝수 게임** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Silver/33011.%E2%80%85%ED%99%80%EC%88%98%EC%99%80%E2%80%85%EC%A7%9D%EC%88%98%E2%80%85%EA%B2%8C%EC%9E%84) |
-| 2026-03-26 | **12866. 피노키오** | Baekjoon | [코드](./%EB%B0%B1%EC%A4%80/Bronze/12866.%E2%80%85%ED%94%BC%EB%85%B8%ED%82%A4%EC%98%A4) |
 <!-- RECENT_SOLUTIONS:END -->
 
 <!---LeetCode Topics Start-->
