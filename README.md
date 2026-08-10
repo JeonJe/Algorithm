@@ -60,6 +60,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0136-single-number](https://github.com/JeonJe/Algorithm/tree/main/0136-single-number/) | Easy |
+| [0190-reverse-bits](https://github.com/JeonJe/Algorithm/tree/main/0190-reverse-bits/) | Easy |
 ## Linked List
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -104,4 +105,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0062-unique-paths](https://github.com/JeonJe/Algorithm/tree/main/0062-unique-paths/) | Medium |
+## Divide and Conquer
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0190-reverse-bits](https://github.com/JeonJe/Algorithm/tree/main/0190-reverse-bits/) | Easy |
 <!---LeetCode Topics End-->
