@@ -19,13 +19,14 @@ class Node {
 */
 
 import java.util.*;
+import java.util.*;
 
 class Solution {
     public Node cloneGraph(Node node) {
-        return clone(node, new HashMap<>());
+        return deepCopy(node, new HashMap<>());
     }
 
-    private Node clone(Node node, HashMap<Node, Node> cloned) {
+    private Node deepCopy(Node node, Map<Node, Node> cloned) {
         if (node == null) {
             return null;
         }
@@ -38,7 +39,7 @@ class Solution {
         cloned.put(node, clonedNode);
 
         for (Node neighbor : node.neighbors) {
-            clonedNode.neighbors.add(clone(neighbor, cloned));
+            clonedNode.neighbors.add(deepCopy(neighbor, cloned));
         }
 
         return clonedNode;
