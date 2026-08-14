@@ -21,8 +21,8 @@
 <!-- RECENT_SOLUTIONS:START -->
 | 날짜 | 문제 | 플랫폼 | 링크 |
 |---|---|---|---|
+| 2026-08-14 | **0190-reverse-bits** | LeetCode | [코드](./0190-reverse-bits) |
 | 2026-08-14 | **0133-clone-graph** | LeetCode | [코드](./0133-clone-graph) |
-| 2026-08-10 | **0190-reverse-bits** | LeetCode | [코드](./0190-reverse-bits) |
 | 2026-08-06 | **0062-unique-paths** | LeetCode | [코드](./0062-unique-paths) |
 | 2026-08-06 | **0200-number-of-islands** | LeetCode | [코드](./0200-number-of-islands) |
 | 2026-08-05 | **0003-longest-substring-without-repeating-characters** | LeetCode | [코드](./0003-longest-substring-without-repeating-characters) |
